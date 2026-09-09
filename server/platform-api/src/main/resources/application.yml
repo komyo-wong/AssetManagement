@@ -1,0 +1,115 @@
+spring:
+  application:
+    name: asset-management-api
+  profiles:
+    default: dev
+  servlet:
+    multipart:
+      max-file-size: ${UPLOAD_MAX_FILE_SIZE:50MB}
+      max-request-size: ${UPLOAD_MAX_REQUEST_SIZE:55MB}
+  datasource:
+    hikari:
+      maximum-pool-size: ${DB_POOL_MAX_SIZE:20}
+      minimum-idle: ${DB_POOL_MIN_IDLE:2}
+      connection-timeout: 10000
+      # 避免登录等请求在远端 Postgres 无响应时无限挂起（秒）
+      data-source-properties:
+        connectTimeout: ${DB_CONNECT_TIMEOUT_SECONDS:5}
+        socketTimeout: ${DB_SOCKET_TIMEOUT_SECONDS:15}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+          batch_size: 50
+        order_inserts: true
+        order_updates: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    validate-migration-naming: true
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      database: ${REDIS_DATABASE:0}
+      timeout: 3s
+      password: ${REDIS_PASSWORD}
+  jackson:
+    default-property-inclusion: non_null
+    time-zone: UTC
+
+server:
+  port: ${SERVER_PORT:8080}
+  forward-headers-strategy: framework
+  shutdown: graceful
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: never
+  observations:
+    key-values:
+      application: ${spring.application.name}
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    display-request-duration: true
+
+app:
+  storage:
+    documents-root: ${APP_DOCUMENTS_ROOT:./.data/documents}
+  license:
+    dir: ${LICENSE_DIR:./.data/license}
+  ops:
+    backup-dir: ${OPS_BACKUP_DIR:./.data/backups}
+    max-backups: ${OPS_MAX_BACKUPS:30}
+    worker-health-url: ${OPS_WORKER_HEALTH_URL:http://worker:8081/actuator/health}
+    mqtt-host: ${OPS_MQTT_HOST:mosquitto}
+    mqtt-port: ${OPS_MQTT_PORT:1883}
+    docker-enabled: ${OPS_DOCKER_ENABLED:false}
+    docker-socket: ${OPS_DOCKER_SOCKET:/var/run/docker.sock}
+    docker-api-version: ${OPS_DOCKER_API_VERSION:v1.41}
+  mqtt:
+    connection-test:
+      timeout: ${MQTT_CONNECTION_TEST_TIMEOUT:5s}
+      max-concurrent: ${MQTT_CONNECTION_TEST_MAX_CONCURRENT:4}
+      allowed-ports: ${MQTT_CONNECTION_TEST_ALLOWED_PORTS:1883,8883,80,443}
+      allowed-private-addresses: ${MQTT_CONNECTION_TEST_ALLOWED_PRIVATE_ADDRESSES:}
+  secrets:
+    active-key-version: ${APP_SECRET_ACTIVE_KEY_VERSION}
+    active-key-base64: ${APP_SECRET_ACTIVE_KEY_BASE64}
+  security:
+    access-token:
+      # Supply a random value of at least 32 bytes through the deployment
+      # secret manager. There is deliberately no source default.
+      secret: ${AUTH_ACCESS_TOKEN_SECRET}
+      issuer: ${AUTH_ACCESS_TOKEN_ISSUER:asset-management-api}
+      audience: ${AUTH_ACCESS_TOKEN_AUDIENCE:asset-management-web}
+      ttl: ${AUTH_ACCESS_TOKEN_TTL:2h}
+      clock-skew: ${AUTH_ACCESS_TOKEN_CLOCK_SKEW:30s}
+    refresh-token:
+      ttl: ${AUTH_REFRESH_TOKEN_TTL:30d}
+      cookie-name: ${AUTH_REFRESH_COOKIE_NAME:AM_REFRESH}
+      secure: ${AUTH_REFRESH_COOKIE_SECURE:false}
+      same-site: Strict
+      cookie-path: /api/v1/auth
+    browser:
+      allowed-origins: ${AUTH_ALLOWED_ORIGINS:http://localhost:3006,http://127.0.0.1:3006}
+    login-limit:
+      account-attempts: ${AUTH_LOGIN_ACCOUNT_ATTEMPTS:10}
+      account-window: ${AUTH_LOGIN_ACCOUNT_WINDOW:15m}
+      ip-attempts: ${AUTH_LOGIN_IP_ATTEMPTS:30}
+      ip-window: ${AUTH_LOGIN_IP_WINDOW:5m}

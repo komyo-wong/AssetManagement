@@ -1,0 +1,36 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  data:
+    redis:
+      host: ${REDIS_HOST}
+      port: ${REDIS_PORT:6379}
+      database: ${REDIS_DATABASE:0}
+      password: ${REDIS_PASSWORD}
+
+logging:
+  level:
+    root: INFO
+    com.assetmanagement: INFO
+
+# API descriptions are useful in controlled development environments, but are
+# disabled by default in production. Enable them only behind authenticated,
+# internal access when operationally required.
+springdoc:
+  api-docs:
+    enabled: ${SPRINGDOC_ENABLED:false}
+  swagger-ui:
+    enabled: ${SPRINGDOC_ENABLED:false}
+
+app:
+  security:
+    refresh-token:
+      secure: true
+    browser:
+      # Production must provide exact HTTPS origins. Wildcards are rejected.
+      allowed-origins: ${AUTH_ALLOWED_ORIGINS}

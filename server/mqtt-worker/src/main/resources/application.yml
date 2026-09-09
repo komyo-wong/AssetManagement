@@ -1,0 +1,64 @@
+spring:
+  application:
+    name: asset-management-mqtt-worker
+  profiles:
+    default: dev
+  datasource:
+    hikari:
+      maximum-pool-size: ${DB_POOL_MAX_SIZE:10}
+      minimum-idle: ${DB_POOL_MIN_IDLE:1}
+      connection-timeout: 30000
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+          batch_size: 100
+  flyway:
+    enabled: false
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      database: ${REDIS_DATABASE:0}
+      timeout: 3s
+      password: ${REDIS_PASSWORD}
+
+server:
+  port: ${WORKER_MANAGEMENT_PORT:8081}
+  shutdown: graceful
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: never
+
+app:
+  mqtt-worker:
+    enabled: ${MQTT_WORKER_ENABLED:false}
+    reconcile-interval: ${MQTT_RECONCILE_INTERVAL:30s}
+    max-concurrent-connections: ${MQTT_MAX_CONCURRENT_CONNECTIONS:32}
+    # Worker-only rewrite: connect to the in-compose broker while the DB still
+    # stores the LAN URI that gateways provision against.
+    broker-uri-override: ${MQTT_BROKER_URI_OVERRIDE:}
+    public-broker-host: ${MQTT_PUBLIC_BROKER_HOST:}
+    local-username: ${MQTT_USERNAME:}
+    local-password: ${MQTT_PASSWORD:}
+    # Keep latest frame per device MAC; flush to DB on this interval.
+    coalesce-flush-ms: ${MQTT_COALESCE_FLUSH_MS:250}
+    coalesce-max-buffer: ${MQTT_COALESCE_MAX_BUFFER:4000}
+  gateway:
+    online-ttl: ${GATEWAY_ONLINE_TTL:90s}
+    presence-reconcile-interval: ${GATEWAY_PRESENCE_RECONCILE_INTERVAL:15s}
+  secrets:
+    active-key-version: ${APP_SECRET_ACTIVE_KEY_VERSION}
+    active-key-base64: ${APP_SECRET_ACTIVE_KEY_BASE64}

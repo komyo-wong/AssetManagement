@@ -1,0 +1,204 @@
+name: ${COMPOSE_PROJECT_NAME:-asset-management}
+
+x-default-logging: &default-logging
+  driver: json-file
+  options:
+    max-size: "20m"
+    max-file: "5"
+
+services:
+  postgres:
+    image: ${POSTGRES_IMAGE:-postgis/postgis:18-3.6}
+    restart: unless-stopped
+    env_file:
+      - config.env
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-asset_management}
+      POSTGRES_USER: ${POSTGRES_USER:-asset_app}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      TZ: ${TZ:-Asia/Shanghai}
+      PGTZ: ${TZ:-Asia/Shanghai}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - ${DATA_DIR}/postgres:/var/lib/postgresql
+      - ./compose/postgres/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    logging: *default-logging
+    networks:
+      - asset_backend
+
+  redis:
+    image: ${REDIS_IMAGE:-redis:8-alpine}
+    restart: unless-stopped
+    env_file:
+      - config.env
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+      TZ: ${TZ:-Asia/Shanghai}
+    command:
+      - /bin/sh
+      - -ec
+      - exec redis-server /usr/local/etc/redis/redis.conf --requirepass "$${REDIS_PASSWORD}"
+    ports:
+      - "127.0.0.1:6379:6379"
+    volumes:
+      - ${DATA_DIR}/redis:/data
+      - ./compose/redis/redis.conf:/usr/local/etc/redis/redis.conf:ro
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - redis-cli --no-auth-warning -a "$${REDIS_PASSWORD}" ping | grep -q PONG
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    logging: *default-logging
+    networks:
+      - asset_backend
+
+  mosquitto:
+    image: ${MOSQUITTO_IMAGE:-eclipse-mosquitto:2}
+    restart: unless-stopped
+    env_file:
+      - config.env
+    environment:
+      MQTT_USERNAME: ${MQTT_USERNAME}
+      MQTT_PASSWORD: ${MQTT_PASSWORD}
+      TZ: ${TZ:-Asia/Shanghai}
+    ports:
+      - "${MQTT_BIND_ADDRESS:-0.0.0.0}:${MQTT_PORT:-1883}:1883"
+    volumes:
+      - ${DATA_DIR}/mosquitto:/mosquitto/data
+      - ./compose/mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./runtime/mosquitto/acl:/mosquitto/config/acl:ro
+      - ./runtime/mosquitto/password_file:/mosquitto/config/password_file
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - >-
+          mosquitto_pub -h 127.0.0.1 -p 1883
+          -u "$${MQTT_USERNAME}" -P "$${MQTT_PASSWORD}"
+          -t "_health/$${MQTT_USERNAME}" -m ping -q 1
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    logging: *default-logging
+    networks:
+      - asset_backend
+
+  api:
+    image: asset-management-api:${APP_IMAGE_TAG:-1.0.7}
+    restart: unless-stopped
+    env_file:
+      - config.env
+    environment:
+      SERVER_PORT: "8080"
+      SPRING_PROFILES_ACTIVE: install
+      MQTT_WORKER_ENABLED: "false"
+      APP_DOCUMENTS_ROOT: /app/data/documents
+      DB_URL: jdbc:postgresql://postgres:5432/${POSTGRES_DB:-asset_management}
+      DB_USERNAME: ${POSTGRES_USER:-asset_app}
+      DB_PASSWORD: ${POSTGRES_PASSWORD}
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+      APP_DEV_BOOTSTRAP_ROOT_USERNAME: ${ROOT_USERNAME}
+      APP_DEV_BOOTSTRAP_ROOT_PASSWORD: ${ROOT_PASSWORD}
+      APP_DEV_BOOTSTRAP_ROOT_EMAIL: ${ROOT_EMAIL:-}
+      APP_DEV_BOOTSTRAP_ROOT_DISPLAY_NAME: ${ROOT_USERNAME}
+      APP_DEV_BOOTSTRAP_MQTT_ENABLED: "true"
+      APP_DEV_BOOTSTRAP_MQTT_BROKER_URI: mqtt://${PUBLIC_HOST}:${MQTT_PORT:-1883}
+      APP_DEV_BOOTSTRAP_MQTT_USERNAME: ${MQTT_USERNAME}
+      APP_DEV_BOOTSTRAP_MQTT_PASSWORD: ${MQTT_PASSWORD}
+      OPS_DOCKER_ENABLED: "true"
+      OPS_BACKUP_DIR: /app/data/backups
+      LICENSE_DIR: /app/data/backups/license
+      OPS_WORKER_HEALTH_URL: http://worker:8081/actuator/health
+      OPS_MQTT_HOST: mosquitto
+      OPS_MQTT_PORT: "1883"
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - ${DATA_DIR}/documents:/app/data/documents
+      - ${DATA_DIR}/backups:/app/data/backups
+      - /var/run/docker.sock:/var/run/docker.sock
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:8080/actuator/health/liveness | grep -q UP || curl -fsS http://127.0.0.1:8080/actuator/health | grep -q UP || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 180s
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    logging: *default-logging
+    networks:
+      - asset_backend
+      - asset_frontend
+
+  worker:
+    image: asset-management-worker:${APP_IMAGE_TAG:-1.0.7}
+    restart: unless-stopped
+    env_file:
+      - config.env
+    environment:
+      WORKER_MANAGEMENT_PORT: "8081"
+      SPRING_PROFILES_ACTIVE: install
+      MQTT_WORKER_ENABLED: "true"
+      DB_URL: jdbc:postgresql://postgres:5432/${POSTGRES_DB:-asset_management}
+      DB_USERNAME: ${POSTGRES_USER:-asset_app}
+      DB_PASSWORD: ${POSTGRES_PASSWORD}
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+      MQTT_BROKER_URI_OVERRIDE: mqtt://mosquitto:1883
+      MQTT_PUBLIC_BROKER_HOST: ${PUBLIC_HOST}
+    ports:
+      - "127.0.0.1:8081:8081"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:8081/actuator/health/liveness | grep -q UP || curl -fsS http://127.0.0.1:8081/actuator/health | grep -q UP || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 120s
+    depends_on:
+      api:
+        condition: service_started
+      mosquitto:
+        condition: service_healthy
+    logging: *default-logging
+    networks:
+      - asset_backend
+
+  web:
+    image: asset-management-web:${APP_IMAGE_TAG:-1.0.7}
+    restart: unless-stopped
+    ports:
+      - "${WEB_BIND_ADDRESS:-0.0.0.0}:${WEB_PORT:-80}:80"
+      - "${WEB_BIND_ADDRESS:-0.0.0.0}:${WEB_HTTPS_PORT:-443}:443"
+    volumes:
+      - ./runtime/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./certs:/etc/nginx/certs:ro
+    depends_on:
+      api:
+        condition: service_started
+    logging: *default-logging
+    networks:
+      - asset_frontend
+
+networks:
+  asset_backend:
+    name: ${COMPOSE_PROJECT_NAME:-asset-management}-backend
+    driver: bridge
+  asset_frontend:
+    name: ${COMPOSE_PROJECT_NAME:-asset-management}-frontend
+    driver: bridge

@@ -1,0 +1,39 @@
+Copyright (c) 2026 GeoTag
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/agpl-3.0.html>.
+
+-----------------------------------------------------------------------------
+GeoTag commercial authorization
+-----------------------------------------------------------------------------
+
+Official builds gate paid capabilities behind a license token signed by GeoTag:
+
+  - eink              e-ink screen push
+  - buzz              find-my-asset buzzer
+  - notify            outbound alert email / webhook
+  - login_copyright   replacing the default login-page copyright line
+
+A token may also cap beacon/gateway counts and set an expiry date.
+Each token is bound to one server install ID. The Ed25519 signing private
+key is not in this repository (see deploy/.license-private* in .gitignore).
+
+Compiling from this source and changing or removing the check is permitted
+under AGPL. That does not grant a commercial license from GeoTag, and it
+does not authorize using GeoTag branding as your own.
+
+中文：本仓库按 AGPL-3.0-or-later 开源。官方包用授权码解锁「墨水屏改屏」
+「蜂鸣寻找」「告警通知」「登录页版权」；私钥不公开。自行改源码绕过校验
+不等于获得商业授权。

@@ -1,0 +1,4 @@
+.env
+.sshpass
+build/
+web-src/

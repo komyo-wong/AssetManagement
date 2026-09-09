@@ -1,0 +1,45 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/asset_management}
+    username: ${DB_USERNAME:asset_app}
+    password: ${DB_PASSWORD}
+  jpa:
+    show-sql: false
+
+app:
+  security:
+    browser:
+      # 本地开发允许 Vite 默认本机源；局域网 IP 访问由 web/vite 代理改写 Origin
+      allowed-origins: ${AUTH_ALLOWED_ORIGINS:http://localhost:3006,http://127.0.0.1:3006}
+  dev-bootstrap:
+    enabled: true
+    root-username: root
+    root-email: root@local.dev
+    root-password: ${DEV_ROOT_PASSWORD:}
+    root-display-name: Root
+    tenant-code: demo
+    tenant-name: Demo Tenant
+    project-code: demo-project
+    project-name: Demo Project
+    mqtt-enabled: ${APP_DEV_BOOTSTRAP_MQTT_ENABLED:true}
+    mqtt-broker-uri: ${APP_DEV_BOOTSTRAP_MQTT_BROKER_URI:}
+    mqtt-username: ${APP_DEV_BOOTSTRAP_MQTT_USERNAME:}
+    mqtt-password: ${APP_DEV_BOOTSTRAP_MQTT_PASSWORD:}
+    mqtt-connection-name: ${APP_DEV_BOOTSTRAP_MQTT_CONNECTION_NAME:本机 Broker}
+  mqtt:
+    connection-test:
+      # Allow probing the LAN Mosquitto on the shared Ubuntu host during local development.
+      allowed-private-addresses: ${MQTT_CONNECTION_TEST_ALLOWED_PRIVATE_ADDRESSES:127.0.0.1,::1}
+  ops:
+    worker-health-url: ${OPS_WORKER_HEALTH_URL:http://127.0.0.1:8081/actuator/health}
+    mqtt-host: ${OPS_MQTT_HOST:127.0.0.1}
+    mqtt-port: ${OPS_MQTT_PORT:1883}
+    docker-enabled: ${OPS_DOCKER_ENABLED:false}
+
+logging:
+  level:
+    com.assetmanagement: DEBUG
+    org.springframework.security: INFO

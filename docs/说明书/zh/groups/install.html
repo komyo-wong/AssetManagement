@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>安装与运维</title>
+  <style>
+:root {
+  --bg: #f6f7f9;
+  --panel: #fff;
+  --text: #1f2328;
+  --muted: #5c6570;
+  --line: #e6e8ec;
+  --brand: #1a5f4a;
+  --link: #0b6e4f;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+nav {
+  width: 280px;
+  flex: 0 0 280px;
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+  padding: 16px 12px 32px;
+  overflow-y: auto;
+  height: 100vh;
+}
+nav .brand { font-weight: 700; color: var(--brand); padding: 4px 8px 14px; font-size: 15px; }
+nav .brand a { color: inherit; text-decoration: none; }
+nav .top-link { margin-bottom: 10px; }
+nav .section { margin-bottom: 4px; }
+nav .parent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  margin: 0;
+  padding: 7px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+}
+nav .parent:hover { background: #eef6f2; }
+nav .parent.current, nav .parent.active { color: var(--brand); }
+nav .chevron {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 5px solid currentColor;
+  flex: 0 0 auto;
+  transform: rotate(0deg);
+  transition: transform 0.15s ease;
+}
+nav .section.open > .parent .chevron { transform: rotate(90deg); }
+nav .children { display: none; padding: 0 0 8px 20px; }
+nav .section.open > .children { display: block; }
+nav a.item {
+  display: block;
+  padding: 5px 8px;
+  border-radius: 6px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+nav a.item:hover { background: #eef6f2; color: var(--text); }
+nav a.item.active { background: #1a5f4a; color: #fff; }
+main { flex: 1; padding: 32px 40px 80px; overflow-y: auto; height: 100vh; }
+article { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 28px 36px; max-width: 860px; }
+h1 { margin-top: 0; font-size: 28px; }
+h2 { margin-top: 1.6em; font-size: 20px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+h3 { font-size: 16px; }
+p, li { line-height: 1.7; }
+a { color: var(--link); }
+table { border-collapse: collapse; width: 100%; margin: 12px 0 20px; font-size: 14px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #f3f5f7; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9em; background: #f3f5f7; padding: 1px 5px; border-radius: 4px; }
+pre { background: #111827; color: #e5e7eb; padding: 14px 16px; border-radius: 8px; overflow: auto; }
+pre code { background: none; color: inherit; padding: 0; }
+pre.diagram { background: #f3f5f7; color: var(--text); font-size: 12px; }
+.hint { border-left: 4px solid #3b82f6; background: #eff6ff; padding: 10px 14px; margin: 16px 0; border-radius: 0 8px 8px 0; }
+.hint.warning { border-color: #d97706; background: #fffbeb; }
+.hint.danger { border-color: #dc2626; background: #fef2f2; }
+.hint.success { border-color: #059669; background: #ecfdf5; }
+.hint.info { border-color: #2563eb; background: #eff6ff; }
+.home-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
+.home-cards a {
+  display: block; background: var(--panel); border: 1px solid var(--line);
+  border-radius: 12px; padding: 28px 24px; text-decoration: none; color: var(--text);
+}
+.home-cards a:hover { border-color: var(--brand); }
+.home-cards strong { display: block; font-size: 20px; color: var(--brand); margin-bottom: 8px; }
+.group-list { list-style: none; padding: 0; }
+.group-list a {
+  display: block; padding: 12px 14px; border: 1px solid var(--line);
+  border-radius: 8px; margin: 8px 0; text-decoration: none; color: var(--text);
+}
+.group-list a:hover { border-color: var(--brand); }
+@media (max-width: 860px) {
+  body { display: block; height: auto; overflow: auto; }
+  nav { width: auto; height: auto; }
+  main { height: auto; padding: 16px; overflow: visible; }
+  .home-cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="brand"><a href="../../index.html">资产管理平台说明书</a></div>
+  <a class="item top-link" href="../../index.html">选择语言 / Language</a>
+<div class="section" data-slug="intro">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>入门</button>
+<div class="children">
+<a class="item" href="../README.html">产品简介</a>
+<a class="item" href="../getting-started.html">第一次使用</a>
+</div></div>
+<div class="section open is-current" data-slug="install">
+<button type="button" class="parent current active" aria-expanded="true"><span class="chevron" aria-hidden="true"></span>安装与运维</button>
+<div class="children">
+<a class="item" href="../install/offline.html">离线安装</a>
+<a class="item" href="../install/login.html">登录、语言与找回密码</a>
+<a class="item" href="../install/upgrade.html">升级（不覆盖数据）</a>
+<a class="item" href="../install/ops.html">日常命令、备份与 HTTPS</a>
+</div></div>
+<a class="parent" href="../menus/overview.html">总览</a>
+<div class="section" data-slug="asset-center">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>资产中心</button>
+<div class="children">
+<a class="item" href="../menus/assets.html">资产管理</a>
+<a class="item" href="../menus/asset-types.html">资产类型</a>
+<a class="item" href="../menus/asset-status.html">资产状态</a>
+<a class="item" href="../menus/floorplan.html">平面图概览</a>
+<a class="item" href="../menus/inventory.html">盘点管理</a>
+</div></div>
+<div class="section" data-slug="devices">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>设备与空间</button>
+<div class="children">
+<a class="item" href="../menus/beacons.html">信标管理</a>
+<a class="item" href="../menus/gateways.html">网关管理</a>
+<a class="item" href="../menus/maps.html">地图管理</a>
+<a class="item" href="../menus/zones.html">区域管理</a>
+<a class="item" href="../menus/presence-ttl.html">在线阈值</a>
+</div></div>
+<div class="section" data-slug="alerts">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>告警中心</button>
+<div class="children">
+<a class="item" href="../menus/alert-events.html">告警事件</a>
+<a class="item" href="../menus/alert-rules.html">告警规则</a>
+<a class="item" href="../menus/notifications.html">我的通知</a>
+</div></div>
+<div class="section" data-slug="analytics">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>数据分析</button>
+<div class="children">
+<a class="item" href="../menus/analytics-assets.html">资产分析</a>
+<a class="item" href="../menus/daily-summary.html">每日汇总</a>
+</div></div>
+<div class="section" data-slug="mqtt">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>MQTT 接入</button>
+<div class="children">
+<a class="item" href="../menus/mqtt-connections.html">连接管理</a>
+<a class="item" href="../menus/mqtt-topics.html">Topic 路由</a>
+<a class="item" href="../menus/mqtt-messages.html">消息监控</a>
+<a class="item" href="../menus/mqtt-commands.html">下行命令</a>
+</div></div>
+<div class="section" data-slug="platform">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>平台管理</button>
+<div class="children">
+<a class="item" href="../menus/platform-users.html">用户管理</a>
+<a class="item" href="../menus/platform-roles.html">角色管理</a>
+<a class="item" href="../menus/audit.html">审计日志</a>
+<a class="item" href="../menus/mail.html">邮件配置</a>
+<a class="item" href="../menus/branding.html">登录页配置</a>
+<a class="item" href="../menus/ops.html">系统运维</a>
+</div></div>
+<a class="parent" href="../menus/account.html">个人中心</a>
+<div class="section" data-slug="appendix">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>附录</button>
+<div class="children">
+<a class="item" href="../appendix/defaults.html">端口与数据目录</a>
+<a class="item" href="../appendix/gateway.html">网关接入参数</a>
+<a class="item" href="../appendix/app-api.html">App 接口</a>
+</div></div>
+</nav>
+<main>
+  <article>
+    <h1>安装与运维</h1><p>本章包含以下页面：</p><ul class="group-list"><li><a href="../install/offline.html">离线安装</a></li><li><a href="../install/login.html">登录、语言与找回密码</a></li><li><a href="../install/upgrade.html">升级（不覆盖数据）</a></li><li><a href="../install/ops.html">日常命令、备份与 HTTPS</a></li></ul>
+  </article>
+</main>
+
+<script>
+(function () {
+  var nav = document.querySelector("nav");
+  if (!nav) return;
+  var scrollKey = "am-guide-nav-scroll";
+  var saved = sessionStorage.getItem(scrollKey);
+  if (saved !== null) nav.scrollTop = Number(saved);
+  nav.querySelectorAll("a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      sessionStorage.setItem(scrollKey, String(nav.scrollTop));
+    });
+  });
+  nav.querySelectorAll(".section[data-slug]").forEach(function (section) {
+    var btn = section.querySelector("button.parent");
+    if (!btn) return;
+    btn.addEventListener("click", function () {
+      var open = !section.classList.contains("open");
+      section.classList.toggle("open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+.DS_Store
+.idea/
+.vscode/
+*.iml
+*.log
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+DEPLOY_SECRETS.txt
+deploy/.sshpass
+deploy/.remote-host
+deploy/.license-private*
+deploy/.license-issued.jsonl
+local-setup.sh
+LOCAL_SETUP.md
+BOOT-INF/
+server/BOOT-INF/
+
+# Local package and build caches
+.pnpm-store/
+**/node_modules/
+**/dist/
+**/target/
+**/.vite/
+**/coverage/
+
+# Runtime data and generated credentials
+infra/data/
+infra/mosquitto/secrets/password_file
+.tools/
+.data/
+**/.data/
+
+docs/_mdlib/
+docs/说明书.zip
+
+# Host-side image build context (jars + web dist)
+deploy/build/
+
+# Offline install kit build output (images, debs, tarball)
+deploy/offline/dist/
+deploy/offline/kit/images/
+deploy/offline/kit/packages/
+deploy/offline/kit/runtime/
+deploy/offline/kit/config.env

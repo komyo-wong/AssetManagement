@@ -1,0 +1,29 @@
+# Mosquitto ACL notes:
+# - `topic` lines BEFORE any `user` directive apply to anonymous clients only.
+# - `pattern` lines apply to EVERY username (including future gw0001 / gw0010 / …).
+#   New gateways therefore do not need a new ACL block for GwData / SrvData / GwStatus.
+# - Authenticated users still need CONNECT rights (password_file / allow_anonymous).
+
+# Shared device/platform topics for all clients
+pattern readwrite GwData
+pattern readwrite SrvData
+pattern readwrite GwStatus
+pattern write _health/%u
+pattern readwrite sandbox/%u/#
+
+# Anonymous (only used when allow_anonymous is true)
+topic readwrite GwData
+topic readwrite SrvData
+topic readwrite GwStatus
+
+# Gateway / platform shared account
+user user
+topic readwrite GwData
+topic readwrite SrvData
+topic readwrite GwStatus
+
+# Platform MQTT worker (must match infra MQTT_USERNAME)
+user asset_platform_local
+topic readwrite GwData
+topic readwrite SrvData
+topic readwrite GwStatus

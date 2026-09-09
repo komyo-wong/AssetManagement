@@ -1,0 +1,20 @@
+# Prebuilt jar runtime image (build jar on host first).
+# Build context: deploy/  (see docker-compose.yml)
+FROM docker.m.daocloud.io/library/eclipse-temurin:25-jre-jammy
+
+WORKDIR /app
+
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends curl \
+  && rm -rf /var/lib/apt/lists/* \
+  && useradd --system --uid 10001 --create-home app \
+  && chown -R app:app /app
+
+ARG APP_VERSION=1.0.7
+COPY --chown=app:app build/mqtt-worker-${APP_VERSION}.jar /app/app.jar
+
+USER app
+EXPOSE 8081
+
+ENV JAVA_OPTS="-XX:MaxRAMPercentage=75.0 -Djava.security.egd=file:/dev/./urandom"
+ENTRYPOINT ["sh", "-c", "exec java $JAVA_OPTS -jar /app/app.jar"]

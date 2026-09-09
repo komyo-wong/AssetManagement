@@ -1,0 +1,2816 @@
+{
+  "httpMsg": {
+    "unauthorized": "Unauthorized access, please login again",
+    "forbidden": "Access to this resource is forbidden",
+    "notFound": "The requested resource does not exist",
+    "methodNotAllowed": "Request method not allowed",
+    "requestTimeout": "Request timeout, please try again later",
+    "internalServerError": "Internal server error, please try again later",
+    "badGateway": "Bad gateway error, please try again later",
+    "serviceUnavailable": "Service temporarily unavailable, please try again later",
+    "gatewayTimeout": "Gateway timeout, please try again later",
+    "requestCancelled": "Request cancelled",
+    "networkError": "Network connection error, please check your connection",
+    "requestFailed": "Request failed",
+    "requestConfigError": "Request configuration error"
+  },
+  "topBar": {
+    "search": {
+      "title": "Search"
+    },
+    "user": {
+      "userCenter": "User center",
+      "docs": "Document",
+      "github": "Github",
+      "lockScreen": "Lock screen",
+      "logout": "Log out"
+    },
+    "guide": {
+      "title": "Click here to view",
+      "theme": "Theme style",
+      "menu": "Open top menu",
+      "description": "More configurations"
+    }
+  },
+  "common": {
+    "tips": "Prompt",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "refresh": "Refresh",
+    "search": "Search",
+    "reset": "Reset",
+    "edit": "Edit",
+    "detail": "Details",
+    "yes": "Yes",
+    "no": "No",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "logOutTips": "Do you want to log out?",
+    "create": "Create",
+    "save": "Save",
+    "delete": "Delete",
+    "actions": "Actions",
+    "status": "Status",
+    "add": "Add",
+    "saveSuccess": "Saved",
+    "deleteConfirm": "Delete confirmation",
+    "deleted": "Deleted",
+    "totalCount": "{count} total",
+    "selectedCount": "{count} selected",
+    "code": "Code",
+    "name": "Name",
+    "description": "Description",
+    "updatedAt": "Updated",
+    "searchPlaceholder": "Search code / name…",
+    "new": "New",
+    "type": "Type",
+    "address": "Address",
+    "remark": "Remark",
+    "time": "Time",
+    "title": "Title",
+    "message": "Message",
+    "loading": "Loading…",
+    "to": "to",
+    "start": "Start",
+    "exportCsv": "Export CSV",
+    "clear": "Clear",
+    "all": "All",
+    "enable": "Enable",
+    "close": "Close",
+    "download": "Download",
+    "upload": "Upload",
+    "remove": "Remove",
+    "invite": "Invite",
+    "username": "Username",
+    "displayName": "Display name",
+    "email": "Email",
+    "roles": "Roles",
+    "permissions": "Permissions",
+    "file": "File",
+    "size": "Size",
+    "fileName": "File name",
+    "createdAt": "Created",
+    "selectTenant": "Select a tenant first",
+    "selectTenantProject": "Workspace is not ready",
+    "error": "Error"
+  },
+  "search": {
+    "placeholder": "Search page",
+    "historyTitle": "Search history",
+    "switchKeydown": "Navigate",
+    "selectKeydown": "Select",
+    "exitKeydown": "Close"
+  },
+  "setting": {
+    "menuType": {
+      "title": "Menu Layout",
+      "list": [
+        "Vertical",
+        "Horizontal",
+        "Mixed",
+        "Dual"
+      ]
+    },
+    "theme": {
+      "title": "Theme Style",
+      "list": [
+        "Light",
+        "Dark",
+        "System"
+      ]
+    },
+    "menu": {
+      "title": "Menu Style"
+    },
+    "color": {
+      "title": "Theme Color"
+    },
+    "box": {
+      "title": "Box Style",
+      "list": [
+        "Border",
+        "Shadow"
+      ]
+    },
+    "container": {
+      "title": "Container Width",
+      "list": [
+        "Full",
+        "Boxed"
+      ]
+    },
+    "basics": {
+      "title": "Basic Config",
+      "list": {
+        "multiTab": "Show work tab",
+        "accordion": "Sidebar opens accordion",
+        "collapseSidebar": "Show sidebar button",
+        "reloadPage": "Show reload page button",
+        "fastEnter": "Show fast enter",
+        "breadcrumb": "Show crumb navigation",
+        "language": "Show multilingual selection",
+        "progressBar": "Show top progress bar",
+        "weakMode": "Color Weakness Mode",
+        "watermark": "Global watermark",
+        "menuWidth": "Menu width",
+        "tabStyle": "Tab style",
+        "pageTransition": "Page animation",
+        "borderRadius": "Custom radius"
+      }
+    },
+    "tabStyle": {
+      "default": "Default",
+      "card": "Card",
+      "google": "Chrome"
+    },
+    "transition": {
+      "list": {
+        "none": "None",
+        "fade": "Fade",
+        "slideLeft": "Slide Left",
+        "slideBottom": "Slide Bottom",
+        "slideTop": "Slide Top"
+      }
+    },
+    "actions": {
+      "resetConfig": "Reset Config",
+      "copyConfig": "Copy Config",
+      "copySuccess": "Configuration copied to clipboard, paste it into src/config/setting.ts file",
+      "copyFailed": "Copy failed, please try again",
+      "resetFailed": "Reset failed, please refresh the page and try again"
+    }
+  },
+  "notice": {
+    "title": "Notice",
+    "btnRead": "Mark as read",
+    "bar": [
+      "Notice",
+      "Message",
+      "Todo"
+    ],
+    "text": [
+      "No"
+    ],
+    "viewAll": "View all"
+  },
+  "worktab": {
+    "btn": {
+      "refresh": "Refresh",
+      "fixed": "Fixed",
+      "unfixed": "Unfixed",
+      "closeLeft": "Close left",
+      "closeRight": "Close right",
+      "closeOther": "Close other",
+      "closeAll": "Close all"
+    }
+  },
+  "login": {
+    "leftView": {
+      "title": "Make every asset visible, traceable, and auditable",
+      "subTitle": "Manage assets, devices, location, alerts, and MQTT data in one place"
+    },
+    "title": "Welcome back",
+    "subTitle": "Please enter your account and password to login",
+    "roles": {
+      "super": "Super Admin",
+      "admin": "Admin",
+      "user": "User"
+    },
+    "placeholder": {
+      "username": "Please enter your account",
+      "password": "Please enter your password",
+      "slider": "Please slide to verify"
+    },
+    "sliderText": "Please slide to verify",
+    "sliderSuccessText": "Verification successful",
+    "rememberPwd": "Remember password",
+    "forgetPwd": "Forgot password",
+    "btnText": "Login",
+    "managedAccount": "Public registration is disabled. A super administrator creates accounts and assigns role permissions in Platform Admin.",
+    "failure": "Login failed. Please try again later.",
+    "invalidCredentials": "Incorrect account or password",
+    "rateLimited": "Too many login attempts. Please try again later.",
+    "serverUnavailable": "Backend is unavailable. Please try again later.",
+    "noAccount": "No account yet?",
+    "register": "Register",
+    "success": {
+      "title": "Login successful",
+      "message": "Welcome back"
+    },
+    "copyright": "Copyright © 2026 GeoTag All Rights Reserved"
+  },
+  "context": {
+    "title": "Workspace",
+    "tenant": "Organization",
+    "project": "Workspace",
+    "selectTenant": "Organization",
+    "selectProject": "Workspace",
+    "switch": "Workspace",
+    "noActiveMembership": "This account has no workspace. Ask an administrator to assign platform role permissions."
+  },
+  "overview": {
+    "title": "Asset operations overview",
+    "subtitle": "Focus on presence, exceptions, alerts, and inventory results.",
+    "projectScope": "Operations",
+    "selectProject": "Waiting for workspace",
+    "createProject": "Platform Admin",
+    "realDataNotice": "Metrics come from real asset and device data; empty when unavailable.",
+    "dashboardLoadFailed": "The overview could not be loaded",
+    "metricsTitle": "Core asset metrics",
+    "waitingForData": "Waiting for real data",
+    "availability": {
+      "unavailable": "No data available",
+      "stale": "Data may be stale",
+      "available": "From the active workspace"
+    },
+    "metrics": {
+      "assets": "Total assets",
+      "onlineGateways": "Online gateways",
+      "onlineGatewaysHint": "Field gateways (e.g. ESP32), not the MQTT broker",
+      "activeAlerts": "Active alerts",
+      "rollCallCoverage": "Inventory coverage"
+    },
+    "pipelineEyebrow": "Live data pipeline",
+    "pipelineTitle": "From device messages to business state",
+    "pipelineSafety": "Encrypted secrets with permission-based access",
+    "configureMqtt": "Configure MQTT",
+    "notConfigured": "Not configured",
+    "pipeline": {
+      "device": "Edge devices",
+      "deviceHint": "Beacons, gateways, sensors",
+      "broker": "MQTT Broker",
+      "brokerHint": "Primary and standby links",
+      "rules": "Topic rules",
+      "rulesHint": "Identify, validate, map",
+      "platform": "Platform state",
+      "platformHint": "Assets, location, alerts"
+    },
+    "readinessEyebrow": "Runtime dependencies",
+    "readinessTitle": "System readiness",
+    "pendingCheck": "Pending",
+    "readinessStatus": {
+      "UP": "Healthy",
+      "DOWN": "Down",
+      "NOT_CONFIGURED": "Not configured",
+      "UNKNOWN": "Unknown"
+    },
+    "pipelineStatus": {
+      "ok": "Ready",
+      "degraded": "Degraded",
+      "pending": "Checking"
+    },
+    "readiness": {
+      "api": "Business API and authorization",
+      "postgres": "Business and spatial data",
+      "redis": "Cache, sessions, live state",
+      "mqtt": "Device ingestion and consumers"
+    },
+    "onboardingEyebrow": "Connection guide",
+    "onboardingTitle": "Complete the first real data pipeline",
+    "onboarding": {
+      "project": "Create workspace scope",
+      "connection": "Configure MQTT link",
+      "topicRule": "Add a Topic rule",
+      "deviceData": "Verify device messages"
+    },
+    "alertEyebrow": "Alert queue",
+    "alertTitle": "Alerts requiring action",
+    "viewAll": "View all",
+    "noAlertData": "No alerts to display",
+    "noAlertDataHint": "Alerts will appear after real device messages and alert rules are enabled."
+  },
+  "mqtt": {
+    "title": "MQTT Integration",
+    "subtitle": "Manage multi-environment brokers, primary/standby links, Topic parsing rules, and live diagnostics.",
+    "previewNotice": "Connection status, routes, and messages come from the active workspace APIs.",
+    "realDataNotice": "This page only renders connections, routes, and messages returned by the server. Unknown values stay empty; demo data is never substituted.",
+    "scopeRequired": "Workspace is not ready",
+    "scopeRequiredHint": "Ask an administrator to assign the required platform role permissions.",
+    "loadFailed": "MQTT data could not be loaded",
+    "unknownError": "The request did not complete. Please try again later.",
+    "addConnection": "New connection",
+    "addStandby": "Add standby",
+    "testConnection": "Test connection",
+    "testUnavailable": "Save a valid connection before running a real connectivity test",
+    "awaitingBackend": "Waiting for server data",
+    "secretHint": "Secrets are write-only and never returned",
+    "allEnvironments": "All environments",
+    "metrics": {
+      "connections": "Connections",
+      "connected": "Connected",
+      "rules": "Enabled rules",
+      "messages": "Matching messages",
+      "fromApi": "From the workspace API",
+      "currentStatus": "Current server connection status",
+      "queryTotal": "Total records matching the current filters"
+    },
+    "status": {
+      "not_configured": "Not configured",
+      "notConfigured": "Not configured",
+      "connecting": "Connecting",
+      "connected": "Connected",
+      "disconnected": "Disconnected",
+      "error": "Error",
+      "disabled": "Disabled"
+    },
+    "roles": {
+      "primary": "Primary connection",
+      "standby": "Standby connection",
+      "primaryEyebrow": "Primary Broker",
+      "standbyEyebrow": "Standby Broker"
+    },
+    "environments": {
+      "development": "Development",
+      "test": "Test",
+      "staging": "Staging",
+      "production": "Production"
+    },
+    "fields": {
+      "name": "Connection name",
+      "role": "Connection role",
+      "endpoint": "Broker endpoint",
+      "environment": "Environment",
+      "version": "Protocol version",
+      "clientId": "Client ID",
+      "username": "Username",
+      "password": "Password",
+      "keepAlive": "Keep Alive (seconds)",
+      "enabled": "Enable connection",
+      "enabledHint": "Allow the Worker to use this profile after saving; the backend still validates activation",
+      "lastConnected": "Last connected",
+      "tlsHint": "Validate server certificates and encrypt traffic",
+      "cleanStartHint": "Create a new session without restoring old subscriptions"
+    },
+    "placeholders": {
+      "name": "For example: Production primary",
+      "clientId": "Enter a unique, identifiable Client ID",
+      "leaveUnchanged": "Leave blank to keep the existing credential"
+    },
+    "tabs": {
+      "connections": "Connections",
+      "topicRules": "Topic rules",
+      "messages": "Message monitor"
+    },
+    "connections": {
+      "title": "Connection profiles",
+      "subtitle": "Manage brokers by environment and use case, with primary/standby support in production.",
+      "empty": "No MQTT connection configured",
+      "emptyHint": "Create a connection to run real connectivity tests. Passwords and private keys are never returned in lists or API responses."
+    },
+    "rules": {
+      "title": "Topic parsing rules",
+      "subtitle": "Map device Topics and payloads to asset status, location, alert, or heartbeat events.",
+      "searchPlaceholder": "Search rules or Topics",
+      "addRule": "New rule",
+      "guideTitle": "Provide real Topic and payload samples first",
+      "guideText": "Rules validate fields, device identity, and duplicate messages before persistence.",
+      "samplePending": "Protocol sample needed",
+      "serverValidated": "Server-side publish validation",
+      "empty": "No Topic rule configured",
+      "emptyHint": "Create validated mappings after receiving real Topic and payload samples from the device provider."
+    },
+    "messages": {
+      "title": "Live message monitor",
+      "subtitle": "Last ~500 messages (about 1 hour). Successful frames are not stored; parse failures stay a few days for troubleshooting.",
+      "notStreaming": "Not streaming",
+      "snapshotMode": "API snapshot",
+      "connection": "Select connection",
+      "gateway": "Select gateway",
+      "topic": "Filter Topic",
+      "result": "Parse result",
+      "pause": "Pause",
+      "clear": "Clear",
+      "empty": "No real MQTT message received",
+      "emptyHint": "Messages appear after the gateway reports. The list is empty after a worker or Redis restart until new frames arrive.",
+      "loadFailed": "Message list could not be loaded",
+      "loadFailedHint": "Connection settings are still available. Retry if the inbox is large; gateway ingest is unaffected."
+    },
+    "columns": {
+      "connection": "Connection",
+      "gateway": "Gateway",
+      "environment": "Environment",
+      "endpoint": "Broker endpoint",
+      "role": "Role",
+      "status": "Status",
+      "actions": "Actions",
+      "credentials": "Credentials",
+      "ruleName": "Rule name",
+      "direction": "Direction",
+      "messageType": "Message type",
+      "time": "Received at",
+      "parseResult": "Parse result",
+      "payload": "Full payload"
+    },
+    "drawer": {
+      "title": "New MQTT connection",
+      "editTitle": "Edit MQTT connection",
+      "secretNotice": "Passwords, private keys, and certificates are sensitive. The frontend submits but never caches them; the server encrypts them and never returns plaintext.",
+      "save": "Save connection",
+      "update": "Update connection",
+      "credentialsConfigured": "Credentials already exist on the server. Leave username or password blank to keep it unchanged; plaintext is never populated here.",
+      "saveUnavailable": "Saving will be enabled after the backend connection API is integrated"
+    },
+    "routeDrawer": {
+      "title": "New Topic route",
+      "editTitle": "Edit Topic route",
+      "save": "Save route",
+      "update": "Update route",
+      "protocolNotice": "Use the real Topic and payload contract supplied by the device provider. Drafts default to disabled and should pass backend sample validation before activation."
+    },
+    "routeFields": {
+      "connection": "MQTT connection",
+      "name": "Route name",
+      "direction": "Direction",
+      "topicPattern": "Topic filter or template",
+      "topicHint": "Uplink subscriptions may use controlled wildcards; downlink publish Topics cannot contain + or #.",
+      "messageType": "Business message type",
+      "parserKey": "Parser key",
+      "retained": "Retain",
+      "retainedHint": "Enable only when required by the real protocol",
+      "enabled": "Enable route",
+      "enabledHint": "The server still checks connection grants, Topic conflicts, and parser versions before activation"
+    },
+    "routePlaceholders": {
+      "direction": "Select the direction defined by the real protocol",
+      "qos": "Select the QoS required by the protocol",
+      "topicPattern": "Enter the real Topic supplied by the device provider",
+      "messageType": "Enter the message type defined by the protocol",
+      "parserKey": "Enter a parser key registered by the backend"
+    },
+    "directions": {
+      "uplink": "Uplink subscription",
+      "downlink": "Downlink publish",
+      "acknowledgement": "Device ACK"
+    },
+    "parseStatus": {
+      "pending": "Pending",
+      "parsed": "Parsed",
+      "rejected": "Rejected",
+      "failed": "Failed"
+    },
+    "feedback": {
+      "connectionCreated": "MQTT connection created",
+      "connectionUpdated": "MQTT connection updated",
+      "testSucceeded": "Connection test succeeded",
+      "testFailed": "Connection test failed",
+      "routeCreated": "Topic route created",
+      "routeUpdated": "Topic route updated"
+    },
+    "validation": {
+      "nameRequired": "Enter a connection name",
+      "roleRequired": "Select a connection role",
+      "environmentRequired": "Select an environment",
+      "versionRequired": "Select an MQTT version",
+      "endpointRequired": "Enter a Broker endpoint",
+      "endpointInvalid": "The endpoint must use mqtt, mqtts, ws, or wss",
+      "clientIdRequired": "Enter a Client ID",
+      "connectionRequired": "Select an MQTT connection",
+      "routeNameRequired": "Enter a route name",
+      "directionRequired": "Select a message direction",
+      "qosRequired": "Select the QoS required by the real protocol",
+      "topicRequired": "Enter a Topic",
+      "topicInvalid": "Topic must not be empty or contain NUL and is limited to 500 characters",
+      "publishWildcard": "A downlink publish Topic cannot contain + or # wildcards",
+      "messageTypeRequired": "Enter the message type from the real protocol",
+      "parserKeyRequired": "Enter a parser key registered by the backend",
+      "max80": "Maximum 80 characters",
+      "max120": "Maximum 120 characters",
+      "max180": "Maximum 180 characters",
+      "max512": "Maximum 512 characters",
+      "secretTooLong": "The sensitive value exceeds the allowed length"
+    }
+  },
+  "modulePlaceholder": {
+    "status": "Module contract defined",
+    "description": "This entry is part of the product information architecture. Tables, filters, editing, and bulk actions will connect after the matching backend API is ready; fabricated records are never shown.",
+    "contractEyebrow": "Implementation boundary",
+    "contractTitle": "Foundation requirements",
+    "notice": "This is a functional placeholder and does not write to any real system.",
+    "contract": {
+      "scope": "Permission isolation",
+      "scopeHint": "Business operations are authorized by platform role permissions on the server.",
+      "permission": "Authorization",
+      "permissionHint": "Pages and operations map to platform roles and permission codes; super-admin actions are audited separately.",
+      "audit": "Change audit",
+      "auditHint": "Create, edit, archive, and permission changes retain actor and timestamp records."
+    }
+  },
+  "forgetPassword": {
+    "title": "Forgot password?",
+    "subTitle": "Enter your account or email. A new random password will be sent to that user's mailbox.",
+    "placeholder": "Enter account or email",
+    "submitBtnText": "Send new password",
+    "backBtnText": "Back",
+    "accountRequired": "Please enter your account or email",
+    "sent": "If the account exists, a new password has been sent to its email. Sign in after you receive it.",
+    "rateLimited": "Too many attempts. Please try again later.",
+    "serverUnavailable": "Service is temporarily unavailable. Please try again later."
+  },
+  "register": {
+    "title": "Create account",
+    "subTitle": "Welcome to join us, please fill in the following information to complete the registration",
+    "placeholder": {
+      "username": "Please enter your account",
+      "password": "Please enter your password",
+      "confirmPassword": "Please enter your password again"
+    },
+    "rule": {
+      "confirmPasswordRequired": "Please enter your password again",
+      "passwordMismatch": "The two passwords are inconsistent!",
+      "usernameLength": "The length is 3 to 20 characters",
+      "passwordLength": "The password length cannot be less than 6 digits",
+      "agreementRequired": "Please agree to the privacy policy"
+    },
+    "agreeText": "I agree",
+    "privacyPolicy": "Privacy policy",
+    "submitBtnText": "Register",
+    "hasAccount": "Already have an account?",
+    "toLogin": "To login"
+  },
+  "lockScreen": {
+    "pwdError": "Password error",
+    "lock": {
+      "inputPlaceholder": "Please input lock screen password",
+      "btnText": "Lock"
+    },
+    "unlock": {
+      "inputPlaceholder": "Please input unlock password",
+      "btnText": "Unlock",
+      "backBtnText": "Back to login"
+    }
+  },
+  "greeting": {
+    "dawn": "Good morning!",
+    "morning": "Good morning!",
+    "afternoon": "Good afternoon!",
+    "evening": "Good evening!"
+  },
+  "exceptionPage": {
+    "gohome": "Go Home",
+    "403": "Sorry, you do not have permission to access this page",
+    "404": "Sorry, the page you are trying to access does not exist",
+    "500": "Sorry, there was an error on the server"
+  },
+  "menus": {
+    "login": {
+      "title": "Login"
+    },
+    "register": {
+      "title": "Register"
+    },
+    "forgetPassword": {
+      "title": "Forget Password"
+    },
+    "outside": {
+      "title": "Outside"
+    },
+    "overview": "Overview",
+    "account": "Account",
+    "project": {
+      "title": "Collaboration",
+      "projects": "Workspaces",
+      "tasks": "Tasks",
+      "members": "Members",
+      "documents": "Documents"
+    },
+    "asset": {
+      "title": "Asset Center",
+      "assets": "Assets",
+      "types": "Asset Types",
+      "status": "Asset Status",
+      "floorplan": "Floor Plan",
+      "inventory": "Inventory"
+    },
+    "device": {
+      "title": "Devices & Space",
+      "beacons": "Beacons",
+      "gateways": "Gateways",
+      "maps": "Maps",
+      "zones": "Zones",
+      "presenceTtl": "Presence TTL"
+    },
+    "alert": {
+      "title": "Alert Center",
+      "events": "Alert Events",
+      "rules": "Alert Rules",
+      "notifications": "My Notifications"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "assets": "Asset Analytics",
+      "dailySummary": "Daily Summary"
+    },
+    "geotag": {
+      "title": "GeoTag",
+      "map": "Map",
+      "devices": "Devices",
+      "track": "Tracks"
+    },
+    "mqtt": {
+      "title": "MQTT Integration",
+      "connections": "Connections",
+      "topicRoutes": "Topic Routes",
+      "messageMonitor": "Message Monitor",
+      "commands": "Downlink Commands"
+    },
+    "tenant": {
+      "title": "Organization Admin",
+      "members": "Members & Roles"
+    },
+    "platform": {
+      "title": "Platform Administration",
+      "users": "Users",
+      "roles": "Roles",
+      "permissions": "Permission Catalog",
+      "audit": "Audit Log",
+      "mail": "Mail Settings",
+      "branding": "Login Branding",
+      "ops": "System Ops",
+      "geotag": "GeoTag Integration",
+      "gateways": "Gateways",
+      "mqttConnections": "MQTT Connections",
+      "mqttTopicRules": "Topic Rules",
+      "mqttMessageMonitor": "Message Monitor",
+      "profile": "Profile"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "console": "Console",
+      "analysis": "Analysis",
+      "ecommerce": "Ecommerce"
+    },
+    "widgets": {
+      "title": "Components",
+      "icon": "Icon",
+      "imageCrop": "Image Crop",
+      "excel": "Excel Import Export",
+      "video": "Video Player",
+      "countTo": "Count To",
+      "wangEditor": "Wang Editor",
+      "watermark": "Watermark",
+      "contextMenu": "Context Menu",
+      "qrcode": "QR Code",
+      "drag": "Drag",
+      "textScroll": "Text Scroll",
+      "fireworks": "Fireworks",
+      "elementUI": "Component Overview"
+    },
+    "template": {
+      "title": "Template Center",
+      "chat": "Chat",
+      "cards": "Cards",
+      "banners": "Banners",
+      "charts": "Charts",
+      "map": "Map",
+      "calendar": "Calendar",
+      "pricing": "Pricing"
+    },
+    "article": {
+      "title": "Article",
+      "articleList": "Article List",
+      "articleDetail": "Article Detail",
+      "comment": "Comment",
+      "articlePublish": "Article Publish"
+    },
+    "result": {
+      "title": "Result Page",
+      "success": "Success",
+      "fail": "Fail"
+    },
+    "exception": {
+      "title": "Exception",
+      "forbidden": "403",
+      "notFound": "404",
+      "serverError": "500"
+    },
+    "examples": {
+      "title": "Feature Examples",
+      "tabs": "Tabs",
+      "tablesBasic": "Basic Tables",
+      "tables": "Advanced Tables",
+      "tablesTree": "Tree Table Layout",
+      "forms": "Forms",
+      "searchBar": "Search Form",
+      "socketChat": "Socket Connection",
+      "permission": {
+        "title": "Frontend Permission",
+        "switchRole": "Toggle Auth",
+        "buttonAuth": "Button Authority",
+        "pageVisibility": "Super Admin Visibility"
+      }
+    },
+    "system": {
+      "title": "System Settings",
+      "user": "User Manage",
+      "role": "Role Manage",
+      "userCenter": "User Center",
+      "menu": "Menu Manage",
+      "nested": "Nested Menu",
+      "menu1": "Menu 1",
+      "menu2": "Menu 2",
+      "menu21": "Menu 2-1",
+      "menu3": "Menu 3",
+      "menu31": "Menu 3-1",
+      "menu32": "Menu 3-2",
+      "menu321": "Menu 3-2-1"
+    },
+    "safeguard": {
+      "title": "Safeguard",
+      "server": "Server"
+    },
+    "plan": {
+      "title": "Version Plan",
+      "log": "Change Log"
+    },
+    "help": {
+      "title": "Help Center",
+      "document": "Document",
+      "liteVersion": "Lite Version",
+      "oldVersion": "v2.6.1 Version"
+    }
+  },
+  "alerts": {
+    "events": {
+      "title": "Alert Events",
+      "subtitle": "Opened as soon as a rule matches (independent of email). Auto-refreshes every 5s. {count} item(s).",
+      "empty": "No alert events",
+      "loadFailed": "Failed to load alert events",
+      "colTitle": "Title",
+      "colStatus": "Status",
+      "colSeverity": "Severity",
+      "colMessage": "Message",
+      "colOpenedAt": "Opened at",
+      "colActions": "Actions",
+      "statusOpen": "Open",
+      "statusAcknowledged": "Acknowledged",
+      "statusResolved": "Resolved",
+      "severityInfo": "Info",
+      "severityWarning": "Warning",
+      "severityCritical": "Critical",
+      "ack": "Acknowledge",
+      "ackHint": "Mark as seen. Status becomes Acknowledged; reminders stop, but the case stays open until resolved.",
+      "ackSuccess": "Alert acknowledged",
+      "resolve": "Resolve",
+      "resolveHint": "Close the case manually when handled or dismissed. May send a recovery notification.",
+      "resolveSuccess": "Alert resolved",
+      "noActions": "—",
+      "filterKeyword": "Search title / message",
+      "filterStatus": "Status",
+      "filterSeverity": "Severity",
+      "filterAll": "All",
+      "filterSearch": "Filter",
+      "filterReset": "Reset",
+      "filteredCount": "Showing {shown} / {total}",
+      "colResource": "Resource"
+    },
+    "content": {
+      "title": {
+        "assetOffline": "Asset offline · {name}",
+        "gatewayOffline": "Gateway offline · {name}",
+        "beaconOffline": "Beacon offline · {name}",
+        "lowBattery": "Low battery · {name}",
+        "weakSignal": "Weak signal · {name}",
+        "inventoryResult": "Inventory result · {name}"
+      },
+      "message": {
+        "assetOffline": "Bound beacon not scanned for over {seconds}s: {detail}",
+        "gatewayOffline": "No heartbeat/report for over {seconds}s: MAC {mac}",
+        "beaconOffline": "Not scanned for over {seconds}s: MAC {mac}",
+        "lowBattery": "Battery about {percent}% (threshold ≤ {threshold}%): MAC {mac}",
+        "weakSignal": "RSSI {rssi} dBm below threshold {threshold} dBm: MAC {mac}",
+        "inventoryAllFound": "Inventory complete: {found}/{expected} (coverage {coverage}%), all found. Rule threshold: coverage ≥ {minCoverage}%",
+        "inventoryPartial": "Inventory complete: {found}/{expected} (coverage {coverage}%), missing {missing}. Rule threshold: coverage ≥ {minCoverage}%",
+        "inventoryMissing": "Inventory complete: {found}/{expected} (coverage {coverage}%), missing {missing}. Missing: {missingList}. Rule threshold: coverage ≥ {minCoverage}%"
+      }
+    }
+  },
+  "table": {
+    "form": {
+      "reset": "Reset",
+      "submit": "Submit"
+    },
+    "searchBar": {
+      "reset": "Reset",
+      "search": "Search",
+      "expand": "Expand",
+      "collapse": "Collapse",
+      "searchInputPlaceholder": "Please enter",
+      "searchSelectPlaceholder": "Please select"
+    },
+    "selection": "Select",
+    "sizeOptions": {
+      "small": "Compact",
+      "default": "Default",
+      "large": "Loose"
+    },
+    "column": {
+      "selection": "Select",
+      "expand": "Expand",
+      "index": "Index"
+    },
+    "zebra": "Zebra",
+    "border": "Border",
+    "headerBackground": "Header BG"
+  },
+  "platformAdmin": {
+    "users": {
+      "title": "Users",
+      "subtitle": "Manage platform operator accounts and their platform roles. Root and protected accounts are view-only here.",
+      "create": "New user",
+      "createTitle": "Create platform user",
+      "editTitle": "Edit user",
+      "rolesTitle": "Assign platform roles",
+      "passwordTitle": "Reset password",
+      "username": "Username",
+      "displayName": "Display name",
+      "email": "Email",
+      "status": "Status",
+      "platformRoles": "Platform roles",
+      "root": "Root",
+      "actions": "Actions",
+      "edit": "Edit",
+      "roles": "Roles",
+      "resetPassword": "Reset password",
+      "activate": "Activate",
+      "suspend": "Suspend",
+      "protected": "Protected",
+      "initialPassword": "Initial password",
+      "passwordPlaceholder": "New password (min. 8 characters)",
+      "created": "User created",
+      "updated": "Updated",
+      "rolesUpdated": "Roles updated",
+      "passwordReset": "Password reset",
+      "activated": "Activated",
+      "suspended": "Suspended",
+      "suspendConfirmTitle": "Confirm suspend",
+      "suspendConfirm": "Suspend user “{username}”?",
+      "usernameRequired": "Username is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Enter a valid email address",
+      "passwordMin": "Password must be at least 8 characters",
+      "initialPasswordPh": "At least 8 characters"
+    },
+    "roles": {
+      "title": "Roles",
+      "subtitle": "Manage platform-scoped roles. Select platform and business capabilities (assets, devices, alerts, MQTT, etc.).",
+      "create": "New role",
+      "createTitle": "Create platform role",
+      "editTitle": "Edit platform role",
+      "code": "Code",
+      "name": "Name",
+      "scope": "Scope",
+      "system": "System",
+      "protected": "Protected",
+      "permissionCount": "Permissions",
+      "actions": "Actions",
+      "edit": "Edit",
+      "delete": "Delete",
+      "permissions": "Permissions",
+      "saved": "Role saved",
+      "deleted": "Deleted",
+      "cannotDelete": "System/protected roles cannot be deleted",
+      "deleteConfirmTitle": "Confirm delete",
+      "deleteConfirm": "Delete platform role “{name}”?",
+      "permissionsHint": "Select by module. Each feature can enable View and/or Edit separately.",
+      "selectModule": "Select all in module",
+      "selectFeature": "Select all in feature",
+      "workspaceCaps": "Workspace capabilities",
+      "workspaceCapsHint": "Asset, device, alert, and related permissions (often needed for super-admin style roles).",
+      "showWorkspaceCaps": "Show workspace capabilities",
+      "hideWorkspaceCaps": "Hide workspace capabilities",
+      "noPermissions": "No assignable permissions"
+    },
+    "permissions": {
+      "title": "Permission catalog",
+      "subtitle": "Read-only permission catalog. Member/task/document and unused tracking/roll-call capabilities are omitted.",
+      "code": "Code",
+      "name": "Name",
+      "module": "Module",
+      "description": "Description",
+      "search": "Search code / name",
+      "allModules": "All modules",
+      "empty": "No matching permissions"
+    },
+    "audit": {
+      "title": "Audit log",
+      "subtitle": "Covers sign-in, platform admin, and business mutations (assets, beacons, gateways, maps, and more).",
+      "action": "Action",
+      "resourceType": "Resource type",
+      "resourceId": "Resource ID",
+      "actor": "Actor",
+      "successful": "Result",
+      "success": "Success",
+      "failed": "Failed",
+      "traceId": "Trace ID",
+      "time": "Time",
+      "refresh": "Refresh",
+      "empty": "No audit records",
+      "colWho": "User",
+      "colWhat": "Action",
+      "colChange": "Record",
+      "colResult": "Result",
+      "colWhen": "Time",
+      "filterActorPh": "Filter by username or display name",
+      "search": "Search",
+      "reset": "Reset",
+      "showSessionRefresh": "Show session auto-refresh",
+      "actorUnknown": "Unknown user",
+      "yes": "Yes",
+      "no": "No",
+      "actions": {
+        "loginSucceeded": "Signed in",
+        "loginFailed": "Sign-in failed",
+        "sessionRefreshed": "Session refreshed",
+        "sessionRevoked": "Signed out",
+        "mqttConnectionCreate": "Created MQTT connection",
+        "mqttConnectionUpdate": "Updated MQTT connection",
+        "mqttConnectionTest": "Tested MQTT connection",
+        "mqttTopicRouteCreate": "Created topic route",
+        "mqttTopicRouteUpdate": "Updated topic route",
+        "mqttTopicRouteDelete": "Deleted topic route",
+        "userCreate": "Created user",
+        "userUpdate": "Updated user",
+        "userResetPassword": "Reset password",
+        "userActivate": "Activated user",
+        "userSuspend": "Suspended user",
+        "userReplaceRoles": "Changed user roles",
+        "roleCreate": "Created role",
+        "roleUpdate": "Updated role",
+        "roleDelete": "Deleted role",
+        "mailUpdate": "Updated mail settings",
+        "brandingUpdate": "Updated login branding",
+        "opsCleanup": "Purged operational data",
+        "opsAutoCleanup": "Updated automatic purge",
+        "opsBackup": "Backed up database",
+        "opsBackupDelete": "Deleted database backup",
+        "opsRestore": "Restored database",
+        "opsRestart": "Restarted service",
+        "assetTypeCreate": "Created asset type",
+        "assetTypeUpdate": "Updated asset type",
+        "assetTypeDelete": "Deleted asset type",
+        "assetCreate": "Created asset",
+        "assetUpdate": "Updated asset",
+        "assetDelete": "Deleted asset",
+        "assetBindBeacon": "Bound beacon",
+        "assetUnbindBeacon": "Unbound beacon",
+        "assetBuzzer": "Asset buzzer",
+        "assetEinkPush": "Asset e-ink push",
+        "beaconCreate": "Created beacon",
+        "beaconUpdate": "Updated beacon",
+        "beaconDelete": "Deleted beacon",
+        "beaconBatchDelete": "Batch deleted beacons",
+        "beaconImport": "Imported beacons",
+        "beaconEinkSettings": "Beacon e-ink settings",
+        "gatewayCreate": "Created gateway",
+        "gatewayUpdate": "Updated gateway",
+        "gatewayDelete": "Deleted gateway",
+        "mapCreate": "Created map",
+        "mapUpdate": "Updated map",
+        "mapDelete": "Deleted map",
+        "mapUploadImage": "Uploaded floor plan",
+        "zoneCreate": "Created zone",
+        "zoneUpdate": "Updated zone",
+        "zoneDelete": "Deleted zone",
+        "alertRuleCreate": "Created alert rule",
+        "alertRuleUpdate": "Updated alert rule",
+        "alertAcknowledge": "Acknowledged alert",
+        "alertResolve": "Resolved alert",
+        "inventoryStart": "Started inventory",
+        "inventoryClose": "Closed inventory",
+        "inventoryDelete": "Deleted inventory",
+        "rollCallStart": "Started roll call",
+        "taskCreate": "Created task",
+        "taskUpdate": "Updated task",
+        "documentCreate": "Created document",
+        "documentUpload": "Uploaded document",
+        "documentUpdate": "Updated document",
+        "documentDelete": "Deleted document"
+      },
+      "resources": {
+        "authSession": "Auth session",
+        "mqttConnection": "MQTT connection",
+        "mqttTopicRoute": "Topic route",
+        "platformUser": "Platform user",
+        "platformRole": "Platform role",
+        "platformMail": "Mail settings",
+        "platformBranding": "Login branding",
+        "platformOps": "System ops",
+        "assetType": "Asset type",
+        "asset": "Asset",
+        "beacon": "Beacon",
+        "gateway": "Gateway",
+        "map": "Map",
+        "zone": "Zone",
+        "alertRule": "Alert rule",
+        "alertEvent": "Alert event",
+        "inventorySession": "Inventory session",
+        "rollCall": "Roll call",
+        "projectTask": "任务",
+        "projectDocument": "文档"
+      },
+      "summary": {
+        "object": "{resource} ({id})",
+        "project": "Workspace: {value}",
+        "reason": "Reason: {value}",
+        "scope": "Scope: {value}",
+        "environment": "Environment: {value}",
+        "resultCode": "Result: {value}",
+        "session": "Session: {value}",
+        "ip": "IP: {value}",
+        "email": "Email: {value}",
+        "displayName": "Display name: {value}",
+        "roleCodes": "Roles: {value}",
+        "permissionCount": "Permissions: {value}",
+        "enabled": "Enabled: {value}",
+        "port": "Port: {value}",
+        "fromAddress": "From: {value}",
+        "username": "Account: {value}",
+        "passwordChanged": "Password updated: {value}",
+        "loginTitle": "Login title: {value}",
+        "hasLoginBackground": "Custom background: {value}",
+        "hasTitleLogo": "Custom logo: {value}",
+        "code": "Code: {value}",
+        "name": "Name: {value}",
+        "systemName": "System name: {value}",
+        "host": "Host: {value}"
+      }
+    },
+    "scope": {
+      "PLATFORM": "Platform",
+      "TENANT": "Organization",
+      "PROJECT": "Workspace"
+    },
+    "userStatus": {
+      "active": "Active",
+      "suspended": "Suspended",
+      "invited": "Invited",
+      "locked": "Locked"
+    },
+    "save": "Save",
+    "create": "Create",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "geotag": {
+      "title": "GeoTag integration",
+      "subtitle": "Connect their cloud GPS tags.",
+      "enabled": "Enabled",
+      "ready": "Connected",
+      "notReady": "Not connected",
+      "apiBaseUrl": "API base URL",
+      "apiBaseUrlPh": "https://their-host or mock for local preview",
+      "apiHint": "Use mock for local preview: no cloud call; bound asset device names appear; the webhook also accepts plaintext JSON.",
+      "businessNo": "Business no.",
+      "businessNoPh": "e.g. B197458838294",
+      "platformPublicKey": "Their platform public key",
+      "platformPublicKeyPh": "Public key they sent you (Base64)",
+      "ourPublicKey": "System public key",
+      "ourPublicKeyHint": "Copy this and give it to the GeoTag provider, or save it yourself on the GeoTag enterprise platform.",
+      "webhookUrl": "Webhook URL",
+      "webhookEnabled": "Receive webhook",
+      "webhookOnHint": "After checking, send the URL below to the provider, or paste it in the GeoTag app backend. Location updates are pushed in real time.",
+      "webhookOffHint": "The system handles data automatically.",
+      "webhookHost": "Public IP / host",
+      "webhookHostPh": "Defaults to this server’s public IP",
+      "webhookPort": "Port",
+      "webhookHttps": "HTTPS",
+      "webhookPortHint": "Forward this port on the router/firewall to this API. It is the mapped port they call, not this machine’s listen port.",
+      "webhookNatHint": "From behind NAT, this self-test may fail even if they can still reach you. Use the last real push time below as a second check.",
+      "webhookTest": "Test reachability",
+      "webhookOk": "Webhook is reachable",
+      "lastWebhookAt": "Last real push: {time}",
+      "webhookHint": "Give this to them. Location updates are stored as local track points.",
+      "copy": "Copy",
+      "copied": "Copied",
+      "rotateKeys": "Regenerate system keys",
+      "rotateConfirm": "After rotating keys you must give the new system public key to the GeoTag provider or save it on the GeoTag enterprise platform, or decrypt will fail. Continue?",
+      "rotated": "New keys generated. Give the system public key to the GeoTag provider or save it on the GeoTag enterprise platform.",
+      "test": "Test connection",
+      "tested": "Connected. {count} cloud devices.",
+      "save": "Save",
+      "saved": "Saved. Refresh after enabling to show GeoTag in the sidebar.",
+      "lastTest": "Last test",
+      "simulateTitle": "Insert a local point",
+      "simulateHint": "Local test write",
+      "simulateSn": "Device name / SN",
+      "simulateSnPh": "Must match the bound beacon device name",
+      "lat": "Latitude",
+      "lng": "Longitude",
+      "battery": "Battery",
+      "simulate": "Insert",
+      "simulated": "Track point saved",
+      "mapProvider": "Basemap",
+      "mapOsm": "OpenStreetMap (default, free, 3D)",
+      "mapEsri": "Esri streets (free, 2D only)",
+      "mapCarto": "CARTO Voyager (2D, key required)",
+      "mapMaptiler": "MapTiler (3D, key required)",
+      "mapApiKey": "Basemap API key",
+      "mapCartoKey": "CARTO key",
+      "mapMaptilerKey": "MapTiler key",
+      "mapApiKeyPh": "Paste the key after you apply",
+      "mapOsmHint": "OpenStreetMap is the default. No key. 3D can be turned on in map pages.",
+      "mapCartoHint": "Save a CARTO key here before switching to it on map pages.",
+      "mapMaptilerHint": "Save a MapTiler key here. 3D looks better than OSM. Apply and paste it back.",
+      "mapSettingsHint": "Default is OpenStreetMap. Map and track pages can switch."
+    },
+    "mail": {
+      "title": "Mail settings (SMTP)",
+      "subtitle": "Global outbound mail channel. Email channels in My Notifications need this before messages can be sent.",
+      "ready": "Ready",
+      "notReady": "Not ready",
+      "enabled": "Enabled",
+      "host": "SMTP host",
+      "port": "Port",
+      "username": "Username",
+      "password": "Password",
+      "passwordHintConfigured": "Configured — leave blank to keep",
+      "passwordHintEmpty": "Password not set yet",
+      "fromAddress": "From address",
+      "fromName": "From name",
+      "useSsl": "SSL",
+      "useStarttls": "STARTTLS",
+      "save": "Save",
+      "testTo": "Test recipient",
+      "sendTest": "Send test",
+      "saved": "SMTP settings saved",
+      "testNeedTo": "Enter a test recipient email",
+      "testSent": "Test email sent",
+      "sslHint": "Common on port 465",
+      "starttlsHint": "Common on port 587",
+      "passwordPh": "SMTP password / app password",
+      "fromAddressPh": "noreply@example.com",
+      "fromNamePh": "Asset Management",
+      "testToPh": "Recipient email",
+      "sendTestMail": "Send test email",
+      "testSection": "Send test"
+    },
+    "branding": {
+      "title": "Login branding",
+      "subtitle": "Configure login copy, background image, and title logo",
+      "save": "Save",
+      "text": "Copy",
+      "systemName": "System name (sidebar brand, login page, and browser title suffix)",
+      "systemNamePh": "Asset Management",
+      "loginTitle": "Left panel title",
+      "loginTitlePh": "Override default left title",
+      "loginSubtitle": "Left panel subtitle",
+      "loginSubtitlePh": "Override default left description",
+      "welcomeTitle": "Login form title",
+      "welcomeTitlePh": "e.g. Welcome back",
+      "welcomeSubtitle": "Login form subtitle",
+      "welcomeSubtitlePh": "e.g. Sign in to continue",
+      "background": "Login background",
+      "backgroundHint": "Common image formats, max 500KB. You can restore the system default anytime.",
+      "backgroundEmpty": "No background set",
+      "uploadBackground": "Upload background",
+      "clear": "Clear",
+      "logo": "Title logo",
+      "logoHint": "Used in the sidebar, login brand area, and browser tab icon, max 50KB. Saves apply immediately.",
+      "logoEmpty": "No logo set",
+      "uploadLogo": "Upload logo",
+      "saved": "Login branding saved",
+      "pickImage": "Please choose an image file",
+      "bgTooLarge": "Background image must be ≤ 500KB",
+      "logoTooLarge": "Title logo must be ≤ 50KB",
+      "bgPicked": "Background selected — save to apply",
+      "logoPicked": "Logo selected — save to apply",
+      "restoreDefault": "Restore default",
+      "bgRestored": "Default login background restored",
+      "logoRestored": "Default logo restored",
+      "copyright": "Login copyright",
+      "copyrightPh": "Replace the GeoTag line after a license is activated",
+      "copyrightLocked": "Without a license the GeoTag copyright stays fixed"
+    },
+    "ops": {
+      "title": "System operations",
+      "subtitle": "Purge operational data, backup/restore the database, inspect health, and restart services. Assets, beacons, gateways, and users are never in the purge list.",
+      "refresh": "Refresh",
+      "license": "License",
+      "licenseHint": "Each code is bound to this install ID and cannot be used on another server. Send the ID to us for a code. Reinstalling on the same machine keeps the ID if data volumes remain; wiping volumes creates a new ID and needs a new code.",
+      "licenseInstallId": "Install ID",
+      "licenseCopy": "Copy",
+      "licenseCopied": "Install ID copied",
+      "licenseToken": "License code",
+      "licenseTokenPh": "Paste a code starting with AM1.",
+      "licenseActivate": "Activate",
+      "licenseActivated": "License activated",
+      "licenseWho": "Customer",
+      "licenseUntil": "Valid until {date}",
+      "licenseNone": "Not activated",
+      "licenseNotify": "Notifications",
+      "licenseCopyright": "Login copyright",
+      "licenseEink": "E-ink",
+      "licenseBuzz": "Find",
+      "licenseMaxBeacons": "Beacon cap {count}",
+      "licenseMaxGateways": "Gateway cap {count}",
+      "licenseOn": "On",
+      "licenseOff": "Off",
+      "health": "Service health",
+      "healthHint": "The MQTT worker must be up to ingest reports. Restarting PostgreSQL / Redis / MQTT briefly interrupts traffic.",
+      "restart": "Restart",
+      "restarting": "Restart requested",
+      "restartConfirmTitle": "Confirm restart",
+      "restartConfirm": "This will restart “{name}”. Type RESTART to confirm.",
+      "restartNeedToken": "Type RESTART",
+      "cleanup": "Purge unused data",
+      "cleanupHint": "Only expired operational rows. Assets, beacons, gateways, maps, users, and rules are not deleted. New installs enable daily automatic purge.",
+      "preview": "Preview",
+      "executeCleanup": "Run purge",
+      "days": "Keep days",
+      "count": "Rows",
+      "countMany": "More than {count}",
+      "deleted": "Deleted",
+      "selectAll": "Select all",
+      "previewEmpty": "Nothing older than the retention window",
+      "cleanupConfirmTitle": "Confirm purge",
+      "cleanupConfirm": "This deletes {total} matching rows. This cannot be undone.",
+      "cleanupConfirmBackground": "Expired operational rows will be deleted in the background. Assets, beacons, gateways, and users are not deleted. This cannot be undone.",
+      "cleanupStarted": "Cleanup started in the background. Watch progress on this page.",
+      "cleanupProgress": "Cleaning: {total} rows deleted · current table {table}",
+      "cleanupDone": "Purged {total} rows",
+      "autoCleanup": "Automatic purge",
+      "autoCleanupHint": "By default the job runs daily around 03:20 (failed MQTT frames ~3 days, scans ~2 days). Successful MQTT frames are not stored. You can change days or turn it off. Container logs rotate and will not grow without bound.",
+      "autoCleanupEnable": "Enable automatic purge",
+      "autoCleanupInterval": "Every N days",
+      "autoCleanupSave": "Save rules",
+      "autoCleanupSaved": "Cleanup rules saved",
+      "autoCleanupNeedRules": "Select at least one rule before enabling automatic purge",
+      "autoCleanupLastRun": "Last automatic purge: {total} rows · {time}",
+      "autoCleanupNever": "Not run yet",
+      "targets": {
+        "mqttInbox": "Failed MQTT frames",
+        "scanEvents": "Scan events",
+        "presenceEvents": "Presence events",
+        "outboundCommands": "Downlink commands (except queued)",
+        "gattOps": "GATT jobs (except in progress)",
+        "einkOps": "E-ink jobs (except in progress)",
+        "einkJobs": "E-ink push records (except queued)",
+        "closedAlerts": "Closed alerts",
+        "notificationDeliveries": "Notification deliveries",
+        "auditLogs": "Expired audit logs"
+      },
+      "backup": "Database backup",
+      "backupHint": "Creates a gzip-compressed PostgreSQL dump (.sql.gz). Raw MQTT inbox payloads are omitted. Successful frames are no longer stored; use cleanup above to drop leftover inbox rows and expired scans.",
+      "createBackup": "Back up now",
+      "backupCreated": "Backup created",
+      "download": "Download",
+      "delete": "Delete",
+      "fileName": "File",
+      "size": "Size",
+      "modifiedAt": "Modified",
+      "noBackups": "No backups yet",
+      "deleteBackupConfirm": "Delete backup “{name}”?",
+      "backupDeleted": "Backup deleted",
+      "toolsMissing": "pg_dump / psql are missing, so backup and restore are unavailable.",
+      "restore": "Restore database",
+      "restoreHint": "Restore takes a safety dump first, then overwrites all business data and restarts the API. You must type RESTORE.",
+      "restoreFromSelected": "Restore selected backup",
+      "restoreUpload": "Upload and restore",
+      "restoreConfirmTitle": "Confirm restore",
+      "restoreConfirm": "This overwrites the database with “{name}”. Type RESTORE to confirm. You will need to sign in again after the restart.",
+      "restoreNeedToken": "Type RESTORE",
+      "restoreAccepted": "Restore submitted. The API is restarting — refresh and sign in again shortly.",
+      "pickBackup": "Select a backup first",
+      "pickFile": "Choose a .sql, .sql.gz, or offline-kit .tar.gz backup",
+      "dockerOff": "Docker is not mounted, so Postgres / Redis / MQTT / Web cannot be restarted here. API and Worker still can.",
+      "up": "Up",
+      "down": "Down"
+    }
+  },
+  "permissionCatalog": {
+    "modules": {
+      "platform": "Platform",
+      "tenant": "Organization",
+      "project": "Workspace",
+      "mqtt": "MQTT",
+      "audit": "Audit",
+      "asset": "Assets",
+      "device": "Devices",
+      "tracking": "Tracking & Roll Call",
+      "alert": "Alerts",
+      "inventory": "Inventory",
+      "analytics": "Analytics",
+      "dashboard": "Dashboard",
+      "notification": "Notifications",
+      "geotag": "GeoTag"
+    },
+    "codes": {
+      "notification": {
+        "read": {
+          "name": "Read own notification preferences",
+          "description": "View personal notification channels and subscriptions"
+        },
+        "manage": {
+          "name": "Manage own notification preferences",
+          "description": "Create and update personal notification channels and subscriptions"
+        }
+      },
+      "platform-mail": {
+        "read": {
+          "name": "Read platform mail settings",
+          "description": "View SMTP configuration"
+        },
+        "manage": {
+          "name": "Manage platform mail settings",
+          "description": "Update SMTP configuration and send test mail"
+        }
+      },
+      "platform-branding": {
+        "read": {
+          "name": "Read platform branding",
+          "description": "View login page branding settings"
+        },
+        "manage": {
+          "name": "Manage platform branding",
+          "description": "Update login page text, background and title logo"
+        }
+      },
+      "platform-ops": {
+        "read": {
+          "name": "Read platform operations",
+          "description": "View health, cleanup preview and backup list"
+        },
+        "manage": {
+          "name": "Manage platform operations",
+          "description": "Purge data, backup/restore the database, restart services"
+        }
+      },
+      "platform-user": {
+        "read": {
+          "name": "Read platform users",
+          "description": "Read global user metadata"
+        },
+        "manage": {
+          "name": "Manage platform users",
+          "description": "Create, suspend and manage non-Root users"
+        }
+      },
+      "platform-tenant": {
+        "read": {
+          "name": "View organizations",
+          "description": "Read organization metadata"
+        },
+        "manage": {
+          "name": "Manage organizations",
+          "description": "Create, update, archive and restore organizations"
+        }
+      },
+      "platform-role": {
+        "read": {
+          "name": "Read platform roles",
+          "description": "Read platform role definitions"
+        },
+        "manage": {
+          "name": "Manage platform roles",
+          "description": "Manage non-Root platform roles and assignments"
+        }
+      },
+      "platform-broker": {
+        "read": {
+          "name": "Read platform brokers",
+          "description": "Read redacted platform broker configuration"
+        },
+        "manage": {
+          "name": "Manage platform brokers",
+          "description": "Manage platform-scoped broker configuration"
+        },
+        "test": {
+          "name": "Test platform brokers",
+          "description": "Test a platform-scoped broker connection"
+        }
+      },
+      "platform-audit": {
+        "read": {
+          "name": "Read platform audit",
+          "description": "Read platform-level audit records"
+        }
+      },
+      "tenant": {
+        "read": {
+          "name": "View current organization",
+          "description": "Read the current organization"
+        },
+        "update": {
+          "name": "Update current organization",
+          "description": "Update the current organization"
+        }
+      },
+      "tenant-member": {
+        "read": {
+          "name": "View organization members",
+          "description": "Read members in the current organization"
+        },
+        "invite": {
+          "name": "Invite organization members",
+          "description": "Invite or approve an organization member"
+        },
+        "assign": {
+          "name": "Assign organization roles",
+          "description": "Assign delegable organization roles"
+        },
+        "remove": {
+          "name": "Remove organization members",
+          "description": "Suspend or remove an organization member"
+        }
+      },
+      "tenant-role": {
+        "read": {
+          "name": "View organization roles",
+          "description": "Read organization role definitions"
+        },
+        "manage": {
+          "name": "Manage organization roles",
+          "description": "Manage organization-scoped role definitions"
+        }
+      },
+      "tenant-project": {
+        "read": {
+          "name": "View organization workspaces",
+          "description": "Read workspaces in the current organization"
+        },
+        "create": {
+          "name": "Create organization workspaces",
+          "description": "Create a workspace in the current organization"
+        },
+        "manage": {
+          "name": "Manage organization workspaces",
+          "description": "Update, archive and restore organization workspaces"
+        }
+      },
+      "tenant-broker": {
+        "read": {
+          "name": "View organization broker",
+          "description": "Read redacted organization broker configuration"
+        },
+        "manage": {
+          "name": "Manage organization broker",
+          "description": "Manage organization-scoped broker configuration"
+        },
+        "test": {
+          "name": "Test organization broker",
+          "description": "Test an organization-scoped broker connection"
+        }
+      },
+      "tenant-audit": {
+        "read": {
+          "name": "View organization audit",
+          "description": "Read organization audit records"
+        }
+      },
+      "project": {
+        "read": {
+          "name": "Read workspace",
+          "description": "Read the current workspace"
+        },
+        "update": {
+          "name": "Update workspace",
+          "description": "Update the current workspace"
+        }
+      },
+      "project-member": {
+        "read": {
+          "name": "Read members",
+          "description": "Read members"
+        },
+        "invite": {
+          "name": "Invite members",
+          "description": "Invite an existing user to the workspace"
+        },
+        "assign": {
+          "name": "Assign roles",
+          "description": "Assign delegable roles"
+        },
+        "remove": {
+          "name": "Remove members",
+          "description": "Suspend or remove a member"
+        }
+      },
+      "project-role": {
+        "read": {
+          "name": "Read roles",
+          "description": "Read role definitions"
+        },
+        "manage": {
+          "name": "Manage roles",
+          "description": "Manage roles"
+        }
+      },
+      "mqtt-connection": {
+        "read": {
+          "name": "Read MQTT connections",
+          "description": "Read redacted MQTT connections"
+        },
+        "configure": {
+          "name": "Configure MQTT connections",
+          "description": "Create and update MQTT connections"
+        },
+        "test": {
+          "name": "Test MQTT connections",
+          "description": "Test an MQTT connection"
+        }
+      },
+      "mqtt-topic-route": {
+        "read": {
+          "name": "Read MQTT topic routes",
+          "description": "Read MQTT topic routes"
+        },
+        "configure": {
+          "name": "Configure MQTT topic routes",
+          "description": "Create and update MQTT topic routes"
+        }
+      },
+      "mqtt-message": {
+        "read": {
+          "name": "Read MQTT messages",
+          "description": "Read authorized MQTT message metadata"
+        }
+      },
+      "device-command": {
+        "publish": {
+          "name": "Publish device commands",
+          "description": "Publish validated and audited device commands"
+        }
+      },
+      "asset": {
+        "read": {
+          "name": "Read assets",
+          "description": "Read assets"
+        },
+        "manage": {
+          "name": "Manage assets",
+          "description": "Create and update assets"
+        }
+      },
+      "asset-type": {
+        "read": {
+          "name": "Read asset types",
+          "description": "Read asset types"
+        },
+        "manage": {
+          "name": "Manage asset types",
+          "description": "Create and update asset types"
+        }
+      },
+      "beacon": {
+        "read": {
+          "name": "Read beacons",
+          "description": "Read beacons"
+        },
+        "manage": {
+          "name": "Manage beacons",
+          "description": "Create and update beacons"
+        }
+      },
+      "gateway": {
+        "read": {
+          "name": "Read gateways",
+          "description": "Read gateways"
+        },
+        "manage": {
+          "name": "Manage gateways",
+          "description": "Create and update gateways"
+        }
+      },
+      "map": {
+        "read": {
+          "name": "Read maps",
+          "description": "Read maps"
+        },
+        "manage": {
+          "name": "Manage maps",
+          "description": "Create and update maps"
+        }
+      },
+      "zone": {
+        "read": {
+          "name": "Read zones",
+          "description": "Read zones"
+        },
+        "manage": {
+          "name": "Manage zones",
+          "description": "Create and update zones"
+        }
+      },
+      "tracking": {
+        "read": {
+          "name": "Read tracking",
+          "description": "Read live and historical tracking"
+        }
+      },
+      "roll-call": {
+        "read": {
+          "name": "Read roll call",
+          "description": "Read roll-call results"
+        },
+        "manage": {
+          "name": "Manage roll call",
+          "description": "Run roll-call sessions"
+        }
+      },
+      "alert": {
+        "read": {
+          "name": "Read alerts",
+          "description": "Read alert events"
+        },
+        "manage": {
+          "name": "Manage alerts",
+          "description": "Acknowledge and resolve alerts"
+        }
+      },
+      "alert-rule": {
+        "read": {
+          "name": "Read alert rules",
+          "description": "Read alert rules"
+        },
+        "manage": {
+          "name": "Manage alert rules",
+          "description": "Create and update alert rules"
+        }
+      },
+      "inventory": {
+        "read": {
+          "name": "Read inventory",
+          "description": "Read inventory sessions"
+        },
+        "manage": {
+          "name": "Manage inventory",
+          "description": "Create and run inventory sessions"
+        }
+      },
+      "project-task": {
+        "read": {
+          "name": "Read tasks",
+          "description": "Read tasks"
+        },
+        "manage": {
+          "name": "Manage tasks",
+          "description": "Create and update tasks"
+        }
+      },
+      "project-document": {
+        "read": {
+          "name": "Read documents",
+          "description": "Read documents"
+        },
+        "manage": {
+          "name": "Manage documents",
+          "description": "Create and update documents"
+        }
+      },
+      "analytics": {
+        "read": {
+          "name": "Read analytics",
+          "description": "Read analytics summaries"
+        }
+      },
+      "dashboard": {
+        "read": {
+          "name": "Read dashboard",
+          "description": "Read dashboard summary"
+        }
+      },
+      "platform-gateway": {
+        "read": {
+          "name": "View cross-org gateways",
+          "description": "List gateways across all organizations for platform operators"
+        }
+      },
+      "platform-geotag": {
+        "read": {
+          "name": "View GeoTag integration",
+          "description": "View GeoTag cloud API and basemap settings"
+        },
+        "manage": {
+          "name": "Manage GeoTag integration",
+          "description": "Update GeoTag cloud API, basemap settings and test the connection"
+        }
+      },
+      "geotag": {
+        "read": {
+          "name": "View GeoTag",
+          "description": "View GeoTag map, devices and tracks"
+        },
+        "manage": {
+          "name": "Manage GeoTag",
+          "description": "Manage GeoTag map, devices and tracks"
+        }
+      }
+    },
+    "actions": {
+      "read": "View",
+      "manage": "Edit",
+      "create": "Create",
+      "update": "Update",
+      "configure": "Configure",
+      "test": "Test",
+      "publish": "Publish",
+      "invite": "Invite",
+      "assign": "Assign",
+      "remove": "Remove"
+    },
+    "features": {
+      "platform-user": "Users",
+      "platform-tenant": "Organizations",
+      "platform-role": "Roles",
+      "platform-broker": "Platform broker",
+      "platform-audit": "Platform audit",
+      "platform-gateway": "Cross-org gateways",
+      "platform-mail": "Mail settings",
+      "platform-branding": "Login branding",
+      "platform-ops": "System ops",
+      "platform-geotag": "GeoTag integration",
+      "geotag": "GeoTag",
+      "tenant": "Organization profile",
+      "tenant-member": "Organization members",
+      "tenant-role": "Organization roles",
+      "tenant-project": "Organization workspaces",
+      "tenant-broker": "Organization broker",
+      "tenant-audit": "Organization audit",
+      "project": "Workspace profile",
+      "project-member": "Members",
+      "project-role": "Roles",
+      "project-task": "Tasks",
+      "project-document": "Documents",
+      "mqtt-connection": "MQTT connections",
+      "mqtt-topic-route": "Topic routes",
+      "mqtt-message": "MQTT messages",
+      "device-command": "Device commands",
+      "asset": "Assets",
+      "asset-type": "Asset types",
+      "beacon": "Beacons",
+      "gateway": "Gateways",
+      "map": "Maps",
+      "zone": "Zones",
+      "tracking": "Tracking",
+      "roll-call": "Roll call",
+      "alert": "Alert events",
+      "alert-rule": "Alert rules",
+      "inventory": "Inventory",
+      "analytics": "Analytics",
+      "dashboard": "Dashboard",
+      "notification": "Notification preferences"
+    }
+  },
+  "presence": {
+    "ONLINE": "Online",
+    "OFFLINE": "Offline",
+    "UNBOUND": "Unbound",
+    "ARCHIVED": "Archived",
+    "UNKNOWN": "Unknown"
+  },
+  "product": {
+    "crud": {
+      "deleteConfirm": "Delete \"{code} · {name}\"? It will no longer appear in the list.",
+      "selectField": "Select {label}",
+      "drawerEdit": "Edit",
+      "drawerDetail": "Details",
+      "drawerCreate": "Create",
+      "filterCount": "{filtered} / {total}"
+    },
+    "battery": {
+      "full": "Full",
+      "medium": "Medium",
+      "low": "Low",
+      "critical": "Critical",
+      "unknown": "Unknown",
+      "noOfFrame": "No OF frame",
+      "noBattery": "No battery",
+      "detecting": "Detecting",
+      "autoTitle": "Auto · {text}"
+    },
+    "toaster": {
+      "eyebrow": "Live alert",
+      "needAttention": "Needs attention",
+      "offlineAndAlerts": "{offline} device(s) offline · {alerts} new alert(s)",
+      "offlineOnly": "{offline} device(s) offline",
+      "alertsOnly": "{alerts} new alert(s)",
+      "assetOffline": "Asset offline · {code}",
+      "gatewayOffline": "Gateway offline · {code}",
+      "alertFallback": "Alert",
+      "openAlertFallback": "Open alert",
+      "enableSound": "Click to enable sound",
+      "dismiss": "Got it",
+      "goHandle": "Handle"
+    },
+    "geotag": {
+      "empty": "No devices to show. Bind a beacon to an asset.",
+      "cloudSyncError": "Could not refresh their device list; using the last cache.",
+      "mock": "Local preview",
+      "asset": "Asset",
+      "sn": "Device name",
+      "status": "Cloud status",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "battery": "Battery",
+      "address": "Address",
+      "locationTime": "Located at",
+      "accuracy": "Accuracy",
+      "noPoint": "No webhook points yet",
+      "refresh": "Refresh",
+      "selectDevice": "Device",
+      "from": "From",
+      "to": "To",
+      "query": "Query",
+      "points": "{count} points",
+      "lat": "Latitude",
+      "lng": "Longitude",
+      "allTypes": "All types",
+      "assetType": "Asset type",
+      "unclassified": "Unclassified",
+      "searchPh": "Asset / device / address",
+      "allStatus": "All statuses",
+      "statusUnknown": "Unknown",
+      "pointFilter": "Location",
+      "allPoints": "All",
+      "hasPoint": "Has location",
+      "noPointFilter": "No location",
+      "mapKeyMissing": "{provider} needs an API key; OpenStreetMap is used for now. Apply for a key, then fill it in Platform Administration → GeoTag.",
+      "mapKeyApply": "Apply for a key",
+      "map3d": "3D",
+      "mapKeyNeed": "{provider} needs an API key. Apply at {url}, then paste it in Platform Administration → GeoTag before switching.",
+      "mapSettingsPath": "Platform Administration → GeoTag"
+    },
+    "floorPlan": {
+      "alt": "Floor plan",
+      "previewAlt": "Floor plan preview",
+      "installPoint": "Install point",
+      "needUpload": "Upload a floor plan first",
+      "needSize": "Enter the real width and height (meters) first",
+      "clickPick": "Click the floor plan to pick install position (origin: top-left, meters)",
+      "coordsReadonly": "Install coords (m): X {x} · Y {y}",
+      "currentPoint": "Current: X {x} m · Y {y} m",
+      "stageEmpty": "Select a map with uploaded floor plan and real dimensions",
+      "loadFailed": "Failed to load image",
+      "noImage": "No floor plan",
+      "loading": "Loading…"
+    },
+    "account": {
+      "title": "Account",
+      "subtitle": "Manage avatar, display name, email, password, and alert popup/sound preferences",
+      "userFallback": "User",
+      "accountLabel": "Account {name}",
+      "changeAvatar": "Change avatar",
+      "restoreDefault": "Restore default",
+      "basicProfile": "Profile",
+      "displayName": "Display name",
+      "displayNamePh": "Display name",
+      "email": "Email",
+      "emailPh": "Used for sign-in and password reset",
+      "saveProfile": "Save profile",
+      "saveDisplayName": "Save profile",
+      "changePassword": "Change password",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm new password",
+      "updatePassword": "Update password",
+      "alertPrefs": "Alert preferences",
+      "alertPrefsHint": "Whether to show a popup and play sound when devices go offline or new alerts appear. All on by default.",
+      "popupTitle": "Popup",
+      "popupDesc": "Show a popup for new offline devices or alerts",
+      "soundTitle": "Sound",
+      "soundDesc": "Play sound when the popup appears (browsers require a user gesture to unlock audio)",
+      "customSound": "Custom alert sound",
+      "customSoundHint": "mp3 / wma, max 300KB.",
+      "currentUploaded": "Current: {name}",
+      "uploaded": "Uploaded",
+      "currentDefault": "Current: system default",
+      "browserHint": "Note: Chrome / Safari usually support mp3 reliably; wma may fail and fall back to the default sound.",
+      "uploadSound": "Upload sound",
+      "testSound": "Preview sound",
+      "savePrefs": "Save preferences",
+      "customSoundName": "Custom alert sound",
+      "needDisplayName": "Please enter a display name",
+      "needEmail": "Please enter an email",
+      "emailInvalid": "Enter a valid email address",
+      "profileUpdated": "Profile updated",
+      "displayNameUpdated": "Profile updated",
+      "needFullPassword": "Please fill in all password fields",
+      "passwordMin": "New password must be at least 8 characters",
+      "passwordMismatch": "New passwords do not match",
+      "passwordUpdated": "Password updated",
+      "prefsSaved": "Alert preferences saved",
+      "testPlayed": "Preview played",
+      "soundBlocked": "Browser blocked audio, or the format is unsupported (WMA may not work in some browsers)",
+      "soundFormat": "Only mp3 / wma are supported",
+      "soundTooLarge": "Sound file must be under 300KB",
+      "soundSaved": "Custom alert sound saved",
+      "soundRestored": "Default alert sound restored",
+      "needImage": "Please select an image file",
+      "avatarTooLarge": "Avatar must be under 240KB",
+      "avatarUpdated": "Avatar updated",
+      "avatarRestored": "Default avatar restored",
+      "readFailed": "Read failed"
+    },
+    "overview": {
+      "title": "Operations overview",
+      "subtitle": "Health and to-dos; work happens on the destination pages",
+      "lastRefresh": "Last refresh {time}",
+      "floorplan": "Floor plan",
+      "assetStatus": "Asset status",
+      "loadFailed": "Failed to load overview",
+      "metricLedger": "Asset ledger",
+      "ledgerHint": "{unbound} unbound beacons",
+      "ledgerAllBound": "All beacons bound",
+      "metricAssetTotal": "Total assets",
+      "metricOnlineOffline": "Online {online} · Offline {offline}",
+      "metricOnlineAssets": "Online assets",
+      "metricDeviceOverview": "Device overview",
+      "metricFieldOnline": "On-site online",
+      "metricGateways": "Gateways",
+      "gatewayAllOnline": "All online",
+      "gatewayStatusTitle": "Gateway status",
+      "unboundNotOnSite": "Unbound assets are not on-site",
+      "fieldSplit": "Beacons {beacons} · Gateways {gateways}",
+      "onlineRate": "{rate}% online",
+      "noAssets": "No assets",
+      "metricOfflineDevices": "Offline devices",
+      "offlineBreakdown": "Assets {assets} · Gateways {gateways}",
+      "noOffline": "None offline",
+      "metricUnbound": "Unbound beacons",
+      "unboundHint": "{bound} bound; the rest are not on an asset",
+      "allBound": "All assigned to assets",
+      "noBeacons": "No beacons",
+      "todosTitle": "To-dos",
+      "todosHint": "Routed to ledger, live status, or alerts",
+      "noTodosMerged": "No to-dos",
+      "todosOk": "No unbound assets, low batteries, or open alerts",
+      "metricOnlineGateways": "Online gateways",
+      "gatewaysOffline": "{count} offline",
+      "scanCoverage": "On-site scan coverage",
+      "metricOpenAlerts": "Open alerts",
+      "needAttention": "Needs attention",
+      "noTodos": "No pending items",
+      "metricScansHour": "Scans (1h)",
+      "linkActivity": "Link activity",
+      "deviceHealth": "Device health",
+      "offlineDevicesTitle": "Offline devices",
+      "offlineCount": "{count} offline",
+      "gateways": "Gateways",
+      "noOfflineDevices": "No offline devices",
+      "allOnline": "Assets and gateways are online",
+      "offlineAssets": "Offline assets",
+      "units": "{count}",
+      "noOfflineAssets": "No offline assets",
+      "offlineGateways": "Offline gateways",
+      "noOfflineGateways": "No offline gateways",
+      "attention": "Attention",
+      "abnormalAssets": "Abnormal assets",
+      "viewAll": "View all",
+      "noAbnormal": "No abnormal assets",
+      "abnormalOk": "Online bound assets look healthy",
+      "pending": "Pending",
+      "openAlertsTitle": "Open alerts",
+      "alertCenter": "Alert center",
+      "noOpenAlerts": "No open alerts",
+      "openAlertsHint": "New alerts will appear here",
+      "onsite": "On-site",
+      "gatewayAndBattery": "Gateways & low battery",
+      "assets": "Assets",
+      "gatewayOnlineFrac": "{online}/{total} online",
+      "noGateways": "No gateways",
+      "registerGateway": "Register devices under Gateway management",
+      "lowBattery": "Low battery",
+      "noLowBattery": "No low-battery assets",
+      "lowBatteryHint": "Battery ≤20% appears here",
+      "activity": "Activity",
+      "recentPresence": "Recent presence",
+      "noScans": "No scan records",
+      "scansHint": "Recent assets appear after gateway reports",
+      "inventory": "Inventory",
+      "latestInventory": "Recent inventories",
+      "noInventory": "No inventory yet",
+      "inventoryHint": "Start a roll-call by gateway scope",
+      "found": "Found",
+      "coverage": "Coverage",
+      "status": "Status",
+      "startedAt": "Started {time}",
+      "reasonOffline": "Offline",
+      "reasonUnbound": "Unbound beacon",
+      "reasonBatteryPct": "Battery {pct}%",
+      "reasonBatteryLow": "Low battery",
+      "batteryLowLabel": "Low"
+    },
+    "assets": {
+      "types": {
+        "title": "Asset types",
+        "subtitle": "Asset categories. Choose a type when creating assets. Delete or reassign related assets before removing a type."
+      },
+      "list": {
+        "title": "Assets",
+        "subtitle": "Assets belong to types; after binding a beacon, online/offline follows the presence TTL. {refreshHint}",
+        "refreshLive": "Auto-refresh · last {time}",
+        "refreshIdle": "Auto-refresh (~every 3s)",
+        "create": "New asset",
+        "searchPh": "Code / name / gateway / beacon",
+        "typePh": "Asset type",
+        "gatewayPh": "Last gateway",
+        "presencePh": "Presence",
+        "allPresence": "All statuses",
+        "online": "Online",
+        "offline": "Offline",
+        "unbound": "Unbound",
+        "protocolPh": "Protocol",
+        "allProtocols": "All protocols",
+        "autoDetect": "Auto detect",
+        "noProtocol": "No protocol",
+        "boundPh": "Binding",
+        "allBound": "All bindings",
+        "bound": "Bound",
+        "clearFilters": "Clear filters",
+        "filterCount": "{filtered} / {total}",
+        "colMac": "MAC / code",
+        "colPhoto": "Photo",
+        "photo": "Asset photo",
+        "photoHint": "Max 100KB each. Pick from the library or upload JPG / PNG / WebP / GIF.",
+        "photoLibrary": "Library",
+        "photoUpload": "Upload",
+        "photoClear": "Clear",
+        "photoNeedFile": "Choose an image file",
+        "photoTooLarge": "Each photo must be 100KB or smaller",
+        "photoUploaded": "Photo selected",
+        "photoEmpty": "No photo",
+        "photoSearch": "Search library, e.g. forklift, laptop, badge",
+        "photoSearchEmpty": "No matching photos",
+        "photoShareHint": "Anyone in this workspace with asset view permission can see the photo.",
+        "colCode": "Code",
+        "colType": "Asset type",
+        "colBeacon": "Bound beacon",
+        "colProtocol": "Protocol",
+        "colBattery": "Battery",
+        "colLocation": "Location",
+        "colGateway": "Last gateway",
+        "colLastSeen": "Last seen",
+        "bindBeacon": "Bind beacon",
+        "unbind": "Unbind",
+        "buzz": "Buzz",
+        "buzzShort": "Short (~3 beeps)",
+        "buzzLong": "Long (~10 beeps)",
+        "buzzStop": "Stop buzz",
+        "buzzShortSent": "Short buzz sent (~3 beeps)",
+        "buzzLongStarted": "Long buzz sent (~10 beeps)",
+        "buzzStopped": "Buzz stopped",
+        "buzzNoGateway": "No nearby gateway recently; command was broadcast (multiple gateways may try)",
+        "eink": "E-ink",
+        "einkAssetFlag": "E-ink",
+        "einkAssetFlagCheck": "E-ink",
+        "einkAssetFlagHint": "Check and pick the panel if it is not auto-detected. Uncheck while editing to hide Edit screen.",
+        "licenseRequired": "License required",
+        "einkTitle": "Push e-ink screen",
+        "einkHint": "Both 2.13\" 3-color (E-lnk) and 2.8\" 4-color (ZA25GM2D) support templates and a custom canvas (image, text, and handwriting can stack). Pushed via a nearby gateway; HCBG is not supported. Reopening restores the last push or unsaved draft.",
+        "einkLastSavedPush": "Restored last pushed screen ({time})",
+        "einkLastSavedDraft": "Restored unsaved draft ({time})",
+        "einkTemplates": "Templates",
+        "einkFields": "Fields",
+        "einkNoFields": "This template has no editable fields",
+        "einkFontSize": "Size",
+        "einkLandscape": "Landscape",
+        "einkPortrait": "Portrait",
+        "einkPreview": "Preview",
+        "einkPreviewLandscape": "Preview (250×128 landscape)",
+        "einkPreviewPortrait": "Preview (128×250 portrait)",
+        "einkPreviewSizedLandscape": "Preview ({model} {w}×{h} landscape)",
+        "einkPreviewSizedPortrait": "Preview ({model} {w}×{h} portrait)",
+        "einkProfile": "Panel",
+        "einkProfileElnk": "2.13\" 3-color",
+        "einkProfileZa25": "2.8\" 4-color",
+        "einkTabTemplate": "Template",
+        "einkTabCustom": "Custom",
+        "einkTabImage": "Image",
+        "einkTabDraw": "Draw",
+        "einkCustomHint": "Blank canvas — no template. Stack image, text, and ink; use Move to drag items.",
+        "einkDrawHint": "Blank canvas — no template. 2.13\" has black/white/red; 2.8\" also has yellow.",
+        "einkImageHint": "Starts from a blank canvas, not the template. Fits the current orientation.",
+        "einkToolMove": "Move",
+        "einkToolText": "Text",
+        "einkToolDraw": "Draw",
+        "einkText": "Text",
+        "einkTextPh": "Type text to place on the canvas",
+        "einkTextPlace": "Place on canvas",
+        "einkTextWeight": "Weight",
+        "einkWeight400": "Light",
+        "einkWeight500": "Regular",
+        "einkWeight700": "Bold",
+        "einkWeight900": "Black",
+        "einkTextNeed": "Enter text first",
+        "einkImageMoveHint": "Drag to reposition",
+        "einkColorBlack": "Black",
+        "einkColorWhite": "White",
+        "einkColorYellow": "Yellow",
+        "einkColorRed": "Red",
+        "einkNeedProfile": "Select a panel type if it was not auto-detected",
+        "einkProfileOverride": "Overrides the scan-detected panel",
+        "einkImage": "Image",
+        "einkImagePick": "Choose image",
+        "einkImageClear": "Remove image",
+        "einkImageFail": "Could not read the image",
+        "einkDither": "Photo dither",
+        "einkFitContain": "Fit",
+        "einkFitCover": "Fill",
+        "einkDraw": "Draw",
+        "einkEraser": "Eraser",
+        "einkPenWidth": "Pen",
+        "einkUndo": "Undo",
+        "einkClearInk": "Clear ink",
+        "einkUnlock": "Unlock PIN",
+        "einkUnlockPh": "6 digits; required to push",
+        "einkPasskey": "Pairing passkey",
+        "einkPasskeyPh": "4–6 digits; required to push",
+        "einkPasskeyConfigured": "Configured (leave blank to keep)",
+        "einkPreferredGateway": "Preferred gateway",
+        "einkPreferredGatewayPh": "Optional; defaults to last-seen gateway",
+        "einkSubmit": "Push screen",
+        "einkQueued": "Queued (job {jobId})",
+        "einkNotCapable": "Bound beacon is not recognized as e-ink (GeoTag E-lnk / ZA25GM2D, or FFE0/FF70)",
+        "einkNeedTitle": "Enter a title",
+        "needMac": "Enter MAC address (used as asset code)",
+        "needName": "Enter a name",
+        "boundOk": "Bound successfully",
+        "unboundOk": "Unbound",
+        "unbindConfirm": "Unbind asset \"{name}\" from beacon \"{beacon}\"? Positioning via this beacon will stop.",
+        "unbindTitle": "Unbind confirmation",
+        "deleteConfirm": "Delete asset \"{code} · {name}\"?",
+        "autoProtocol": "Auto · {kind}",
+        "autoOnly": "Auto",
+        "drawerCreate": "New asset",
+        "drawerEdit": "Edit asset",
+        "macLabel": "MAC / code",
+        "macPh": "Supports AA:BB:… / AA-BB-… / AABB…",
+        "macHintEdit": "Code syncs with the bound beacon MAC and cannot be edited; use Bind beacon to change.",
+        "macHintCreate": "Asset code equals MAC; saving will register/bind the matching beacon.",
+        "codeHintBound": "When a beacon is bound, the code syncs to the beacon MAC.",
+        "codeHintUnbound": "Unbound assets use a business code; binding a beacon may sync it to the MAC.",
+        "typeLabel": "Asset type",
+        "typePhSelect": "Select asset type",
+        "locationLabel": "Location label",
+        "protocolLabel": "Broadcast protocol",
+        "protocolHintEdit": "Default auto: detect battery protocol from broadcast; usually no need to pick manually.",
+        "bindTitle": "Bind beacon",
+        "beaconDevice": "Beacon device",
+        "selectBeacon": "Select beacon",
+        "noUnboundBeacon": "No unbound beacons; add one in Beacon management first",
+        "deviceName": "Device name",
+        "protocolHintBind": "Auto-detect battery protocol by default; override only when needed.",
+        "colNameHeader": "Name"
+      },
+      "photoGroups": {
+        "it": "Electronics",
+        "safety": "People & safety",
+        "warehouse": "Warehouse",
+        "vehicle": "Vehicles",
+        "tool": "Tools",
+        "facility": "Facilities"
+      },
+      "photos": {
+        "laptop": "Laptop",
+        "desktop": "Desktop",
+        "phone": "Phone",
+        "tablet": "Tablet",
+        "monitor": "Monitor",
+        "tv": "TV",
+        "printer": "Printer",
+        "scanner": "Scanner",
+        "projector": "Projector",
+        "server": "Server",
+        "router": "Router",
+        "ups": "UPS",
+        "camera": "Camera",
+        "cctv": "CCTV",
+        "radio": "Radio",
+        "headset": "Headset",
+        "speaker": "Speaker",
+        "watch": "Watch",
+        "pos": "POS",
+        "barcode": "Barcode",
+        "badge": "Badge",
+        "keys": "Keys",
+        "helmet": "Helmet",
+        "vest": "Vest",
+        "boots": "Boots",
+        "extinguisher": "Extinguisher",
+        "firstaid": "First aid",
+        "package": "Box",
+        "pallet": "Pallet",
+        "crate": "Crate",
+        "barrel": "Drum",
+        "container": "Container",
+        "cart": "Cart",
+        "palletjack": "Pallet jack",
+        "forklift": "Forklift",
+        "car": "Car",
+        "van": "Van",
+        "truck": "Truck",
+        "bicycle": "Bicycle",
+        "motorcycle": "Motorcycle",
+        "excavator": "Excavator",
+        "toolbox": "Toolbox",
+        "drill": "Drill",
+        "ladder": "Ladder",
+        "generator": "Generator",
+        "battery": "Battery",
+        "sensor": "Sensor",
+        "antenna": "Antenna",
+        "chair": "Chair",
+        "desk": "Desk",
+        "cabinet": "Cabinet",
+        "fridge": "Fridge",
+        "ac": "AC",
+        "wheelchair": "Wheelchair",
+        "stretcher": "Stretcher",
+        "generic": "Generic"
+      },
+      "status": {
+        "title": "Asset status",
+        "subtitle": "Includes tagged assets and gateways. Beacons use last scan + presence TTL; gateways use heartbeat/scan. View battery and RSSI history. {refreshHint}",
+        "searchPh": "Code / name / beacon / gateway / location",
+        "allPresenceCount": "All statuses ({count})",
+        "online": "Online",
+        "offline": "Offline",
+        "unbound": "Unbound",
+        "gatewayType": "Gateway",
+        "colType": "Asset type",
+        "colBattery": "Battery",
+        "colSignal": "Signal",
+        "colLiveLocation": "Live location",
+        "nearPrefix": "Near",
+        "approxPrefix": "~",
+        "approxMeters": "~{meters} m",
+        "colZone": "Zone",
+        "colMap": "Map",
+        "colRegisteredLocation": "Registered location",
+        "colLastGateway": "Last gateway",
+        "colBeacon": "Bound beacon",
+        "colLastSeen": "Last seen",
+        "historySignal": "Signal history",
+        "historyTitle": "Signal history · {name}",
+        "historyHint": "Beacon {beacon} · last 100 scans",
+        "colGateway": "Gateway",
+        "clearFilters": "Clear filters",
+        "batteryPh": "Battery",
+        "allBattery": "All batteries",
+        "lowBattery": "Low battery",
+        "filterCount": "{filtered} / {total}",
+        "typePh": "Asset type",
+        "presencePh": "Presence",
+        "protocolPh": "Protocol",
+        "allProtocols": "All protocols",
+        "noProtocol": "No protocol",
+        "gatewayPh": "Last gateway",
+        "colNameHeader": "Name"
+      },
+      "floorplan": {
+        "title": "Floor plan overview",
+        "subtitle": "Assets placed near the last reporting gateway (proximity)",
+        "lastRefresh": "Last refresh {time}",
+        "selectMap": "Select map",
+        "noMap": "No maps yet. Upload a floor plan under Map management and set dimensions.",
+        "legendGateway": "Gateway",
+        "legendAsset": "Asset (approx. distance to gateway)",
+        "asset": "Asset",
+        "liveLocation": "Live location",
+        "distance": "Distance",
+        "signal": "Signal",
+        "zone": "Zone",
+        "lastGateway": "Last gateway",
+        "lastSeen": "Last seen",
+        "gateway": "Gateway",
+        "installPoint": "Install point",
+        "detail": "Details",
+        "detailHint": "Click a gateway or asset on the map for details",
+        "mapAssets": "Assets on map ({count})",
+        "unlocated": "Cannot place on map ({count})",
+        "unlocatedHint": "Gateway install coordinates not set",
+        "noGateway": "No gateway"
+      },
+      "inventory": {
+        "title": "Asset inventory",
+        "subtitle": "Pick gateways and asset scope, then start roll-call. Selected gateways enter inventory scan and resume normal scanning when finished.",
+        "start": "Start inventory",
+        "inProgress": "In progress · {name}",
+        "foundProgress": "Found {found} / {expected}",
+        "coverage": "Coverage {pct}%",
+        "gatewayPart": "Gateways {label}",
+        "autoCloseTip": "Ends automatically when all found and gateways resume scanning",
+        "viewDetail": "View details",
+        "finishEarly": "Finish early",
+        "statusOpen": "In progress",
+        "statusClosed": "Closed",
+        "scopeTypes": "By asset type",
+        "scopeAssets": "Selected assets",
+        "scopeAll": "All assets",
+        "andMore": "{name} and {count} total",
+        "defaultName": "Inventory {time}",
+        "needGateway": "Select at least one gateway",
+        "needType": "Select at least one asset type",
+        "needAsset": "Select at least one asset",
+        "started": "Roll-call sent to selected gateways",
+        "finished": "Inventory finished",
+        "deleteConfirm": "Delete inventory report \"{name}\"? This cannot be undone.",
+        "csv": {
+          "code": "Asset code",
+          "name": "Asset name",
+          "type": "Asset type",
+          "result": "Result",
+          "rssi": "RSSI",
+          "gateway": "Gateway",
+          "foundAt": "Found at"
+        },
+        "found": "Found",
+        "unbound": "Unbound",
+        "missing": "Missing",
+        "csvFileName": "inventory-{name}.csv",
+        "exported": "CSV exported",
+        "dateStart": "Start date",
+        "dateEnd": "End date",
+        "clearDate": "Clear dates",
+        "filterCount": "{filtered} / {total}",
+        "colScope": "Scope",
+        "colGateway": "Gateway",
+        "colDuration": "Duration",
+        "minutesUnit": "{n} min",
+        "colFoundExpected": "Found/Expected",
+        "colCoverage": "Coverage",
+        "colStarted": "Started",
+        "report": "Report",
+        "dialogTitle": "Start inventory",
+        "formCountdown": "Countdown (minutes)",
+        "formGateways": "Gateways",
+        "gatewaysPh": "Select gateways for roll-call",
+        "formScope": "Scope",
+        "formTypes": "Asset types",
+        "formAssets": "Assets",
+        "formHint": "Sends inventory_start to selected gateways; inventory_stop on timeout or manual finish. Only reports from these gateways count.",
+        "reportTitle": "Inventory report · {name}",
+        "reportSub": "Found / Expected · Coverage {pct}%",
+        "reportStatus": "Status: {status}",
+        "reportScope": "Scope: {scope}",
+        "reportGateway": "Gateways: {gateway}",
+        "reportStarted": "Started: {time}",
+        "reportRemaining": "Remaining: {time}",
+        "reportClosed": "Closed: {time}",
+        "reportMissing": "Missing: {missing} · Unbound: {unbound}",
+        "filterFound": "Found",
+        "filterMissing": "Missing",
+        "deleteReport": "Delete report",
+        "colAsset": "Asset",
+        "colType": "Type",
+        "colResult": "Result",
+        "colFoundAt": "Found at"
+      }
+    },
+    "devices": {
+      "beacons": {
+        "title": "Beacons",
+        "subtitle": "Beacon data comes from gateway scans; only registered MACs are stored. Bind/unbind in Asset management; unbind before deleting bound beacons.",
+        "create": "Add beacon",
+        "searchPh": "Search MAC / name…",
+        "macField": "MAC",
+        "macPh": "Supports AA:BB:… / AA-BB-… / AABB…",
+        "macInvalid": "Enter a valid 12-hex MAC address",
+        "deviceName": "Device name",
+        "ibeaconUuid": "iBeacon UUID",
+        "colMac": "MAC / code",
+        "colLastSeen": "Last seen",
+        "colGateway": "Last gateway",
+        "colAsset": "Bound asset",
+        "colBind": "Binding",
+        "colProtocol": "Protocol",
+        "colBattery": "Battery",
+        "filterBound": "Binding",
+        "filterAllBound": "All bindings",
+        "filterBoundYes": "Bound",
+        "filterBoundNo": "Unbound",
+        "filterPresence": "Status",
+        "filterAllPresence": "All statuses",
+        "filterOnline": "Online",
+        "filterOffline": "Offline",
+        "filterBattery": "Battery",
+        "filterAllBattery": "All battery",
+        "filterBatteryUnknown": "Unknown",
+        "filterProtocol": "Protocol",
+        "filterAllProtocol": "All protocols",
+        "filterNoProtocol": "No protocol",
+        "clearFilters": "Clear filters",
+        "downloadTemplate": "Download template",
+        "import": "Import",
+        "batchDelete": "Batch delete",
+        "batchDeleteCount": "Batch delete ({count})",
+        "history": "History",
+        "bindAsset": "Bind asset",
+        "unbind": "Unbind",
+        "historySignals": "Signal history",
+        "historyPresence": "Presence history",
+        "historyTitleSignals": "Signal history · {name}",
+        "historyTitlePresence": "Presence history · {name}",
+        "signalsHint": "About one point per gateway every 30 seconds; kept for 2 days by default",
+        "presenceHint": "Online/offline records for the last 30 days",
+        "colReason": "Reason",
+        "reasonScanOnline": "Scan online",
+        "reasonTimeout": "Timeout offline",
+        "reasonGatewayOffline": "Gateway offline",
+        "statusOnline": "Online",
+        "statusOffline": "Offline",
+        "cannotDeleteBound": "Beacon is bound to an asset; unbind first",
+        "boundOk": "Bound to asset",
+        "unbindConfirm": "Unbind this beacon from the asset? Positioning via this beacon will stop.",
+        "unbindTitle": "Unbind confirmation",
+        "unboundOk": "Unbound",
+        "allBoundSelected": "All selected beacons are bound; unbind first",
+        "batchDeletePartial": "Delete {unbound} unbound beacon(s); skip {bound} bound. Continue?",
+        "batchDeleteAll": "Delete {count} selected beacon(s)?",
+        "batchDeleteTitle": "Batch delete",
+        "deletedPartial": "Deleted {deleted}, skipped {skipped} bound",
+        "deletedOk": "Deleted {deleted}",
+        "templateDownloading": "Template download started",
+        "importCreated": "Created {n}",
+        "importUpdated": "Updated {n}",
+        "importSkipped": "Skipped {n}",
+        "importFailed": "Failed {n}",
+        "importTitle": "Import beacons",
+        "importHint": "Download the CSV template and put one MAC per row (colon/dash/compact OK). Existing MACs are skipped; new ones are created.",
+        "dropHint": "Drop CSV here, or ",
+        "clickSelect": "click to select",
+        "importResult": "Created {created} · Updated {updated} · Skipped {skipped} · Failed {failed}",
+        "colRow": "Row",
+        "errorTruncated": "Showing first 50 errors only",
+        "startImport": "Start import",
+        "bindTitle": "Bind to asset",
+        "selectAsset": "Select asset",
+        "protocolLabel": "Broadcast protocol",
+        "autoDetect": "Auto detect",
+        "protocolHint": "Auto-detect battery protocol by default; override only when needed.",
+        "assetLabel": "Asset",
+        "einkSettings": "E-ink settings",
+        "einkCapable": "E-ink capable",
+        "einkCapableHint": "Detected from scans as a GeoTag e-ink tag (E-lnk 3-color or ZA25GM2D 4-color; not Find My tags with the same prefix). You can pick the panel type or turn this off to hide the entry.",
+        "einkPasskey": "Pairing passkey",
+        "einkPasskeyPh": "4–6 digits; required to push",
+        "einkPasskeyConfigured": "Passkey configured",
+        "einkPasskeyEmpty": "Not set (push is refused)",
+        "einkPreferredGateway": "Preferred push gateway",
+        "einkPreferredGatewayPh": "Optional; defaults to last-seen gateway",
+        "einkLastAt": "Last e-ink push",
+        "einkSettingsSaved": "E-ink settings saved",
+        "einkYes": "Yes",
+        "einkNo": "No"
+      },
+      "gateways": {
+        "title": "Gateways",
+        "create": "New gateway",
+        "searchPh": "Search code / name / MAC / zone / map…",
+        "colZone": "Zone",
+        "colMap": "Map",
+        "colInstall": "Install point (m)",
+        "colLastSeen": "Last seen",
+        "provision": "Provisioning",
+        "createTitle": "New gateway",
+        "editTitle": "Edit gateway",
+        "zoneLabel": "Zone",
+        "zonePh": "Select a zone to pick a point on the floor plan",
+        "calRssi": "1m calibration RSSI (dBm)",
+        "calHint": "Typical RSSI at ~1m for distance estimation; calibrate once for all beacons under this gateway",
+        "installPoint": "Map install point",
+        "noMapForZone": "This zone has no map; assign a map under Zone management first",
+        "clientIdOptional": "Client ID (optional, auto-generated if empty)",
+        "createAndProvision": "Create & generate provisioning",
+        "codePh": "4-digit code",
+        "codeHint": "Auto-generated 4-digit code; you can change it",
+        "codeInvalid": "Gateway code must be 4 digits",
+        "provisionTitle": "Gateway MQTT provisioning",
+        "provisionHint": "Username and password use letters and digits only. You can edit and save them. Broker details come from the project MQTT connection.",
+        "username": "Username",
+        "password": "Password",
+        "usr": "usr",
+        "pw": "pw",
+        "simpleCredentialHint": "Letters and digits only; username 2-64 chars, password 4-64 chars",
+        "saveCredentials": "Save credentials",
+        "created": "Gateway created",
+        "needName": "Enter a gateway name",
+        "colVendor": "Type",
+        "vendorNative": "Native",
+        "vendorHcbg": "HCBG",
+        "hcbgLabel": "HCBG gateway",
+        "hcbgHint": "Third-party Hivecom HCBG01 JSON protocol. MAC (gw_addr) is required.",
+        "needHcbgMac": "HCBG gateways require a 12-hex MAC",
+        "hcbgMacPh": "Gateway MAC (gw_addr)",
+        "provisionHintHcbg": "Enter host/port/usr/pw/clientId, pub=GwData, sub=SrvData, qos=0 in GatewayAssistant. Data mode must be JSON.",
+        "deleteConfirm": "Delete gateway \"{code} · {name}\"?"
+      },
+      "maps": {
+        "title": "Maps",
+        "subtitle": "Upload floor plans and set real width/height (meters) for zone and gateway placement",
+        "create": "New map",
+        "colSize": "Size (m)",
+        "colImage": "Floor plan",
+        "uploaded": "Uploaded",
+        "notUploaded": "Not uploaded",
+        "colZoneCount": "Linked zones",
+        "colZones": "Linked zones",
+        "drawerEdit": "Edit map",
+        "drawerCreate": "New map",
+        "width": "Width (m)",
+        "height": "Height (m)",
+        "image": "Floor plan",
+        "uploadImage": "Upload floor plan",
+        "linkedZones": "Linked zones",
+        "noZones": "No linked zones",
+        "needImageFile": "Please upload an image file",
+        "imageUploaded": "Floor plan uploaded",
+        "needCodeName": "Enter code and name",
+        "needSize": "Enter real width and height (meters)",
+        "deleteConfirm": "Delete map \"{code} · {name}\"?"
+      },
+      "zones": {
+        "title": "Zones",
+        "subtitle": "Zones belong to a map; gateways belong to a zone",
+        "create": "New zone",
+        "searchPh": "Search code / name / map…",
+        "colMap": "Map",
+        "drawerEdit": "Edit zone",
+        "drawerCreate": "New zone",
+        "mapLabel": "Map",
+        "mapPh": "Select a map",
+        "noMaps": "No maps yet.",
+        "goCreateMap": "Create a map",
+        "needCodeName": "Enter code and name",
+        "deleteConfirm": "Delete zone \"{code} · {name}\"?"
+      },
+      "presenceTtl": {
+        "title": "Presence TTL",
+        "subtitle": "Set how long without reports before gateway/beacon (asset) is offline. Prefer gateway TTL ≥ Keepalive.",
+        "gatewayLabel": "Gateway offline TTL (sec) · {hint}",
+        "gatewayHint": "No GwStatus heartbeat beyond this → gateway offline. Default 90s.",
+        "beaconLabel": "Beacon / asset offline TTL (sec) · {hint}",
+        "beaconHint": "No scan for bound beacon beyond this → asset/beacon offline. Default 300s (5 min).",
+        "sec": "{n} sec",
+        "aboutMinSec": "~{m} min {s} sec",
+        "aboutMin": "~{m} min",
+        "gatewayRange": "Gateway TTL must be 30–3600 seconds",
+        "beaconRange": "Beacon/asset TTL must be 60–86400 seconds",
+        "saved": "Presence TTL saved"
+      }
+    },
+    "alerts": {
+      "rules": {
+        "title": "Alert rules",
+        "subtitle": "Configure triggers and thresholds for beacon/gateway/asset offline, low battery, weak signal, and inventory results. Hits create alert events and can notify via My notifications.",
+        "create": "New rule",
+        "colName": "Rule name",
+        "colCondition": "Condition",
+        "colThreshold": "Threshold",
+        "drawerEdit": "Edit alert rule",
+        "drawerCreate": "New alert rule",
+        "namePh": "e.g. Beacon offline 5 minutes",
+        "thresholdLabel": "Threshold ({unit})",
+        "minCoverage": "Min coverage (%)",
+        "needName": "Enter a rule name",
+        "updated": "Rule updated",
+        "created": "Rule created",
+        "unitSec": "sec",
+        "unitPct": "%",
+        "unitDbm": "dBm",
+        "BEACON_OFFLINE": {
+          "label": "Beacon offline",
+          "hint": "Alert when not scanned by any gateway beyond this many seconds"
+        },
+        "GATEWAY_OFFLINE": {
+          "label": "Gateway offline",
+          "hint": "Alert when no heartbeat/report beyond this many seconds"
+        },
+        "ASSET_OFFLINE": {
+          "label": "Asset offline",
+          "hint": "Bound asset: alert when beacon not scanned beyond this many seconds"
+        },
+        "BATTERY_LOW": {
+          "label": "Low battery",
+          "hint": "Alert when battery % ≤ threshold (estimate from level if no %)"
+        },
+        "INVENTORY_RESULT": {
+          "label": "Inventory result",
+          "hint": "Push result after inventory. Coverage below threshold → WARNING, else INFO (subscribe in My notifications)"
+        },
+        "summary": {
+          "BEACON_OFFLINE": "No scan for {value}s",
+          "GATEWAY_OFFLINE": "No heartbeat for {value}s",
+          "ASSET_OFFLINE": "Bound beacon not scanned for {value}s",
+          "BATTERY_LOW": "Battery ≤ {value}%",
+          "INVENTORY_RESULT": "Coverage < {value}% → warning, else info",
+          "RSSI_THRESHOLD": "RSSI < {value} dBm"
+        },
+        "RSSI_THRESHOLD": {
+          "label": "Weak signal (RSSI)",
+          "hint": "Alert when smoothed online RSSI is weaker (more negative), e.g. -85"
+        }
+      },
+      "notifications": {
+        "title": "My notifications",
+        "subtitle": "Configure email / webhook, choose alert/recovery, and repeat interval while open. Advanced: quiet hours and rule-type filters.",
+        "channels": "Channels",
+        "email": "Email",
+        "emailPh": "Email address",
+        "remarkPh": "Remark (optional)",
+        "accountEmail": "Account email: {email}. Enable SMTP under Platform → Mail first; webhooks POST real JSON.",
+        "needLicense": "Alert notifications require a license. Paste it under Platform → Operations. Forgot-password email is not affected.",
+        "colEnabled": "Enabled",
+        "subscriptions": "Subscriptions (alert / recovery)",
+        "channel": "Channel",
+        "selectChannel": "Select channel",
+        "minSeverity": "Min severity",
+        "events": "Events",
+        "onAlert": "On alert",
+        "onRecovery": "On recovery",
+        "interval": "Push interval",
+        "intervalHint": "\"Once\" = one push on open and recovery; other options repeat while the alert is open.",
+        "ruleTypes": "Rule type filter",
+        "ruleTypesPh": "Empty = all; e.g. BEACON_OFFLINE,INVENTORY_RESULT",
+        "quietHours": "Quiet hours",
+        "criticalBypass": "Still push CRITICAL",
+        "addSubscription": "Add subscription",
+        "colAlert": "Alert",
+        "colRecovery": "Recovery",
+        "colAdvanced": "Advanced",
+        "allRules": "All rules",
+        "hasQuiet": "Quiet hours",
+        "deliveries": "Recent deliveries",
+        "deliveriesHint": "{count} total. Persisted then sent; Skipped means debounce (no email). Auto-refresh every 10s.",
+        "emptyDeliveries": "No delivery records",
+        "colAttempts": "Attempts",
+        "intervalOnce": "Once (alert/recovery once each)",
+        "interval5m": "Every 5 minutes",
+        "interval15m": "Every 15 minutes",
+        "interval30m": "Every 30 minutes",
+        "interval1h": "Every 1 hour",
+        "interval6h": "Every 6 hours",
+        "onceShort": "Once",
+        "everyNSec": "Every {n}s",
+        "kindAlert": "Alert",
+        "kindRecovery": "Recovery",
+        "statusSent": "Sent",
+        "statusFailed": "Failed",
+        "statusPending": "Pending",
+        "statusSkipped": "Skipped",
+        "loadDeliveriesFailed": "Failed to load deliveries",
+        "needAddress": "Enter an address",
+        "channelAdded": "Channel added",
+        "deleteChannelConfirm": "Deleting a channel also affects its subscriptions. Continue?",
+        "deleteChannelTitle": "Delete channel",
+        "workspaceNotReady": "Workspace not ready",
+        "needChannel": "Select a channel",
+        "subscriptionCreated": "Subscription created",
+        "deleteSubConfirm": "Delete this subscription?",
+        "deleteSubTitle": "Delete subscription"
+      }
+    },
+    "mqtt": {
+      "commands": {
+        "title": "Device downlink commands",
+        "subtitle": "Enqueued for the Worker to publish (default topic SrvData). Any JSON is allowed; HCBG needs pkt_type=command with gw_addr and data.cmd.",
+        "connection": "MQTT connection",
+        "connectionPh": "Default: primary connection",
+        "disabledSuffix": " (disabled)",
+        "publish": "Publish",
+        "queued": "Command queued; Worker will publish",
+        "sentAt": "Sent at"
+      }
+    },
+    "analytics": {
+      "assetsTitle": "Asset analytics",
+      "assetsSubtitle": "Asset and scan health",
+      "assetCount": "Assets",
+      "beaconCount": "Beacons",
+      "gatewayOnline": "Online gateways",
+      "openAlerts": "Open alerts",
+      "scansLastHour": "Scans (1h)",
+      "generatedAt": "Generated at",
+      "dailyScans": "Scans (last 7 days)",
+      "date": "Date",
+      "scanCount": "Scan count",
+      "dailyTitle": "Daily summary",
+      "dailySubtitle": "Ops snapshot and last 7 days of scans (UTC day boundary)",
+      "assetTotal": "Total assets",
+      "beaconTotal": "Total beacons",
+      "openAlertsAlt": "Open alerts",
+      "scansHourAlt": "Scans (1h)",
+      "share": "Share",
+      "generatedAtLabel": "Generated: {time}"
+    },
+    "projects": {
+      "tasks": {
+        "title": "Tasks"
+      },
+      "list": {
+        "title": "Workspaces",
+        "subtitle": "Creating a workspace auto-creates an admin role and assigns it to the creator",
+        "create": "New workspace",
+        "drawerTitle": "Workspace",
+        "archive": "Archive",
+        "archiveInfo": "Workspace archived",
+        "archiveConfirm": "Archive workspace \"{name}\"? It can no longer be used.",
+        "archiveTitle": "Archive confirmation",
+        "archived": "Archived"
+      },
+      "documents": {
+        "title": "Documents",
+        "subtitle": "Upload, download, and delete files (recommend ≤50MB each)",
+        "upload": "Upload document",
+        "emptyScope": "Workspace is not ready",
+        "needFile": "Select a file",
+        "uploaded": "Uploaded",
+        "deleteConfirm": "Delete document \"{name}\"?",
+        "uploadTitle": "Upload document",
+        "titleOptional": "Title (optional)",
+        "titlePh": "Defaults to file name",
+        "selectFile": "Select file"
+      },
+      "members": {
+        "title": "Members",
+        "subtitle": "Invite existing users and assign roles",
+        "projectRoles": "Roles",
+        "invite": "Invite member",
+        "rolesList": "Roles",
+        "permissionCount": "Permissions",
+        "inviteTitle": "Invite member",
+        "projectRole": "Role",
+        "roleEdit": "Edit role",
+        "roleCreate": "New role",
+        "noPermissions": "No assignable permissions loaded; refresh and try again.",
+        "joined": "Joined",
+        "rolesUpdated": "Roles updated",
+        "removed": "Removed",
+        "roleSaved": "Role saved",
+        "cannotDeleteRole": "System/protected roles cannot be deleted",
+        "deleteRoleConfirm": "Delete role \"{name}\"? It will also be removed from members.",
+        "deleteRoleTitle": "Delete role",
+        "roleDeleted": "Role deleted"
+      }
+    },
+    "tenantMembers": {
+      "title": "Tenant members",
+      "subtitle": "Invite users and assign tenant roles",
+      "invite": "Invite member",
+      "rolesTitle": "Tenant roles",
+      "createRole": "New role",
+      "inviteTitle": "Invite tenant member",
+      "initialPassword": "Initial password",
+      "roleEdit": "Edit role",
+      "roleCreate": "New role",
+      "selectPermissions": "Select permissions",
+      "noPermissions": "No assignable permissions; select a tenant and refresh.",
+      "permissionCountHint": "{count} assignable permission(s)",
+      "invited": "Member invited",
+      "rolesUpdated": "Roles updated",
+      "removed": "Removed",
+      "roleSaved": "Role saved",
+      "cannotDeleteRole": "System/protected roles cannot be deleted",
+      "deleteRoleConfirm": "Delete role \"{name}\"? It will also be removed from members.",
+      "deleteRoleTitle": "Delete role",
+      "roleDeleted": "Role deleted",
+      "permissionCount": "Permissions"
+    },
+    "platformGateways": {
+      "title": "Platform gateways",
+      "subtitle": "Cross-organization gateway presence and connectivity",
+      "tenant": "Tenant",
+      "project": "Workspace",
+      "lastSeen": "Last seen"
+    }
+  }
+}

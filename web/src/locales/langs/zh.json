@@ -1,0 +1,2816 @@
+{
+  "httpMsg": {
+    "unauthorized": "未授权访问，请重新登录",
+    "forbidden": "禁止访问该资源",
+    "notFound": "请求的资源不存在",
+    "methodNotAllowed": "请求方法不允许",
+    "requestTimeout": "请求超时，请稍后重试",
+    "internalServerError": "服务器内部错误，请稍后重试",
+    "badGateway": "网关错误，请稍后重试",
+    "serviceUnavailable": "服务暂时不可用，请稍后重试",
+    "gatewayTimeout": "网关超时，请稍后重试",
+    "requestCancelled": "请求已取消",
+    "networkError": "网络连接异常，请检查网络连接",
+    "requestFailed": "请求失败",
+    "requestConfigError": "请求配置错误"
+  },
+  "topBar": {
+    "search": {
+      "title": "搜索"
+    },
+    "user": {
+      "userCenter": "个人中心",
+      "docs": "使用文档",
+      "github": "Github",
+      "lockScreen": "锁定屏幕",
+      "logout": "退出登录"
+    },
+    "guide": {
+      "title": "点击这里查看",
+      "theme": "主题风格",
+      "menu": "开启顶栏菜单",
+      "description": "等更多配置"
+    }
+  },
+  "common": {
+    "tips": "提示",
+    "cancel": "取消",
+    "confirm": "确定",
+    "refresh": "刷新",
+    "search": "查询",
+    "reset": "重置",
+    "edit": "编辑",
+    "detail": "详情",
+    "yes": "是",
+    "no": "否",
+    "enabled": "已启用",
+    "disabled": "已停用",
+    "logOutTips": "您是否要退出登录?",
+    "create": "创建",
+    "save": "保存",
+    "delete": "删除",
+    "actions": "操作",
+    "status": "状态",
+    "add": "添加",
+    "saveSuccess": "已保存",
+    "deleteConfirm": "删除确认",
+    "deleted": "已删除",
+    "totalCount": "共 {count} 条",
+    "selectedCount": "已选 {count} 条",
+    "code": "编码",
+    "name": "名称",
+    "description": "描述",
+    "updatedAt": "更新时间",
+    "searchPlaceholder": "搜索编码 / 名称…",
+    "new": "新建",
+    "type": "类型",
+    "address": "地址",
+    "remark": "备注",
+    "time": "时间",
+    "title": "标题",
+    "message": "说明",
+    "loading": "加载中…",
+    "to": "至",
+    "start": "开始",
+    "exportCsv": "导出 CSV",
+    "clear": "清空",
+    "all": "全部",
+    "enable": "启用",
+    "close": "关闭",
+    "download": "下载",
+    "upload": "上传",
+    "remove": "移除",
+    "invite": "邀请",
+    "username": "用户名",
+    "displayName": "显示名",
+    "email": "邮箱",
+    "roles": "角色",
+    "permissions": "权限",
+    "file": "文件",
+    "size": "大小",
+    "fileName": "文件名",
+    "createdAt": "创建时间",
+    "selectTenant": "请先选择租户",
+    "selectTenantProject": "请先选择工作区",
+    "error": "错误"
+  },
+  "search": {
+    "placeholder": "搜索页面",
+    "historyTitle": "搜索历史",
+    "switchKeydown": "切换",
+    "selectKeydown": "选择",
+    "exitKeydown": "关闭"
+  },
+  "setting": {
+    "menuType": {
+      "title": "菜单布局",
+      "list": [
+        "垂直",
+        "水平",
+        "混合",
+        "双列"
+      ]
+    },
+    "theme": {
+      "title": "主题风格",
+      "list": [
+        "浅色",
+        "深色",
+        "系统"
+      ]
+    },
+    "menu": {
+      "title": "菜单风格"
+    },
+    "color": {
+      "title": "系统主题色"
+    },
+    "box": {
+      "title": "盒子样式",
+      "list": [
+        "边框",
+        "阴影"
+      ]
+    },
+    "container": {
+      "title": "容器宽度",
+      "list": [
+        "铺满",
+        "定宽"
+      ]
+    },
+    "basics": {
+      "title": "基础配置",
+      "list": {
+        "multiTab": "开启多标签栏",
+        "accordion": "侧边栏开启手风琴模式",
+        "collapseSidebar": "显示折叠侧边栏按钮",
+        "fastEnter": "显示快速入口",
+        "reloadPage": "显示重载页面按钮",
+        "breadcrumb": "显示全局面包屑导航",
+        "language": "显示多语言选择",
+        "progressBar": "显示顶部进度条",
+        "weakMode": "色弱模式",
+        "watermark": "全局水印",
+        "menuWidth": "菜单宽度",
+        "tabStyle": "标签页风格",
+        "pageTransition": "页面切换动画",
+        "borderRadius": "自定义圆角"
+      }
+    },
+    "tabStyle": {
+      "default": "默认",
+      "card": "卡片",
+      "google": "谷歌"
+    },
+    "transition": {
+      "list": {
+        "none": "无动画",
+        "fade": "淡入淡出",
+        "slideLeft": "左侧滑入",
+        "slideBottom": "下方滑入",
+        "slideTop": "上方滑入"
+      }
+    },
+    "actions": {
+      "resetConfig": "重置配置",
+      "copyConfig": "复制配置",
+      "copySuccess": "配置已复制到剪贴板，可粘贴到 src/config/setting.ts 文件中",
+      "copyFailed": "复制失败，请重试",
+      "resetFailed": "重置失败，请刷新页面后重试"
+    }
+  },
+  "notice": {
+    "title": "通知",
+    "btnRead": "标为已读",
+    "bar": [
+      "通知",
+      "消息",
+      "代办"
+    ],
+    "text": [
+      "暂无"
+    ],
+    "viewAll": "查看全部"
+  },
+  "worktab": {
+    "btn": {
+      "refresh": "刷新",
+      "fixed": "固定",
+      "unfixed": "取消固定",
+      "closeLeft": "关闭左侧",
+      "closeRight": "关闭右侧",
+      "closeOther": "关闭其他",
+      "closeAll": "关闭全部"
+    }
+  },
+  "login": {
+    "leftView": {
+      "title": "让每一项资产可见、可追踪、可审计",
+      "subTitle": "统一管理资产、设备、空间定位、告警与 MQTT 实时数据"
+    },
+    "title": "欢迎回来",
+    "subTitle": "输入您的账号和密码登录",
+    "roles": {
+      "super": "超级管理员",
+      "admin": "管理员",
+      "user": "普通用户"
+    },
+    "placeholder": {
+      "username": "请输入账号",
+      "password": "请输入密码",
+      "slider": "请拖动滑块完成验证"
+    },
+    "sliderText": "按住滑块拖动",
+    "sliderSuccessText": "验证成功",
+    "rememberPwd": "记住密码",
+    "forgetPwd": "忘记密码",
+    "btnText": "登录",
+    "managedAccount": "平台不开放公开注册。账号由超级管理员在平台管理中创建并分配角色权限。",
+    "failure": "登录失败，请稍后重试",
+    "invalidCredentials": "账号或密码不正确",
+    "rateLimited": "登录尝试次数过多，请稍后再试",
+    "serverUnavailable": "后端服务未启动或暂时不可用，请稍后重试",
+    "noAccount": "还没有账号？",
+    "register": "注册",
+    "success": {
+      "title": "登录成功",
+      "message": "欢迎回来"
+    },
+    "copyright": "Copyright © 2026 GeoTag All Rights Reserved"
+  },
+  "context": {
+    "title": "工作区",
+    "tenant": "组织",
+    "project": "工作区",
+    "selectTenant": "组织",
+    "selectProject": "工作区",
+    "switch": "工作区",
+    "noActiveMembership": "当前账号没有可用工作区，请联系管理员在平台管理中分配角色权限"
+  },
+  "overview": {
+    "title": "资产运行总览",
+    "subtitle": "关注在线状态、异常资产、告警与盘点结果。",
+    "projectScope": "运行态势",
+    "selectProject": "等待工作区就绪",
+    "createProject": "平台管理",
+    "realDataNotice": "指标来自真实资产与设备数据；无数据时显示为空。",
+    "dashboardLoadFailed": "总览加载失败",
+    "metricsTitle": "核心资产指标",
+    "waitingForData": "等待真实数据",
+    "availability": {
+      "unavailable": "暂无可用数据",
+      "stale": "数据可能已过期",
+      "available": "来自当前工作区"
+    },
+    "metrics": {
+      "assets": "资产总数",
+      "onlineGateways": "在线网关",
+      "onlineGatewaysHint": "现场终端网关（ESP32 等），非 MQTT Broker",
+      "activeAlerts": "活动告警",
+      "rollCallCoverage": "盘点覆盖率"
+    },
+    "pipelineEyebrow": "实时数据链路",
+    "pipelineTitle": "从设备消息到业务状态",
+    "pipelineSafety": "凭据加密保存，消息按权限隔离",
+    "configureMqtt": "配置 MQTT",
+    "notConfigured": "尚未配置",
+    "pipeline": {
+      "device": "现场设备",
+      "deviceHint": "信标、网关与传感器",
+      "broker": "MQTT Broker",
+      "brokerHint": "主连接与备用连接",
+      "rules": "Topic 规则",
+      "rulesHint": "识别、校验与映射",
+      "platform": "平台状态",
+      "platformHint": "资产、定位与告警"
+    },
+    "readinessEyebrow": "运行依赖",
+    "readinessTitle": "系统就绪状态",
+    "pendingCheck": "待检测",
+    "readinessStatus": {
+      "UP": "正常",
+      "DOWN": "异常",
+      "NOT_CONFIGURED": "未配置",
+      "UNKNOWN": "未知"
+    },
+    "pipelineStatus": {
+      "ok": "链路就绪",
+      "degraded": "部分异常",
+      "pending": "检测中"
+    },
+    "readiness": {
+      "api": "业务接口与权限服务",
+      "postgres": "业务数据与空间数据",
+      "redis": "缓存、会话与实时状态",
+      "mqtt": "设备消息接入与消费"
+    },
+    "onboardingEyebrow": "接入向导",
+    "onboardingTitle": "完成第一条真实数据链路",
+    "onboarding": {
+      "project": "建立工作范围",
+      "connection": "配置 MQTT 连接",
+      "topicRule": "添加 Topic 规则",
+      "deviceData": "验证设备消息"
+    },
+    "alertEyebrow": "告警队列",
+    "alertTitle": "待处理告警",
+    "viewAll": "查看全部",
+    "noAlertData": "暂无可显示的告警",
+    "noAlertDataHint": "接入真实设备消息并启用告警规则后，这里将显示待处理事件。"
+  },
+  "mqtt": {
+    "title": "MQTT 接入管理",
+    "subtitle": "统一配置多环境 Broker、主备连接、Topic 解析规则与实时消息诊断。",
+    "previewNotice": "连接状态、路由和消息均来自当前工作区的真实接口。",
+    "realDataNotice": "当前页面只展示服务端返回的真实连接、路由与消息；未知值保持为空，不使用演示数据补位。",
+    "scopeRequired": "工作区未就绪",
+    "scopeRequiredHint": "请确认账号已在平台管理中分配相应权限。",
+    "loadFailed": "MQTT 数据加载失败",
+    "unknownError": "请求未完成，请稍后重试",
+    "addConnection": "新建连接",
+    "addStandby": "添加备用连接",
+    "testConnection": "测试连接",
+    "testUnavailable": "保存有效连接配置后可执行真实连接测试",
+    "awaitingBackend": "等待服务端数据",
+    "secretHint": "敏感凭据仅写入，不回显",
+    "allEnvironments": "全部环境",
+    "metrics": {
+      "connections": "连接配置",
+      "connected": "已连接",
+      "rules": "启用规则",
+      "messages": "匹配消息总数",
+      "fromApi": "来自当前工作区接口",
+      "currentStatus": "服务端当前连接状态",
+      "queryTotal": "当前筛选条件的总记录数"
+    },
+    "status": {
+      "not_configured": "未配置",
+      "notConfigured": "未配置",
+      "connecting": "连接中",
+      "connected": "已连接",
+      "disconnected": "已断开",
+      "error": "异常",
+      "disabled": "已停用"
+    },
+    "roles": {
+      "primary": "主连接",
+      "standby": "备用连接",
+      "primaryEyebrow": "Primary Broker",
+      "standbyEyebrow": "Standby Broker"
+    },
+    "environments": {
+      "development": "开发环境",
+      "test": "测试环境",
+      "staging": "预发布环境",
+      "production": "生产环境"
+    },
+    "fields": {
+      "name": "连接名称",
+      "role": "连接角色",
+      "endpoint": "Broker 地址",
+      "environment": "环境",
+      "version": "协议版本",
+      "clientId": "Client ID",
+      "username": "用户名",
+      "password": "密码",
+      "keepAlive": "Keep Alive（秒）",
+      "enabled": "启用连接",
+      "enabledHint": "保存后允许 Worker 使用该配置；实际启动仍由后端校验",
+      "lastConnected": "最近连接",
+      "tlsHint": "验证服务端证书并加密传输",
+      "cleanStartHint": "建立新会话，不恢复旧订阅状态"
+    },
+    "placeholders": {
+      "name": "例如：生产主连接",
+      "clientId": "请输入唯一且可识别的 Client ID",
+      "leaveUnchanged": "留空表示保持现有凭据不变"
+    },
+    "tabs": {
+      "connections": "连接管理",
+      "topicRules": "Topic 规则",
+      "messages": "消息监控"
+    },
+    "connections": {
+      "title": "连接配置",
+      "subtitle": "按环境和用途管理 Broker，生产环境支持主备切换。",
+      "empty": "尚未配置 MQTT 连接",
+      "emptyHint": "创建连接后可执行真实连通性测试；密码和私钥不会在列表或接口响应中回显。"
+    },
+    "rules": {
+      "title": "Topic 解析规则",
+      "subtitle": "将设备 Topic 和 Payload 映射为资产状态、定位、告警或心跳事件。",
+      "searchPlaceholder": "搜索规则或 Topic",
+      "addRule": "新建规则",
+      "guideTitle": "先提供真实 Topic 与 Payload 样例",
+      "guideText": "规则在入库前进行字段校验、设备身份匹配和重复消息处理。",
+      "samplePending": "等待协议样例",
+      "serverValidated": "服务端发布校验",
+      "empty": "尚未添加 Topic 规则",
+      "emptyHint": "收到设备方提供的 Topic 和 Payload 样例后，再建立可验证的解析映射。"
+    },
+    "messages": {
+      "title": "实时消息监控",
+      "subtitle": "只显示最近约 500 条（约 1 小时）。成功报文不落库，解析失败会保留几天便于排障。",
+      "notStreaming": "未开始监听",
+      "snapshotMode": "接口快照",
+      "connection": "选择连接",
+      "gateway": "选择网关",
+      "topic": "筛选 Topic",
+      "result": "解析结果",
+      "pause": "暂停",
+      "clear": "清空",
+      "empty": "暂无真实 MQTT 消息",
+      "emptyHint": "有上报后会出现在这里。Worker 或 Redis 重启后列表会空，新报文到来即可。",
+      "loadFailed": "消息列表加载失败",
+      "loadFailedHint": "连接配置仍可查看。消息表很大时请稍后重试，不影响网关上报。"
+    },
+    "columns": {
+      "connection": "连接",
+      "gateway": "网关",
+      "environment": "环境",
+      "endpoint": "Broker 地址",
+      "role": "角色",
+      "status": "状态",
+      "actions": "操作",
+      "credentials": "凭据",
+      "ruleName": "规则名称",
+      "direction": "方向",
+      "messageType": "消息类型",
+      "time": "接收时间",
+      "parseResult": "解析结果",
+      "payload": "完整报文"
+    },
+    "drawer": {
+      "title": "新建 MQTT 连接",
+      "editTitle": "编辑 MQTT 连接",
+      "secretNotice": "密码、私钥与证书属于敏感信息：前端只提交，不缓存；服务端加密保存且永不回传明文。",
+      "save": "保存连接",
+      "update": "更新连接",
+      "credentialsConfigured": "服务端已有凭据。用户名或密码留空时保持原值，页面不会回填明文。",
+      "saveUnavailable": "后端连接接口联调完成后启用保存"
+    },
+    "routeDrawer": {
+      "title": "新建 Topic 路由",
+      "editTitle": "编辑 Topic 路由",
+      "save": "保存路由",
+      "update": "更新路由",
+      "protocolNotice": "请按设备提供的真实 Topic 与 Payload 协议配置；草稿默认停用，激活前应由后端完成样例验证。"
+    },
+    "routeFields": {
+      "connection": "MQTT 连接",
+      "name": "路由名称",
+      "direction": "消息方向",
+      "topicPattern": "Topic 过滤器或模板",
+      "topicHint": "上行订阅可使用受控通配符；下行发布 Topic 不允许 + 或 #。",
+      "messageType": "业务消息类型",
+      "parserKey": "解析器标识",
+      "retained": "Retain",
+      "retainedHint": "仅在真实协议明确要求时启用",
+      "enabled": "启用路由",
+      "enabledHint": "启用前服务端仍会检查连接授权、Topic 冲突与解析器版本"
+    },
+    "routePlaceholders": {
+      "direction": "请选择真实协议的消息方向",
+      "qos": "请选择协议要求的 QoS",
+      "topicPattern": "输入设备提供的真实 Topic",
+      "messageType": "输入协议定义的消息类型",
+      "parserKey": "输入后端已注册的解析器标识"
+    },
+    "directions": {
+      "uplink": "上行订阅",
+      "downlink": "下行发布",
+      "acknowledgement": "设备 ACK"
+    },
+    "parseStatus": {
+      "pending": "待处理",
+      "parsed": "已解析",
+      "rejected": "已拒绝",
+      "failed": "处理失败"
+    },
+    "feedback": {
+      "connectionCreated": "MQTT 连接已创建",
+      "connectionUpdated": "MQTT 连接已更新",
+      "testSucceeded": "连接测试成功",
+      "testFailed": "连接测试失败",
+      "routeCreated": "Topic 路由已创建",
+      "routeUpdated": "Topic 路由已更新"
+    },
+    "validation": {
+      "nameRequired": "请输入连接名称",
+      "roleRequired": "请选择连接角色",
+      "environmentRequired": "请选择环境",
+      "versionRequired": "请选择 MQTT 版本",
+      "endpointRequired": "请输入 Broker 地址",
+      "endpointInvalid": "地址必须使用 mqtt、mqtts、ws 或 wss 协议",
+      "clientIdRequired": "请输入 Client ID",
+      "connectionRequired": "请选择 MQTT 连接",
+      "routeNameRequired": "请输入路由名称",
+      "directionRequired": "请选择消息方向",
+      "qosRequired": "请选择真实协议要求的 QoS",
+      "topicRequired": "请输入 Topic",
+      "topicInvalid": "Topic 不能为空、不能包含空字符且最长 500 字符",
+      "publishWildcard": "下行发布 Topic 不允许包含 + 或 # 通配符",
+      "messageTypeRequired": "请输入真实协议的消息类型",
+      "parserKeyRequired": "请输入后端已注册的解析器标识",
+      "max80": "最多 80 个字符",
+      "max120": "最多 120 个字符",
+      "max180": "最多 180 个字符",
+      "max512": "最多 512 个字符",
+      "secretTooLong": "敏感字段长度超出允许范围"
+    }
+  },
+  "modulePlaceholder": {
+    "status": "模块契约已定义",
+    "description": "该入口已纳入产品信息架构。业务表格、筛选、编辑和批量操作将在对应后端接口完成后接入，不展示伪造记录。",
+    "contractEyebrow": "实现边界",
+    "contractTitle": "本模块遵循的基础约束",
+    "notice": "当前页面是功能占位，不会向任何真实系统写入数据。",
+    "contract": {
+      "scope": "权限隔离",
+      "scopeHint": "业务操作由平台角色权限控制，服务端按权限码鉴权。",
+      "permission": "权限控制",
+      "permissionHint": "页面与操作分别映射平台角色和权限码，超级管理员能力独立审计。",
+      "audit": "变更审计",
+      "auditHint": "新增、编辑、归档和权限变更保留操作者与时间记录。"
+    }
+  },
+  "forgetPassword": {
+    "title": "忘记密码？",
+    "subTitle": "输入账号或邮箱，系统将向该用户邮箱发送新的随机密码",
+    "placeholder": "请输入账号或邮箱",
+    "submitBtnText": "发送新密码",
+    "backBtnText": "返回",
+    "accountRequired": "请输入账号或邮箱",
+    "sent": "若该账号存在，新密码已发送到对应邮箱，请查收后登录",
+    "rateLimited": "尝试次数过多，请稍后再试",
+    "serverUnavailable": "服务暂时不可用，请稍后重试"
+  },
+  "register": {
+    "title": "创建账号",
+    "subTitle": "欢迎加入我们，请填写以下信息完成注册",
+    "placeholder": {
+      "username": "请输入账号",
+      "password": "请输入密码",
+      "confirmPassword": "请再次输入密码"
+    },
+    "rule": {
+      "confirmPasswordRequired": "请再次输入密码",
+      "passwordMismatch": "两次输入密码不一致!",
+      "usernameLength": "长度在 3 到 20 个字符",
+      "passwordLength": "密码长度不能小于6位",
+      "agreementRequired": "请同意隐私协议"
+    },
+    "agreeText": "我同意",
+    "privacyPolicy": "《隐私政策》",
+    "submitBtnText": "注册",
+    "hasAccount": "已有账号？",
+    "toLogin": "去登录"
+  },
+  "lockScreen": {
+    "pwdError": "密码错误",
+    "lock": {
+      "inputPlaceholder": "请输入锁屏密码",
+      "btnText": "锁定"
+    },
+    "unlock": {
+      "inputPlaceholder": "请输入解锁密码",
+      "btnText": "解锁",
+      "backBtnText": "返回登录"
+    }
+  },
+  "greeting": {
+    "dawn": "凌晨了！",
+    "morning": "上午好！",
+    "afternoon": "下午好！",
+    "evening": "晚上好！"
+  },
+  "exceptionPage": {
+    "gohome": "返回首页",
+    "403": "抱歉，您无权访问该页面",
+    "404": "抱歉，您访问的页面不存在",
+    "500": "抱歉，服务器出错了"
+  },
+  "menus": {
+    "login": {
+      "title": "登录"
+    },
+    "register": {
+      "title": "注册"
+    },
+    "forgetPassword": {
+      "title": "忘记密码"
+    },
+    "outside": {
+      "title": "内嵌页面"
+    },
+    "overview": "总览",
+    "account": "个人中心",
+    "project": {
+      "title": "协作",
+      "projects": "工作区",
+      "tasks": "任务",
+      "members": "成员",
+      "documents": "文档"
+    },
+    "asset": {
+      "title": "资产中心",
+      "assets": "资产管理",
+      "types": "资产类型",
+      "status": "资产状态",
+      "floorplan": "平面图概览",
+      "inventory": "盘点管理"
+    },
+    "device": {
+      "title": "设备与空间",
+      "beacons": "信标管理",
+      "gateways": "网关管理",
+      "maps": "地图管理",
+      "zones": "区域管理",
+      "presenceTtl": "在线阈值"
+    },
+    "alert": {
+      "title": "告警中心",
+      "events": "告警事件",
+      "rules": "告警规则",
+      "notifications": "我的通知"
+    },
+    "analytics": {
+      "title": "数据分析",
+      "assets": "资产分析",
+      "dailySummary": "每日汇总"
+    },
+    "geotag": {
+      "title": "GeoTag 管理",
+      "map": "位置地图",
+      "devices": "设备",
+      "track": "轨迹"
+    },
+    "mqtt": {
+      "title": "MQTT 接入",
+      "connections": "连接管理",
+      "topicRoutes": "Topic 路由",
+      "messageMonitor": "消息监控",
+      "commands": "下行命令"
+    },
+    "tenant": {
+      "title": "组织管理",
+      "members": "成员与角色"
+    },
+    "platform": {
+      "title": "平台管理",
+      "users": "用户管理",
+      "roles": "角色管理",
+      "permissions": "权限目录",
+      "audit": "审计日志",
+      "mail": "邮件配置",
+      "branding": "登录页配置",
+      "ops": "系统运维",
+      "geotag": "对接 GeoTag",
+      "gateways": "网关总览",
+      "mqttConnections": "MQTT 连接",
+      "mqttTopicRules": "Topic 规则",
+      "mqttMessageMonitor": "消息监控",
+      "profile": "个人中心"
+    },
+    "dashboard": {
+      "title": "仪表盘",
+      "console": "工作台",
+      "analysis": "分析页",
+      "ecommerce": "电子商务"
+    },
+    "widgets": {
+      "title": "组件中心",
+      "icon": "图标",
+      "imageCrop": "图像裁剪",
+      "excel": "Excel 导入导出",
+      "video": "视频播放器",
+      "countTo": "数字滚动",
+      "wangEditor": "富文本编辑器",
+      "watermark": "水印",
+      "contextMenu": "右键菜单",
+      "qrcode": "二维码",
+      "drag": "拖拽",
+      "textScroll": "文字滚动",
+      "fireworks": "礼花",
+      "elementUI": "组件总览"
+    },
+    "template": {
+      "title": "模板中心",
+      "chat": "聊天",
+      "cards": "卡片",
+      "banners": "横幅",
+      "charts": "图表",
+      "map": "地图",
+      "calendar": "日历",
+      "pricing": "定价"
+    },
+    "article": {
+      "title": "文章管理",
+      "articleList": "文章列表",
+      "articleDetail": "文章详情",
+      "comment": "留言管理",
+      "articlePublish": "文章发布"
+    },
+    "result": {
+      "title": "结果页面",
+      "success": "成功页",
+      "fail": "失败页"
+    },
+    "exception": {
+      "title": "异常页面",
+      "forbidden": "403",
+      "notFound": "404",
+      "serverError": "500"
+    },
+    "examples": {
+      "title": "功能示例",
+      "tabs": "标签页",
+      "tablesBasic": "基础表格",
+      "tables": "高级表格",
+      "tablesTree": "左右布局表格",
+      "forms": "表单",
+      "searchBar": "搜索表单",
+      "socketChat": "Socket 连接",
+      "permission": {
+        "title": "前端权限",
+        "switchRole": "切换权限",
+        "buttonAuth": "按钮权限演示",
+        "pageVisibility": "超级管理员可见"
+      }
+    },
+    "system": {
+      "title": "系统管理",
+      "user": "用户管理",
+      "role": "角色管理",
+      "userCenter": "个人中心",
+      "menu": "菜单管理",
+      "nested": "嵌套菜单",
+      "menu1": "菜单1",
+      "menu2": "菜单2",
+      "menu21": "菜单2-1",
+      "menu3": "菜单3",
+      "menu31": "菜单3-1",
+      "menu32": "菜单3-2",
+      "menu321": "菜单3-2-1"
+    },
+    "safeguard": {
+      "title": "运维管理",
+      "server": "服务器管理"
+    },
+    "plan": {
+      "title": "版本计划",
+      "log": "更新日志"
+    },
+    "help": {
+      "title": "帮助中心",
+      "document": "官方文档",
+      "liteVersion": "精简版本",
+      "oldVersion": "v2.6.1 版本"
+    }
+  },
+  "alerts": {
+    "events": {
+      "title": "告警事件",
+      "subtitle": "规则命中后立即开单（与是否发邮件无关）；每 5 秒自动刷新。共 {count} 条。",
+      "empty": "暂无告警事件",
+      "loadFailed": "加载告警事件失败",
+      "colTitle": "标题",
+      "colStatus": "状态",
+      "colSeverity": "级别",
+      "colMessage": "说明",
+      "colOpenedAt": "开单时间",
+      "colActions": "操作",
+      "statusOpen": "待处理",
+      "statusAcknowledged": "已确认",
+      "statusResolved": "已关闭",
+      "severityInfo": "提示",
+      "severityWarning": "警告",
+      "severityCritical": "严重",
+      "ack": "确认",
+      "ackHint": "表示已看到该告警；状态变为「已确认」，仍可继续处理，并停止重复催促通知。",
+      "ackSuccess": "已确认告警",
+      "resolve": "关闭",
+      "resolveHint": "手动结案。问题已处理或可忽略时使用；关闭后可触发恢复通知。",
+      "resolveSuccess": "已关闭告警",
+      "noActions": "—",
+      "filterKeyword": "搜索标题 / 说明",
+      "filterStatus": "状态",
+      "filterSeverity": "级别",
+      "filterAll": "全部",
+      "filterSearch": "筛选",
+      "filterReset": "重置",
+      "filteredCount": "显示 {shown} / {total} 条",
+      "colResource": "资源"
+    },
+    "content": {
+      "title": {
+        "assetOffline": "资产离线 · {name}",
+        "gatewayOffline": "网关离线 · {name}",
+        "beaconOffline": "信标离线 · {name}",
+        "lowBattery": "电量过低 · {name}",
+        "weakSignal": "信号过弱 · {name}",
+        "inventoryResult": "盘点结果 · {name}"
+      },
+      "message": {
+        "assetOffline": "绑定信标超过 {seconds} 秒未见扫描：{detail}",
+        "gatewayOffline": "超过 {seconds} 秒无心跳/上报：MAC {mac}",
+        "beaconOffline": "超过 {seconds} 秒未扫描：MAC {mac}",
+        "lowBattery": "电量约 {percent}%（阈值 ≤ {threshold}%）：MAC {mac}",
+        "weakSignal": "RSSI {rssi} dBm 低于阈值 {threshold} dBm：MAC {mac}",
+        "inventoryAllFound": "盘点完成：{found}/{expected}（覆盖率 {coverage}%），全部点到。规则阈值：覆盖率 ≥ {minCoverage}%",
+        "inventoryPartial": "盘点完成：{found}/{expected}（覆盖率 {coverage}%），未点到 {missing} 台。规则阈值：覆盖率 ≥ {minCoverage}%",
+        "inventoryMissing": "盘点完成：{found}/{expected}（覆盖率 {coverage}%），未点到 {missing} 台。缺失：{missingList}。规则阈值：覆盖率 ≥ {minCoverage}%"
+      }
+    }
+  },
+  "table": {
+    "form": {
+      "reset": "重置",
+      "submit": "提交"
+    },
+    "searchBar": {
+      "reset": "重置",
+      "search": "查询",
+      "expand": "展开",
+      "collapse": "收起",
+      "searchInputPlaceholder": "请输入",
+      "searchSelectPlaceholder": "请选择"
+    },
+    "selection": "选择",
+    "sizeOptions": {
+      "small": "紧凑",
+      "default": "默认",
+      "large": "宽松"
+    },
+    "column": {
+      "selection": "勾选",
+      "expand": "展开",
+      "index": "序号"
+    },
+    "zebra": "斑马纹",
+    "border": "边框",
+    "headerBackground": "表头背景"
+  },
+  "platformAdmin": {
+    "users": {
+      "title": "用户管理",
+      "subtitle": "管理平台运营账号及其平台角色。Root 与受保护账户仅可查看，不可在此变更。",
+      "create": "新建用户",
+      "createTitle": "新建平台用户",
+      "editTitle": "编辑用户",
+      "rolesTitle": "分配平台角色",
+      "passwordTitle": "重置密码",
+      "username": "用户名",
+      "displayName": "显示名",
+      "email": "邮箱",
+      "status": "状态",
+      "platformRoles": "平台角色",
+      "root": "Root",
+      "actions": "操作",
+      "edit": "编辑",
+      "roles": "角色",
+      "resetPassword": "重置密码",
+      "activate": "激活",
+      "suspend": "停用",
+      "protected": "受保护",
+      "initialPassword": "初始密码",
+      "passwordPlaceholder": "新密码（至少 8 位）",
+      "created": "用户已创建",
+      "updated": "已更新",
+      "rolesUpdated": "角色已更新",
+      "passwordReset": "密码已重置",
+      "activated": "已激活",
+      "suspended": "已停用",
+      "suspendConfirmTitle": "停用确认",
+      "suspendConfirm": "确认停用用户「{username}」？",
+      "usernameRequired": "请填写用户名",
+      "emailRequired": "请填写邮箱",
+      "emailInvalid": "邮箱格式不正确",
+      "passwordMin": "初始密码至少 8 位",
+      "initialPasswordPh": "至少 8 位"
+    },
+    "roles": {
+      "title": "角色管理",
+      "subtitle": "管理平台作用域角色。可勾选平台能力与业务权限（资产、设备、告警、MQTT 等）。",
+      "create": "新建角色",
+      "createTitle": "新建平台角色",
+      "editTitle": "编辑平台角色",
+      "code": "编码",
+      "name": "名称",
+      "scope": "作用域",
+      "system": "系统",
+      "protected": "受保护",
+      "permissionCount": "权限数",
+      "actions": "操作",
+      "edit": "编辑",
+      "delete": "删除",
+      "permissions": "权限",
+      "saved": "角色已保存",
+      "deleted": "已删除",
+      "cannotDelete": "系统/受保护角色不可删除",
+      "deleteConfirmTitle": "删除确认",
+      "deleteConfirm": "确认删除平台角色「{name}」？",
+      "permissionsHint": "按模块勾选；每个功能可单独开启查看或编辑。",
+      "selectModule": "全选本模块",
+      "selectFeature": "全选本功能",
+      "workspaceCaps": "工作区业务能力",
+      "workspaceCapsHint": "面向资产、设备、告警等业务权限（平台超级管理员类角色可能需要）。",
+      "showWorkspaceCaps": "显示工作区业务权限",
+      "hideWorkspaceCaps": "隐藏工作区业务权限",
+      "noPermissions": "暂无可分配权限"
+    },
+    "permissions": {
+      "title": "权限目录",
+      "subtitle": "只读权限清单。不含成员/任务文档，以及未启用的定位与点名能力。",
+      "code": "编码",
+      "name": "名称",
+      "module": "模块",
+      "description": "说明",
+      "search": "搜索编码 / 名称",
+      "allModules": "全部模块",
+      "empty": "没有匹配的权限"
+    },
+    "audit": {
+      "title": "审计日志",
+      "subtitle": "记录登录、平台管理与业务操作（资产/信标/网关/地图等增删改）。",
+      "action": "动作",
+      "resourceType": "资源类型",
+      "resourceId": "资源 ID",
+      "actor": "操作者",
+      "successful": "结果",
+      "success": "成功",
+      "failed": "失败",
+      "traceId": "追踪 ID",
+      "time": "时间",
+      "refresh": "刷新",
+      "empty": "暂无审计记录",
+      "colWho": "用户",
+      "colWhat": "行为",
+      "colChange": "记录",
+      "colResult": "结果",
+      "colWhen": "操作时间",
+      "filterActorPh": "按用户名或显示名筛选",
+      "search": "搜索",
+      "reset": "重置",
+      "showSessionRefresh": "显示自动刷新会话",
+      "actorUnknown": "未知用户",
+      "yes": "是",
+      "no": "否",
+      "actions": {
+        "loginSucceeded": "登录成功",
+        "loginFailed": "登录失败",
+        "sessionRefreshed": "自动刷新会话",
+        "sessionRevoked": "退出登录",
+        "mqttConnectionCreate": "创建 MQTT 连接",
+        "mqttConnectionUpdate": "修改 MQTT 连接",
+        "mqttConnectionTest": "测试 MQTT 连接",
+        "mqttTopicRouteCreate": "创建 Topic 路由",
+        "mqttTopicRouteUpdate": "修改 Topic 路由",
+        "mqttTopicRouteDelete": "删除 Topic 路由",
+        "userCreate": "创建用户",
+        "userUpdate": "修改用户",
+        "userResetPassword": "重置密码",
+        "userActivate": "启用用户",
+        "userSuspend": "停用用户",
+        "userReplaceRoles": "调整用户角色",
+        "roleCreate": "创建角色",
+        "roleUpdate": "修改角色",
+        "roleDelete": "删除角色",
+        "mailUpdate": "修改邮件配置",
+        "brandingUpdate": "修改登录页配置",
+        "opsCleanup": "清理运维数据",
+        "opsAutoCleanup": "设置自动清理",
+        "opsBackup": "备份数据库",
+        "opsBackupDelete": "删除数据库备份",
+        "opsRestore": "恢复数据库",
+        "opsRestart": "重启服务",
+        "assetTypeCreate": "创建资产类型",
+        "assetTypeUpdate": "修改资产类型",
+        "assetTypeDelete": "删除资产类型",
+        "assetCreate": "创建资产",
+        "assetUpdate": "修改资产",
+        "assetDelete": "删除资产",
+        "assetBindBeacon": "绑定信标",
+        "assetUnbindBeacon": "解绑信标",
+        "assetBuzzer": "资产蜂鸣",
+        "assetEinkPush": "资产墨水屏改屏",
+        "beaconCreate": "创建信标",
+        "beaconUpdate": "修改信标",
+        "beaconDelete": "删除信标",
+        "beaconBatchDelete": "批量删除信标",
+        "beaconImport": "导入信标",
+        "beaconEinkSettings": "信标墨水屏设置",
+        "gatewayCreate": "创建网关",
+        "gatewayUpdate": "修改网关",
+        "gatewayDelete": "删除网关",
+        "mapCreate": "创建地图",
+        "mapUpdate": "修改地图",
+        "mapDelete": "删除地图",
+        "mapUploadImage": "上传平面图",
+        "zoneCreate": "创建区域",
+        "zoneUpdate": "修改区域",
+        "zoneDelete": "删除区域",
+        "alertRuleCreate": "创建告警规则",
+        "alertRuleUpdate": "修改告警规则",
+        "alertAcknowledge": "确认告警",
+        "alertResolve": "解除告警",
+        "inventoryStart": "开始盘点",
+        "inventoryClose": "结束盘点",
+        "inventoryDelete": "删除盘点",
+        "rollCallStart": "发起点名",
+        "taskCreate": "创建任务",
+        "taskUpdate": "修改任务",
+        "documentCreate": "创建文档",
+        "documentUpload": "上传文档",
+        "documentUpdate": "修改文档",
+        "documentDelete": "删除文档"
+      },
+      "resources": {
+        "authSession": "登录会话",
+        "mqttConnection": "MQTT 连接",
+        "mqttTopicRoute": "Topic 路由",
+        "platformUser": "平台用户",
+        "platformRole": "平台角色",
+        "platformMail": "邮件配置",
+        "platformBranding": "登录页配置",
+        "platformOps": "系统运维",
+        "assetType": "资产类型",
+        "asset": "资产",
+        "beacon": "信标",
+        "gateway": "网关",
+        "map": "地图",
+        "zone": "区域",
+        "alertRule": "告警规则",
+        "alertEvent": "告警事件",
+        "inventorySession": "盘点会话",
+        "rollCall": "点名",
+        "projectTask": "任务",
+        "projectDocument": "文档"
+      },
+      "summary": {
+        "object": "{resource}（{id}）",
+        "project": "工作区：{value}",
+        "reason": "原因：{value}",
+        "scope": "范围：{value}",
+        "environment": "环境：{value}",
+        "resultCode": "结果码：{value}",
+        "session": "会话：{value}",
+        "ip": "IP：{value}",
+        "email": "邮箱：{value}",
+        "displayName": "显示名：{value}",
+        "roleCodes": "角色：{value}",
+        "permissionCount": "权限数：{value}",
+        "enabled": "启用：{value}",
+        "port": "端口：{value}",
+        "fromAddress": "发件人：{value}",
+        "username": "账号：{value}",
+        "passwordChanged": "密码已更新：{value}",
+        "loginTitle": "登录标题：{value}",
+        "hasLoginBackground": "自定义背景：{value}",
+        "hasTitleLogo": "自定义 Logo：{value}",
+        "code": "编码：{value}",
+        "name": "名称：{value}",
+        "systemName": "系统名：{value}",
+        "host": "主机：{value}"
+      }
+    },
+    "scope": {
+      "PLATFORM": "平台",
+      "TENANT": "组织",
+      "PROJECT": "工作区"
+    },
+    "userStatus": {
+      "active": "正常",
+      "suspended": "已停用",
+      "invited": "待激活",
+      "locked": "已锁定"
+    },
+    "save": "保存",
+    "create": "创建",
+    "cancel": "取消",
+    "confirm": "确定",
+    "geotag": {
+      "title": "对接 GeoTag",
+      "subtitle": "接通他们云上的 GPS 标签。",
+      "enabled": "接通",
+      "ready": "已接通",
+      "notReady": "未接通",
+      "apiBaseUrl": "API 地址",
+      "apiBaseUrlPh": "https://他们的域名 或本机联调填 mock",
+      "apiHint": "本机先验证可填 mock：不连他们云，已绑定资产的设备名都会出现；Webhook 也收明文 JSON。",
+      "businessNo": "企业号",
+      "businessNoPh": "例如 B197458838294",
+      "platformPublicKey": "对方平台公钥",
+      "platformPublicKeyPh": "他们发给你们的公钥（Base64）",
+      "ourPublicKey": "系统公钥",
+      "ourPublicKeyHint": "复制提供给GeoTag服务商或自行到GeoTag企业平台保存。",
+      "webhookUrl": "Webhook 地址",
+      "webhookEnabled": "接收 Webhook",
+      "webhookOnHint": "勾选后把下面地址发给服务商或自行填写到GeoTag应用后台，位置变化实时推送。",
+      "webhookOffHint": "系统自动处理数据。",
+      "webhookHost": "公网 IP / 域名",
+      "webhookHostPh": "默认用本机出口公网 IP",
+      "webhookPort": "端口",
+      "webhookHttps": "HTTPS",
+      "webhookPortHint": "请在路由器或防火墙上把该端口转到本机 API。这是给对方看的映射端口，不会改本机监听端口。",
+      "webhookNatHint": "本机在 NAT 后若没有回流，自测可能失败，但对方仍可能打得通。可看下面最近一次真实推送时间。",
+      "webhookTest": "测试联通性",
+      "webhookOk": "Webhook 可达",
+      "lastWebhookAt": "最近一次真实推送：{time}",
+      "webhookHint": "复制给对方，位置更新会推到这里并落成本地轨迹。",
+      "copy": "复制",
+      "copied": "已复制",
+      "rotateKeys": "重新生成系统密钥",
+      "rotateConfirm": "生成新密钥后，必须把新的系统公钥重新提供给GeoTag服务商或自行到GeoTag企业平台保存，否则推送和解密会失败。继续？",
+      "rotated": "已生成新密钥，请把系统公钥提供给GeoTag服务商或自行到GeoTag企业平台保存",
+      "test": "测试连接",
+      "tested": "连接成功，云上 {count} 台设备",
+      "save": "保存",
+      "saved": "已保存。接通后请刷新页面，侧栏会出现 GeoTag 管理。",
+      "lastTest": "上次测试",
+      "simulateTitle": "本机试写入一条",
+      "simulateHint": "本地测试写入",
+      "simulateSn": "设备名 / SN",
+      "simulateSnPh": "须与资产里绑定信标的设备名一致",
+      "lat": "纬度",
+      "lng": "经度",
+      "battery": "电量",
+      "simulate": "写入",
+      "simulated": "已写入一条轨迹点",
+      "mapProvider": "底图",
+      "mapOsm": "OpenStreetMap（默认，免费，可 3D）",
+      "mapEsri": "Esri 街道图（免费，仅 2D）",
+      "mapCarto": "CARTO Voyager（仅 2D，需 Key）",
+      "mapMaptiler": "MapTiler（可 3D，需 Key）",
+      "mapApiKey": "底图 API Key",
+      "mapCartoKey": "CARTO Key",
+      "mapMaptilerKey": "MapTiler Key",
+      "mapApiKeyPh": "申请后的 Key 填在这里",
+      "mapOsmHint": "默认 OpenStreetMap，无需 Key，地图页可开 3D。",
+      "mapCartoHint": "CARTO 必须先保存 Key，否则地图页切不过去。请到申请页领取后回填。",
+      "mapMaptilerHint": "MapTiler 必须先保存 Key。3D 效果比 OSM 更好。请到申请页领取后回填。",
+      "mapSettingsHint": "默认 OpenStreetMap。位置地图和轨迹页可以切换。"
+    },
+    "mail": {
+      "title": "邮件配置（SMTP）",
+      "subtitle": "平台全局发信通道。「我的通知」里的邮箱渠道依赖此处配置才能真正寄出。",
+      "ready": "当前可用",
+      "notReady": "未就绪",
+      "enabled": "启用",
+      "host": "SMTP 主机",
+      "port": "端口",
+      "username": "用户名",
+      "password": "密码",
+      "passwordHintConfigured": "已配置，留空则不修改",
+      "passwordHintEmpty": "尚未配置密码",
+      "fromAddress": "发件地址",
+      "fromName": "发件人名称",
+      "useSsl": "SSL",
+      "useStarttls": "STARTTLS",
+      "save": "保存",
+      "testTo": "测试收件邮箱",
+      "sendTest": "发送测试",
+      "saved": "SMTP 配置已保存",
+      "testNeedTo": "请填写测试收件邮箱",
+      "testSent": "测试邮件已发送",
+      "sslHint": "常见于 465",
+      "starttlsHint": "常见于 587",
+      "passwordPh": "SMTP 密码 / 授权码",
+      "fromAddressPh": "noreply@example.com",
+      "fromNamePh": "资产管理平台",
+      "testToPh": "收件邮箱",
+      "sendTestMail": "发送测试邮件",
+      "testSection": "发送测试"
+    },
+    "branding": {
+      "title": "登录页配置",
+      "subtitle": "设置登录页文案、背景图与网页标题 Logo",
+      "save": "保存",
+      "text": "文字",
+      "systemName": "系统名称（侧栏品牌名 / 登录页 / 浏览器标题后缀）",
+      "systemNamePh": "资产管理平台",
+      "loginTitle": "登录页左侧主标题",
+      "loginTitlePh": "覆盖默认左侧标题",
+      "loginSubtitle": "登录页左侧副标题",
+      "loginSubtitlePh": "覆盖默认左侧说明",
+      "welcomeTitle": "登录表单标题",
+      "welcomeTitlePh": "例如：欢迎回来",
+      "welcomeSubtitle": "登录表单副标题",
+      "welcomeSubtitlePh": "例如：请输入账号继续",
+      "background": "登录背景图",
+      "backgroundHint": "支持常见图片格式，不超过 500KB。可随时恢复为系统默认背景。",
+      "backgroundEmpty": "未设置背景图",
+      "uploadBackground": "上传背景",
+      "clear": "清除",
+      "logo": "网页标题 Logo",
+      "logoHint": "用于侧栏、登录页品牌区与浏览器标签图标，不超过 50KB。保存后立即生效。",
+      "logoEmpty": "未设置 Logo",
+      "uploadLogo": "上传 Logo",
+      "saved": "登录页配置已保存",
+      "pickImage": "请选择图片文件",
+      "bgTooLarge": "登录背景图不能超过 500KB",
+      "logoTooLarge": "标题 Logo 不能超过 50KB",
+      "bgPicked": "背景图已选择，请保存",
+      "logoPicked": "Logo 已选择，请保存",
+      "restoreDefault": "恢复默认",
+      "bgRestored": "已恢复默认登录背景",
+      "logoRestored": "已恢复默认 Logo",
+      "copyright": "登录页版权",
+      "copyrightPh": "有授权后可改成客户自己的版权",
+      "copyrightLocked": "未授权时固定显示 GeoTag 版权，无法修改"
+    },
+    "ops": {
+      "title": "系统运维",
+      "subtitle": "清理流水数据、备份/恢复数据库、查看服务健康并重启。主数据（资产、信标、网关、用户）不会出现在清理列表中。",
+      "refresh": "刷新",
+      "license": "授权码",
+      "licenseHint": "每个码绑定本页的安装 ID，不能给其他服务器用。把安装 ID 发给我们领取授权码。同机重装若数据卷还在，安装 ID 不变，可再贴同一码；卷也清掉后 ID 会变，需重新发卡。",
+      "licenseInstallId": "安装 ID",
+      "licenseCopy": "复制",
+      "licenseCopied": "已复制安装 ID",
+      "licenseToken": "授权码",
+      "licenseTokenPh": "粘贴 AM1. 开头的授权码",
+      "licenseActivate": "激活",
+      "licenseActivated": "授权已激活",
+      "licenseWho": "客户",
+      "licenseUntil": "有效期至 {date}",
+      "licenseNone": "尚未激活",
+      "licenseNotify": "通知",
+      "licenseCopyright": "登录版权",
+      "licenseEink": "改屏",
+      "licenseBuzz": "寻找",
+      "licenseMaxBeacons": "信标上限 {count}",
+      "licenseMaxGateways": "网关上限 {count}",
+      "licenseOn": "已开",
+      "licenseOff": "未开",
+      "health": "服务状态",
+      "healthHint": "Worker 必须在线才能收上报。重启 PostgreSQL / Redis / MQTT 会短暂中断业务。",
+      "restart": "重启",
+      "restarting": "已发出重启",
+      "restartConfirmTitle": "重启确认",
+      "restartConfirm": "将重启「{name}」。请输入 RESTART 确认。",
+      "restartNeedToken": "请输入 RESTART",
+      "cleanup": "清理无用数据",
+      "cleanupHint": "只删除过期流水。资产台账、信标、网关、地图、用户、规则不会被删。新装默认每天自动清理。",
+      "preview": "预览",
+      "executeCleanup": "执行清理",
+      "days": "保留天数",
+      "count": "可删条数",
+      "countMany": "超过 {count} 条",
+      "deleted": "已删除",
+      "selectAll": "全选",
+      "previewEmpty": "没有可删的过期数据",
+      "cleanupConfirmTitle": "清理确认",
+      "cleanupConfirm": "将删除选中类型中早于保留天数的记录，共 {total} 条。此操作不可恢复。",
+      "cleanupConfirmBackground": "将按保留天数在后台分批删除过期流水。资产、信标、网关、用户不会被删。此操作不可恢复。",
+      "cleanupStarted": "已开始后台清理，可在本页查看进度",
+      "cleanupProgress": "正在清理：已删除 {total} 条 · 当前表 {table}",
+      "cleanupDone": "已清理 {total} 条",
+      "autoCleanup": "自动清理",
+      "autoCleanupHint": "默认每天凌晨检查并清理过期流水（失败报文约 3 天，扫描约 2 天）。成功 MQTT 报文不再入库。可改天数或关掉。容器日志已轮转，不会无限涨。",
+      "autoCleanupEnable": "启用自动清理",
+      "autoCleanupInterval": "相隔天数",
+      "autoCleanupSave": "保存规则",
+      "autoCleanupSaved": "清理规则已保存",
+      "autoCleanupNeedRules": "启用自动清理前请至少勾选一条规则",
+      "autoCleanupLastRun": "上次自动清理：删除 {total} 条 · {time}",
+      "autoCleanupNever": "尚未自动执行过",
+      "targets": {
+        "mqttInbox": "MQTT 失败报文",
+        "scanEvents": "扫描流水",
+        "presenceEvents": "在线状态流水",
+        "outboundCommands": "下行命令（不含排队中）",
+        "gattOps": "GATT 任务（不含进行中）",
+        "einkOps": "墨水屏任务（不含进行中）",
+        "einkJobs": "墨水屏改屏记录（不含排队）",
+        "closedAlerts": "已关闭告警",
+        "notificationDeliveries": "通知投递记录",
+        "auditLogs": "过期审计日志"
+      },
+      "backup": "数据库备份",
+      "backupHint": "生成 gzip 压缩的 PostgreSQL 备份（.sql.gz）。不含 MQTT 收件箱原始报文。成功报文已不再入库；历史收件箱和过期扫描可用上方清理删掉。",
+      "createBackup": "立即备份",
+      "backupCreated": "备份已生成",
+      "download": "下载",
+      "delete": "删除",
+      "fileName": "文件",
+      "size": "大小",
+      "modifiedAt": "时间",
+      "noBackups": "还没有备份",
+      "deleteBackupConfirm": "删除备份「{name}」？",
+      "backupDeleted": "备份已删除",
+      "toolsMissing": "当前环境缺少 pg_dump / psql，无法备份或恢复。",
+      "restore": "恢复数据库",
+      "restoreHint": "恢复会先自动再备份一次当前库，然后覆盖全部业务数据，并重启 API。必须输入 RESTORE 才能继续。",
+      "restoreFromSelected": "从选中备份恢复",
+      "restoreUpload": "上传备份并恢复",
+      "restoreConfirmTitle": "恢复确认",
+      "restoreConfirm": "将用「{name}」覆盖当前数据库。请输入 RESTORE 确认。服务随后会重启，需要重新登录。",
+      "restoreNeedToken": "请输入 RESTORE",
+      "restoreAccepted": "恢复已提交，服务即将重启，请稍后刷新页面重新登录。",
+      "pickBackup": "请先选择一个备份",
+      "pickFile": "请选择 .sql / .sql.gz 或离线套件的 .tar.gz 备份",
+      "dockerOff": "未挂载 Docker，无法从本页重启 Postgres / Redis / MQTT / Web。API 与 Worker 仍可重启。",
+      "up": "正常",
+      "down": "异常"
+    }
+  },
+  "permissionCatalog": {
+    "modules": {
+      "platform": "平台",
+      "tenant": "组织",
+      "project": "工作区",
+      "mqtt": "MQTT",
+      "audit": "审计",
+      "asset": "资产",
+      "device": "设备",
+      "tracking": "定位与点名",
+      "alert": "告警",
+      "inventory": "盘点",
+      "analytics": "分析",
+      "dashboard": "总览",
+      "notification": "通知",
+      "geotag": "GeoTag"
+    },
+    "codes": {
+      "notification": {
+        "read": {
+          "name": "查看个人通知偏好",
+          "description": "查看个人通知渠道与订阅"
+        },
+        "manage": {
+          "name": "管理个人通知偏好",
+          "description": "创建和更新个人通知渠道与订阅"
+        }
+      },
+      "platform-mail": {
+        "read": {
+          "name": "查看平台邮件配置",
+          "description": "查看 SMTP 配置"
+        },
+        "manage": {
+          "name": "管理平台邮件配置",
+          "description": "更新 SMTP 配置并发送测试邮件"
+        }
+      },
+      "platform-branding": {
+        "read": {
+          "name": "查看登录页配置",
+          "description": "查看登录页品牌设置"
+        },
+        "manage": {
+          "name": "管理登录页配置",
+          "description": "更新登录页文案、背景与标题 Logo"
+        }
+      },
+      "platform-ops": {
+        "read": {
+          "name": "查看系统运维",
+          "description": "查看服务健康、清理预览与备份列表"
+        },
+        "manage": {
+          "name": "执行系统运维",
+          "description": "清理流水、备份/恢复数据库、重启服务"
+        }
+      },
+      "platform-user": {
+        "read": {
+          "name": "查看平台用户",
+          "description": "查看全局用户信息"
+        },
+        "manage": {
+          "name": "管理平台用户",
+          "description": "创建、停用和管理非 Root 用户"
+        }
+      },
+      "platform-tenant": {
+        "read": {
+          "name": "查看组织",
+          "description": "查看组织信息"
+        },
+        "manage": {
+          "name": "管理组织",
+          "description": "创建、更新、归档和恢复组织"
+        }
+      },
+      "platform-role": {
+        "read": {
+          "name": "查看平台角色",
+          "description": "查看平台角色定义"
+        },
+        "manage": {
+          "name": "管理平台角色",
+          "description": "管理非 Root 平台角色与授权"
+        }
+      },
+      "platform-broker": {
+        "read": {
+          "name": "查看平台 Broker",
+          "description": "查看平台级 Broker 配置（脱敏）"
+        },
+        "manage": {
+          "name": "管理平台 Broker",
+          "description": "管理平台级 Broker 配置"
+        },
+        "test": {
+          "name": "测试平台 Broker",
+          "description": "测试平台级 Broker 连接"
+        }
+      },
+      "platform-audit": {
+        "read": {
+          "name": "查看平台审计",
+          "description": "查看平台级审计记录"
+        }
+      },
+      "tenant": {
+        "read": {
+          "name": "查看当前组织",
+          "description": "查看当前组织信息"
+        },
+        "update": {
+          "name": "更新当前组织",
+          "description": "更新当前组织信息"
+        }
+      },
+      "tenant-member": {
+        "read": {
+          "name": "查看组织成员",
+          "description": "查看当前组织成员"
+        },
+        "invite": {
+          "name": "邀请组织成员",
+          "description": "邀请或通过组织成员"
+        },
+        "assign": {
+          "name": "分配组织角色",
+          "description": "分配可委派的组织角色"
+        },
+        "remove": {
+          "name": "移除组织成员",
+          "description": "停用或移除组织成员"
+        }
+      },
+      "tenant-role": {
+        "read": {
+          "name": "查看组织角色",
+          "description": "查看组织角色定义"
+        },
+        "manage": {
+          "name": "管理组织角色",
+          "description": "管理组织级角色定义"
+        }
+      },
+      "tenant-project": {
+        "read": {
+          "name": "查看组织工作区",
+          "description": "查看当前组织下的工作区"
+        },
+        "create": {
+          "name": "创建组织工作区",
+          "description": "在当前组织中创建工作区"
+        },
+        "manage": {
+          "name": "管理组织工作区",
+          "description": "更新、归档和恢复组织工作区"
+        }
+      },
+      "tenant-broker": {
+        "read": {
+          "name": "查看组织 Broker",
+          "description": "查看组织级 Broker 配置（脱敏）"
+        },
+        "manage": {
+          "name": "管理组织 Broker",
+          "description": "管理组织级 Broker 配置"
+        },
+        "test": {
+          "name": "测试组织 Broker",
+          "description": "测试组织级 Broker 连接"
+        }
+      },
+      "tenant-audit": {
+        "read": {
+          "name": "查看组织审计",
+          "description": "查看组织审计记录"
+        }
+      },
+      "project": {
+        "read": {
+          "name": "查看工作区",
+          "description": "查看当前工作区"
+        },
+        "update": {
+          "name": "更新工作区",
+          "description": "更新当前工作区"
+        }
+      },
+      "project-member": {
+        "read": {
+          "name": "查看成员",
+          "description": "查看当前成员"
+        },
+        "invite": {
+          "name": "邀请成员",
+          "description": "将用户加入工作区"
+        },
+        "assign": {
+          "name": "分配角色",
+          "description": "分配可委派的角色"
+        },
+        "remove": {
+          "name": "移除成员",
+          "description": "停用或移除成员"
+        }
+      },
+      "project-role": {
+        "read": {
+          "name": "查看角色",
+          "description": "查看当前角色定义"
+        },
+        "manage": {
+          "name": "管理角色",
+          "description": "管理当前角色"
+        }
+      },
+      "mqtt-connection": {
+        "read": {
+          "name": "查看 MQTT 连接",
+          "description": "查看 MQTT 连接（脱敏）"
+        },
+        "configure": {
+          "name": "配置 MQTT 连接",
+          "description": "创建和更新 MQTT 连接"
+        },
+        "test": {
+          "name": "测试 MQTT 连接",
+          "description": "测试 MQTT 连接"
+        }
+      },
+      "mqtt-topic-route": {
+        "read": {
+          "name": "查看 Topic 路由",
+          "description": "查看 MQTT Topic 路由"
+        },
+        "configure": {
+          "name": "配置 Topic 路由",
+          "description": "创建和更新 MQTT Topic 路由"
+        }
+      },
+      "mqtt-message": {
+        "read": {
+          "name": "查看 MQTT 消息",
+          "description": "查看已授权的 MQTT 消息元数据"
+        }
+      },
+      "device-command": {
+        "publish": {
+          "name": "下发设备命令",
+          "description": "发布经校验与审计的设备命令"
+        }
+      },
+      "asset": {
+        "read": {
+          "name": "查看资产",
+          "description": "查看资产"
+        },
+        "manage": {
+          "name": "管理资产",
+          "description": "创建和更新资产"
+        }
+      },
+      "asset-type": {
+        "read": {
+          "name": "查看资产类型",
+          "description": "查看资产类型"
+        },
+        "manage": {
+          "name": "管理资产类型",
+          "description": "创建和更新资产类型"
+        }
+      },
+      "beacon": {
+        "read": {
+          "name": "查看信标",
+          "description": "查看信标"
+        },
+        "manage": {
+          "name": "管理信标",
+          "description": "创建和更新信标"
+        }
+      },
+      "gateway": {
+        "read": {
+          "name": "查看网关",
+          "description": "查看网关"
+        },
+        "manage": {
+          "name": "管理网关",
+          "description": "创建和更新网关"
+        }
+      },
+      "map": {
+        "read": {
+          "name": "查看地图",
+          "description": "查看地图"
+        },
+        "manage": {
+          "name": "管理地图",
+          "description": "创建和更新地图"
+        }
+      },
+      "zone": {
+        "read": {
+          "name": "查看区域",
+          "description": "查看区域"
+        },
+        "manage": {
+          "name": "管理区域",
+          "description": "创建和更新区域"
+        }
+      },
+      "tracking": {
+        "read": {
+          "name": "查看定位追踪",
+          "description": "查看实时与历史定位"
+        }
+      },
+      "roll-call": {
+        "read": {
+          "name": "查看点名",
+          "description": "查看点名结果"
+        },
+        "manage": {
+          "name": "管理点名",
+          "description": "执行点名会话"
+        }
+      },
+      "alert": {
+        "read": {
+          "name": "查看告警",
+          "description": "查看告警事件"
+        },
+        "manage": {
+          "name": "管理告警",
+          "description": "确认和处理告警"
+        }
+      },
+      "alert-rule": {
+        "read": {
+          "name": "查看告警规则",
+          "description": "查看告警规则"
+        },
+        "manage": {
+          "name": "管理告警规则",
+          "description": "创建和更新告警规则"
+        }
+      },
+      "inventory": {
+        "read": {
+          "name": "查看盘点",
+          "description": "查看盘点会话"
+        },
+        "manage": {
+          "name": "管理盘点",
+          "description": "创建并执行盘点会话"
+        }
+      },
+      "project-task": {
+        "read": {
+          "name": "查看任务",
+          "description": "查看任务"
+        },
+        "manage": {
+          "name": "管理任务",
+          "description": "创建和更新任务"
+        }
+      },
+      "project-document": {
+        "read": {
+          "name": "查看文档",
+          "description": "查看文档"
+        },
+        "manage": {
+          "name": "管理文档",
+          "description": "创建和更新文档"
+        }
+      },
+      "analytics": {
+        "read": {
+          "name": "查看分析",
+          "description": "查看分析汇总"
+        }
+      },
+      "dashboard": {
+        "read": {
+          "name": "查看总览",
+          "description": "查看总览摘要"
+        }
+      },
+      "platform-gateway": {
+        "read": {
+          "name": "查看跨组织网关",
+          "description": "平台运维查看全部组织网关"
+        }
+      },
+      "platform-geotag": {
+        "read": {
+          "name": "查看 GeoTag 对接",
+          "description": "查看 GeoTag 云接口与底图配置"
+        },
+        "manage": {
+          "name": "管理 GeoTag 对接",
+          "description": "更新 GeoTag 云接口、底图配置并测试连接"
+        }
+      },
+      "geotag": {
+        "read": {
+          "name": "查看 GeoTag 管理",
+          "description": "查看 GeoTag 位置地图、设备和轨迹"
+        },
+        "manage": {
+          "name": "编辑 GeoTag 管理",
+          "description": "管理 GeoTag 位置地图、设备和轨迹"
+        }
+      }
+    },
+    "actions": {
+      "read": "查看",
+      "manage": "编辑",
+      "create": "创建",
+      "update": "更新",
+      "configure": "配置",
+      "test": "测试",
+      "publish": "下发",
+      "invite": "邀请",
+      "assign": "分配",
+      "remove": "移除"
+    },
+    "features": {
+      "platform-user": "用户管理",
+      "platform-tenant": "组织管理",
+      "platform-role": "角色管理",
+      "platform-broker": "平台 Broker",
+      "platform-audit": "平台审计",
+      "platform-gateway": "跨组织网关",
+      "platform-mail": "邮件配置",
+      "platform-branding": "登录页配置",
+      "platform-ops": "系统运维",
+      "platform-geotag": "对接 GeoTag",
+      "geotag": "GeoTag 管理",
+      "tenant": "组织资料",
+      "tenant-member": "组织成员",
+      "tenant-role": "组织角色",
+      "tenant-project": "组织工作区",
+      "tenant-broker": "组织 Broker",
+      "tenant-audit": "组织审计",
+      "project": "工作区资料",
+      "project-member": "成员",
+      "project-role": "角色",
+      "project-task": "任务",
+      "project-document": "文档",
+      "mqtt-connection": "MQTT 连接",
+      "mqtt-topic-route": "Topic 路由",
+      "mqtt-message": "MQTT 消息",
+      "device-command": "设备命令",
+      "asset": "资产",
+      "asset-type": "资产类型",
+      "beacon": "信标",
+      "gateway": "网关",
+      "map": "地图",
+      "zone": "区域",
+      "tracking": "定位追踪",
+      "roll-call": "点名",
+      "alert": "告警事件",
+      "alert-rule": "告警规则",
+      "inventory": "盘点",
+      "analytics": "分析",
+      "dashboard": "总览",
+      "notification": "通知偏好"
+    }
+  },
+  "presence": {
+    "ONLINE": "在线",
+    "OFFLINE": "离线",
+    "UNBOUND": "未绑定",
+    "ARCHIVED": "已归档",
+    "UNKNOWN": "未知"
+  },
+  "product": {
+    "crud": {
+      "deleteConfirm": "确认删除「{code} · {name}」？删除后列表中不再显示。",
+      "selectField": "请选择{label}",
+      "drawerEdit": "编辑",
+      "drawerDetail": "详情",
+      "drawerCreate": "新建",
+      "filterCount": "共 {filtered} / {total} 条"
+    },
+    "battery": {
+      "full": "满电",
+      "medium": "中等",
+      "low": "低电",
+      "critical": "极低",
+      "unknown": "未知",
+      "noOfFrame": "无OF帧",
+      "noBattery": "无电量",
+      "detecting": "识别中",
+      "autoTitle": "自动 · {text}"
+    },
+    "toaster": {
+      "eyebrow": "实时提醒",
+      "needAttention": "需要关注",
+      "offlineAndAlerts": "{offline} 台设备离线 · {alerts} 条新告警",
+      "offlineOnly": "{offline} 台设备离线",
+      "alertsOnly": "{alerts} 条新告警",
+      "assetOffline": "资产离线 · {code}",
+      "gatewayOffline": "网关离线 · {code}",
+      "alertFallback": "告警",
+      "openAlertFallback": "未处理告警",
+      "enableSound": "点击开启提示音",
+      "dismiss": "知道了",
+      "goHandle": "去处理"
+    },
+    "geotag": {
+      "empty": "没有可显示的设备。需要资产已绑定信标。",
+      "cloudSyncError": "云上清单暂时没拉到，先用上次缓存。",
+      "mock": "本机联调",
+      "asset": "资产",
+      "sn": "设备名",
+      "status": "云上状态",
+      "enabled": "已启用",
+      "disabled": "未启用",
+      "battery": "电量",
+      "address": "地址",
+      "locationTime": "定位时间",
+      "accuracy": "误差",
+      "noPoint": "还没有推送点",
+      "refresh": "刷新",
+      "selectDevice": "选择设备",
+      "from": "开始",
+      "to": "结束",
+      "query": "查询",
+      "points": "{count} 个点",
+      "lat": "纬度",
+      "lng": "经度",
+      "allTypes": "全部类型",
+      "assetType": "资产类型",
+      "unclassified": "未分类",
+      "searchPh": "资产 / 设备名 / 地址",
+      "allStatus": "全部状态",
+      "statusUnknown": "未知",
+      "pointFilter": "定位",
+      "allPoints": "全部",
+      "hasPoint": "有定位",
+      "noPointFilter": "无定位",
+      "mapKeyMissing": "已选 {provider} 但还没有 Key，已暂时用 OpenStreetMap。请到申请页拿到 Key，再到「平台管理 → 对接 GeoTag」填写。",
+      "mapKeyApply": "去申请 Key",
+      "map3d": "3D",
+      "mapKeyNeed": "使用 {provider} 需要 API Key。请到 {url} 申请，然后到「平台管理 → 对接 GeoTag」填写后再切换。",
+      "mapSettingsPath": "平台管理 → 对接 GeoTag"
+    },
+    "floorPlan": {
+      "alt": "平面图",
+      "previewAlt": "平面图预览",
+      "installPoint": "安装点",
+      "needUpload": "请先上传平面图",
+      "needSize": "请先填写平面图真实宽度、高度（米）",
+      "clickPick": "点击平面图选择安装位置（原点：左上角，单位：米）",
+      "coordsReadonly": "安装坐标（米）：X {x} · Y {y}",
+      "currentPoint": "当前点：X {x} m · Y {y} m",
+      "stageEmpty": "请选择已上传平面图并填写真实尺寸的地图",
+      "loadFailed": "图片加载失败",
+      "noImage": "暂无平面图",
+      "loading": "加载中…"
+    },
+    "account": {
+      "title": "个人中心",
+      "subtitle": "管理头像、昵称、邮箱、密码，以及告警弹窗与声音提醒",
+      "userFallback": "用户",
+      "accountLabel": "账号 {name}",
+      "changeAvatar": "更换头像",
+      "restoreDefault": "恢复默认",
+      "basicProfile": "基本资料",
+      "displayName": "昵称",
+      "displayNamePh": "显示名称",
+      "email": "邮箱",
+      "emailPh": "用于登录和找回密码",
+      "saveProfile": "保存资料",
+      "saveDisplayName": "保存资料",
+      "changePassword": "修改密码",
+      "currentPassword": "当前密码",
+      "newPassword": "新密码",
+      "confirmPassword": "确认新密码",
+      "updatePassword": "更新密码",
+      "alertPrefs": "告警提醒",
+      "alertPrefsHint": "设备离线或出现新告警时，是否弹窗并播放提示音。默认全部开启。",
+      "popupTitle": "弹窗提示",
+      "popupDesc": "有新离线设备或告警时弹出提醒",
+      "soundTitle": "声音提醒",
+      "soundDesc": "弹窗出现时播放提示音（浏览器需先点击页面解锁音频）",
+      "customSound": "自定义提示音",
+      "customSoundHint": "支持 mp3 / wma，不超过 300KB。",
+      "currentUploaded": "当前：{name}",
+      "uploaded": "已上传",
+      "currentDefault": "当前：系统默认音",
+      "browserHint": "提示：Chrome / Safari 通常只稳定支持 mp3；wma 可能无法播放并回退默认音。",
+      "uploadSound": "上传声音",
+      "testSound": "试听提示音",
+      "savePrefs": "保存提醒设置",
+      "customSoundName": "自定义提示音",
+      "needDisplayName": "请填写昵称",
+      "needEmail": "请填写邮箱",
+      "emailInvalid": "邮箱格式不正确",
+      "profileUpdated": "资料已更新",
+      "displayNameUpdated": "资料已更新",
+      "needFullPassword": "请填写完整密码信息",
+      "passwordMin": "新密码至少 8 位",
+      "passwordMismatch": "两次输入的新密码不一致",
+      "passwordUpdated": "密码已修改",
+      "prefsSaved": "提醒偏好已保存",
+      "testPlayed": "已播放试听",
+      "soundBlocked": "浏览器阻止了声音，或格式不被支持（WMA 在部分浏览器不可用）",
+      "soundFormat": "仅支持 mp3 / wma",
+      "soundTooLarge": "声音文件不能超过 300KB",
+      "soundSaved": "自定义提示音已保存",
+      "soundRestored": "已恢复默认提示音",
+      "needImage": "请选择图片文件",
+      "avatarTooLarge": "头像请小于 240KB",
+      "avatarUpdated": "头像已更新",
+      "avatarRestored": "已恢复默认头像",
+      "readFailed": "读取失败"
+    },
+    "overview": {
+      "title": "资产运行总览",
+      "subtitle": "看健康、看待办；作业去对应页面",
+      "lastRefresh": "上次刷新 {time}",
+      "floorplan": "平面图",
+      "assetStatus": "资产状态",
+      "loadFailed": "总览数据加载失败",
+      "metricLedger": "资产台账",
+      "ledgerHint": "{unbound} 台未绑定信标",
+      "ledgerAllBound": "全部已绑定信标",
+      "metricAssetTotal": "资产总数",
+      "metricOnlineOffline": "在线 {online} · 离线 {offline}",
+      "metricOnlineAssets": "在线资产",
+      "metricDeviceOverview": "总设备概览",
+      "metricFieldOnline": "现场在线",
+      "metricGateways": "网关",
+      "gatewayAllOnline": "全部在线",
+      "gatewayStatusTitle": "网关状态",
+      "unboundNotOnSite": "未绑定不计入现场",
+      "fieldSplit": "信标 {beacons} 在线 · 网关 {gateways} 在线",
+      "onlineRate": "{rate}% 在线率",
+      "noAssets": "暂无资产",
+      "metricOfflineDevices": "离线设备",
+      "offlineBreakdown": "资产 {assets} · 网关 {gateways}",
+      "noOffline": "暂无离线",
+      "metricUnbound": "未绑定信标",
+      "unboundHint": "已绑定 {bound} 台，其余待挂到资产",
+      "allBound": "全部已绑定到资产",
+      "noBeacons": "暂无信标",
+      "todosTitle": "待办",
+      "todosHint": "按原因分流到台账、现场或告警",
+      "noTodosMerged": "暂无待办",
+      "todosOk": "未绑定、低电量和告警都已处理",
+      "metricOnlineGateways": "在线网关",
+      "gatewaysOffline": "{count} 台离线",
+      "scanCoverage": "现场扫描覆盖",
+      "metricOpenAlerts": "未处理告警",
+      "needAttention": "需要关注",
+      "noTodos": "暂无待办",
+      "metricScansHour": "近1小时扫描",
+      "linkActivity": "链路活跃度",
+      "deviceHealth": "设备健康",
+      "offlineDevicesTitle": "离线设备",
+      "offlineCount": "{count} 台离线",
+      "gateways": "网关",
+      "noOfflineDevices": "当前无离线设备",
+      "allOnline": "资产与网关均在线",
+      "offlineAssets": "离线资产",
+      "units": "{count} 台",
+      "noOfflineAssets": "无离线资产",
+      "offlineGateways": "离线网关",
+      "noOfflineGateways": "无离线网关",
+      "attention": "需要关注",
+      "abnormalAssets": "异常资产",
+      "viewAll": "查看全部",
+      "noAbnormal": "暂无异常资产",
+      "abnormalOk": "在线且已绑定的资产都正常",
+      "pending": "待处理",
+      "openAlertsTitle": "未处理告警",
+      "alertCenter": "告警中心",
+      "noOpenAlerts": "暂无待处理告警",
+      "openAlertsHint": "有新告警时会显示在这里",
+      "onsite": "现场",
+      "gatewayAndBattery": "网关与低电量",
+      "assets": "资产",
+      "gatewayOnlineFrac": "{online}/{total} 在线",
+      "noGateways": "暂无网关",
+      "registerGateway": "先在网关管理登记设备",
+      "lowBattery": "低电量",
+      "noLowBattery": "暂无低电量资产",
+      "lowBatteryHint": "电量 ≤20% 会出现在这里",
+      "activity": "活动",
+      "recentPresence": "最近出现",
+      "noScans": "暂无扫描记录",
+      "scansHint": "网关上报后会显示最近资产",
+      "inventory": "盘点",
+      "latestInventory": "最近盘点",
+      "noInventory": "尚未开始盘点",
+      "inventoryHint": "可按网关范围发起点名",
+      "found": "已点到",
+      "coverage": "覆盖率",
+      "status": "状态",
+      "startedAt": "开始 {time}",
+      "reasonOffline": "离线",
+      "reasonUnbound": "未绑定信标",
+      "reasonBatteryPct": "电量 {pct}%",
+      "reasonBatteryLow": "电量偏低",
+      "batteryLowLabel": "偏低"
+    },
+    "assets": {
+      "types": {
+        "title": "资产类型",
+        "subtitle": "资产分类；创建资产时应选择对应类型。若类型下仍有关联资产，需先删除或改掉这些资产后才能删除类型。"
+      },
+      "list": {
+        "title": "资产列表",
+        "subtitle": "资产归入资产类型（分类）；绑定信标后按「在线阈值」判定在线/离线。{refreshHint}",
+        "refreshLive": "自动刷新中 · 上次 {time}",
+        "refreshIdle": "自动刷新中（约每 3 秒）",
+        "create": "新建资产",
+        "searchPh": "编码 / 名称 / 网关 / 信标",
+        "typePh": "资产类型",
+        "gatewayPh": "最近网关",
+        "presencePh": "在线状态",
+        "allPresence": "全部状态",
+        "online": "在线",
+        "offline": "离线",
+        "unbound": "未绑定",
+        "protocolPh": "协议",
+        "allProtocols": "全部协议",
+        "autoDetect": "自动识别",
+        "noProtocol": "无协议",
+        "boundPh": "绑定",
+        "allBound": "全部绑定",
+        "bound": "已绑定",
+        "clearFilters": "清空条件",
+        "filterCount": "共 {filtered} / {total} 条",
+        "colMac": "MAC / 编码",
+        "colPhoto": "图片",
+        "photo": "资产图片",
+        "photoHint": "每张不超过 100KB。可从图库选，或上传 JPG / PNG / WebP / GIF。",
+        "photoLibrary": "图库",
+        "photoUpload": "上传",
+        "photoClear": "清除",
+        "photoNeedFile": "请选择图片文件",
+        "photoTooLarge": "图片不能超过 100KB",
+        "photoUploaded": "已选择图片",
+        "photoEmpty": "无图片",
+        "photoSearch": "搜索图库，如 叉车、笔记本、工牌",
+        "photoSearchEmpty": "没有匹配的图",
+        "photoShareHint": "同一工作区里，有资产查看权限的账号都能看见这张图。",
+        "colCode": "编码",
+        "colType": "资产类型",
+        "colBeacon": "绑定信标",
+        "colProtocol": "协议",
+        "colBattery": "电量",
+        "colLocation": "位置",
+        "colGateway": "最近网关",
+        "colLastSeen": "最后可见",
+        "bindBeacon": "绑信标",
+        "unbind": "解绑",
+        "buzz": "蜂鸣",
+        "buzzShort": "短响（约 3 次）",
+        "buzzLong": "长响（约 10 次）",
+        "buzzStop": "停止蜂鸣",
+        "buzzShortSent": "已下发短响（约 3 次）",
+        "buzzLongStarted": "已下发长响（约 10 次）",
+        "buzzStopped": "已停止蜂鸣",
+        "buzzNoGateway": "信标近期未见附近网关，已广播下发（可能多网关尝试连接）",
+        "eink": "改屏",
+        "einkAssetFlag": "墨水屏",
+        "einkAssetFlagCheck": "墨水屏",
+        "einkAssetFlagHint": "广播识别不到时请勾选并选屏型。已识别的可不勾；编辑时取消勾选可隐藏「改屏」。",
+        "licenseRequired": "需要授权",
+        "einkTitle": "墨水屏改屏",
+        "einkHint": "2.13 寸三色（E-lnk）和 2.8 寸四色（ZA25GM2D）都支持模版和自定义画布（图片、文字、手写可叠在一起）。经附近网关下发；HCBG 不支持。再次打开会恢复上次下发或未下发的草稿。",
+        "einkLastSavedPush": "已恢复上次下发的屏幕内容（{time}）",
+        "einkLastSavedDraft": "已恢复未下发的草稿（{time}）",
+        "einkTemplates": "模版",
+        "einkFields": "字段",
+        "einkNoFields": "该模版无可编辑字段",
+        "einkFontSize": "字号",
+        "einkLandscape": "横屏",
+        "einkPortrait": "竖屏",
+        "einkPreview": "预览",
+        "einkPreviewLandscape": "预览（250×128 横屏）",
+        "einkPreviewPortrait": "预览（128×250 竖屏）",
+        "einkPreviewSizedLandscape": "预览（{model} {w}×{h} 横屏）",
+        "einkPreviewSizedPortrait": "预览（{model} {w}×{h} 竖屏）",
+        "einkProfile": "屏型",
+        "einkProfileElnk": "2.13寸 三色",
+        "einkProfileZa25": "2.8寸 四色",
+        "einkTabTemplate": "模版",
+        "einkTabCustom": "自定义",
+        "einkTabImage": "上传图片",
+        "einkTabDraw": "手写",
+        "einkCustomHint": "空白画布，不带模版。图片、文字、手写可叠在一起；选「移动」后拖动物体。",
+        "einkDrawHint": "空白画布上手写，不带模版。2.13 寸可用黑/白/红，2.8 寸另有黄。",
+        "einkImageHint": "从空白画布开始，不带模版。选图后按当前横竖屏适配。",
+        "einkToolMove": "移动",
+        "einkToolText": "文字",
+        "einkToolDraw": "手写",
+        "einkText": "文字",
+        "einkTextPh": "输入要放到画布上的文字",
+        "einkTextPlace": "放到画布",
+        "einkTextWeight": "粗细",
+        "einkWeight400": "细",
+        "einkWeight500": "常规",
+        "einkWeight700": "粗",
+        "einkWeight900": "特粗",
+        "einkTextNeed": "请先输入文字",
+        "einkImageMoveHint": "可拖动改位置",
+        "einkColorBlack": "黑",
+        "einkColorWhite": "白",
+        "einkColorYellow": "黄",
+        "einkColorRed": "红",
+        "einkNeedProfile": "请选择屏型（自动识别不到时请手选）",
+        "einkProfileOverride": "已覆盖扫描识别结果",
+        "einkImage": "上传图片",
+        "einkImagePick": "选择图片",
+        "einkImageClear": "移除图片",
+        "einkImageFail": "图片无法读取",
+        "einkDither": "照片抖动",
+        "einkFitContain": "完整",
+        "einkFitCover": "铺满",
+        "einkDraw": "手写",
+        "einkEraser": "橡皮",
+        "einkPenWidth": "笔粗",
+        "einkUndo": "撤销",
+        "einkClearInk": "清除笔迹",
+        "einkUnlock": "解锁码",
+        "einkUnlockPh": "6 位数字，未配置则无法下发",
+        "einkPasskey": "配对密码",
+        "einkPasskeyPh": "4–6 位数字，未配置则无法下发",
+        "einkPasskeyConfigured": "已配置（留空不修改）",
+        "einkPreferredGateway": "首选网关",
+        "einkPreferredGatewayPh": "可选；默认用最近可见网关",
+        "einkSubmit": "下发改屏",
+        "einkQueued": "已排队下发（任务 {jobId}）",
+        "einkNotCapable": "绑定信标未识别为墨水屏（GeoTag E-lnk / ZA25GM2D，或广播含 FFE0/FF70）",
+        "einkNeedTitle": "请填写主标题",
+        "needMac": "请填写 MAC 地址（将作为资产编码）",
+        "needName": "请填写名称",
+        "boundOk": "绑定成功",
+        "unboundOk": "已解绑",
+        "unbindConfirm": "确认解绑资产「{name}」与信标「{beacon}」？解绑后将无法继续通过该信标定位。",
+        "unbindTitle": "解绑确认",
+        "deleteConfirm": "确认删除资产「{code} · {name}」？",
+        "autoProtocol": "自动 · {kind}",
+        "autoOnly": "自动",
+        "drawerCreate": "新建资产",
+        "drawerEdit": "编辑资产",
+        "macLabel": "MAC / 编码",
+        "macPh": "支持 AA:BB:… / AA-BB-… / AABB…",
+        "macHintEdit": "编码随绑定信标的 MAC 自动同步，不可手工修改；换信标请用「绑信标」。",
+        "macHintCreate": "资产编码等于 MAC；保存时会自动登记/绑定对应信标。",
+        "codeHintBound": "已绑信标时编码会同步为信标 MAC。",
+        "codeHintUnbound": "未绑信标时使用业务编码；绑信标后可同步为 MAC。",
+        "typeLabel": "资产类型（分类）",
+        "typePhSelect": "选择资产类型",
+        "locationLabel": "位置标签",
+        "protocolLabel": "广播协议",
+        "protocolHintEdit": "默认自动：根据广播内容识别电量协议，一般无需手动选择。",
+        "bindTitle": "绑定信标",
+        "beaconDevice": "信标设备",
+        "selectBeacon": "选择信标",
+        "noUnboundBeacon": "暂无未绑定信标，请先在信标管理中添加",
+        "deviceName": "设备名",
+        "protocolHintBind": "默认自动识别电量协议；仅在异常时再手动指定。",
+        "colNameHeader": "名称"
+      },
+      "photoGroups": {
+        "it": "电子设备",
+        "safety": "人员与安全",
+        "warehouse": "仓储物流",
+        "vehicle": "车辆机械",
+        "tool": "工具设备",
+        "facility": "办公设施"
+      },
+      "photos": {
+        "laptop": "笔记本",
+        "desktop": "台式机",
+        "phone": "手机",
+        "tablet": "平板",
+        "monitor": "显示器",
+        "tv": "电视",
+        "printer": "打印机",
+        "scanner": "扫描仪",
+        "projector": "投影机",
+        "server": "服务器",
+        "router": "路由器",
+        "ups": "UPS",
+        "camera": "相机",
+        "cctv": "监控",
+        "radio": "对讲机",
+        "headset": "耳机",
+        "speaker": "音箱",
+        "watch": "手表",
+        "pos": "收银机",
+        "barcode": "扫码枪",
+        "badge": "工牌",
+        "keys": "钥匙",
+        "helmet": "安全帽",
+        "vest": "反光衣",
+        "boots": "安全鞋",
+        "extinguisher": "灭火器",
+        "firstaid": "急救箱",
+        "package": "纸箱",
+        "pallet": "托盘",
+        "crate": "木箱",
+        "barrel": "油桶",
+        "container": "集装箱",
+        "cart": "推车",
+        "palletjack": "地牛",
+        "forklift": "叉车",
+        "car": "轿车",
+        "van": "面包车",
+        "truck": "货车",
+        "bicycle": "自行车",
+        "motorcycle": "摩托车",
+        "excavator": "挖掘机",
+        "toolbox": "工具箱",
+        "drill": "电钻",
+        "ladder": "梯子",
+        "generator": "发电机",
+        "battery": "蓄电池",
+        "sensor": "传感器",
+        "antenna": "天线",
+        "chair": "座椅",
+        "desk": "办公桌",
+        "cabinet": "柜子",
+        "fridge": "冰箱",
+        "ac": "空调",
+        "wheelchair": "轮椅",
+        "stretcher": "担架",
+        "generic": "通用"
+      },
+      "status": {
+        "title": "资产状态",
+        "subtitle": "含绑定信标的资产与网关；信标按最近扫描与「在线阈值」判定，网关按心跳/扫描判定。可查看电量与历史 RSSI。{refreshHint}",
+        "searchPh": "编码 / 名称 / 信标 / 网关 / 位置",
+        "allPresenceCount": "全部状态 ({count})",
+        "online": "在线",
+        "offline": "离线",
+        "unbound": "未绑定",
+        "gatewayType": "网关",
+        "colType": "资产类型",
+        "colBattery": "电量",
+        "colSignal": "信号",
+        "colLiveLocation": "实时位置",
+        "nearPrefix": "靠近",
+        "approxPrefix": "约",
+        "approxMeters": "约 {meters} m",
+        "colZone": "区域",
+        "colMap": "地图",
+        "colRegisteredLocation": "登记位置",
+        "colLastGateway": "最近网关",
+        "colBeacon": "绑定信标",
+        "colLastSeen": "最后可见",
+        "historySignal": "历史信号",
+        "historyTitle": "历史信号 · {name}",
+        "historyHint": "信标 {beacon} · 最近 100 条扫描",
+        "colGateway": "网关",
+        "clearFilters": "清空条件",
+        "batteryPh": "电量",
+        "allBattery": "全部电量",
+        "lowBattery": "低电量",
+        "filterCount": "共 {filtered} / {total} 条",
+        "typePh": "资产类型",
+        "presencePh": "在线状态",
+        "protocolPh": "协议",
+        "allProtocols": "全部协议",
+        "noProtocol": "无协议",
+        "gatewayPh": "最近网关",
+        "colNameHeader": "名称"
+      },
+      "floorplan": {
+        "title": "平面图概览",
+        "subtitle": "资产落在最近上报网关附近（邻近定位）",
+        "lastRefresh": "上次刷新 {time}",
+        "selectMap": "选择地图",
+        "noMap": "还没有地图，请先在「地图管理」上传平面图并填写长宽",
+        "legendGateway": "网关",
+        "legendAsset": "资产（标注约距网关）",
+        "asset": "资产",
+        "liveLocation": "实时位置",
+        "distance": "距网关",
+        "signal": "信号",
+        "zone": "区域",
+        "lastGateway": "最近网关",
+        "lastSeen": "最后可见",
+        "gateway": "网关",
+        "installPoint": "安装点",
+        "detail": "详情",
+        "detailHint": "点击图上的网关或资产查看详情",
+        "mapAssets": "本图资产（{count}）",
+        "unlocated": "本图无法落点（{count}）",
+        "unlocatedHint": "网关尚未设置安装坐标",
+        "noGateway": "无网关"
+      },
+      "inventory": {
+        "title": "资产盘点",
+        "subtitle": "选择网关与资产范围后下发点名任务；选定网关进入点名扫描，结束后自动恢复日常扫描。",
+        "start": "开始盘点",
+        "inProgress": "进行中 · {name}",
+        "foundProgress": "已点到 {found} / {expected}",
+        "coverage": "覆盖率 {pct}%",
+        "gatewayPart": "网关 {label}",
+        "autoCloseTip": "全部点到会自动结束并通知网关恢复扫描",
+        "viewDetail": "查看明细",
+        "finishEarly": "提前结束",
+        "statusOpen": "进行中",
+        "statusClosed": "已结束",
+        "scopeTypes": "按资产类型",
+        "scopeAssets": "指定资产",
+        "scopeAll": "全部资产",
+        "andMore": "{name} 等 {count} 台",
+        "defaultName": "盘点 {time}",
+        "needGateway": "请至少选择一台网关执行点名",
+        "needType": "请选择至少一个资产类型",
+        "needAsset": "请选择至少一个资产",
+        "started": "已下发点名任务到选定网关",
+        "finished": "盘点已结束",
+        "deleteConfirm": "确认删除盘点报表「{name}」？删除后不可恢复。",
+        "csv": {
+          "code": "资产编码",
+          "name": "资产名称",
+          "type": "资产类型",
+          "result": "结果",
+          "rssi": "RSSI",
+          "gateway": "网关",
+          "foundAt": "点到时间"
+        },
+        "found": "已点到",
+        "unbound": "未绑定",
+        "missing": "未点到",
+        "csvFileName": "盘点报表-{name}.csv",
+        "exported": "已导出 CSV",
+        "dateStart": "开始日期",
+        "dateEnd": "结束日期",
+        "clearDate": "清空日期",
+        "filterCount": "共 {filtered} / {total} 条",
+        "colScope": "范围",
+        "colGateway": "网关",
+        "colDuration": "时长",
+        "minutesUnit": "{n} 分",
+        "colFoundExpected": "点到/应到",
+        "colCoverage": "覆盖率",
+        "colStarted": "开始时间",
+        "report": "报表",
+        "dialogTitle": "开始盘点",
+        "formCountdown": "倒计时（分钟）",
+        "formGateways": "执行网关",
+        "gatewaysPh": "多选参与点名的网关",
+        "formScope": "盘点范围",
+        "formTypes": "资产类型",
+        "formAssets": "资产",
+        "formHint": "开始后会向选定网关下发 inventory_start；倒计时结束或手动结束后下发 inventory_stop，网关恢复日常扫描。仅这些网关的上报会计入本盘点。",
+        "reportTitle": "盘点报表 · {name}",
+        "reportSub": "点到 / 应到 · 覆盖率 {pct}%",
+        "reportStatus": "状态：{status}",
+        "reportScope": "范围：{scope}",
+        "reportGateway": "网关：{gateway}",
+        "reportStarted": "开始：{time}",
+        "reportRemaining": "剩余：{time}",
+        "reportClosed": "结束：{time}",
+        "reportMissing": "缺失：{missing} · 未绑信标：{unbound}",
+        "filterFound": "已点到",
+        "filterMissing": "未点到",
+        "deleteReport": "删除报表",
+        "colAsset": "资产",
+        "colType": "类型",
+        "colResult": "结果",
+        "colFoundAt": "点到时间"
+      }
+    },
+    "devices": {
+      "beacons": {
+        "title": "信标管理",
+        "subtitle": "信标数据来自网关扫描上报；仅登记过的 MAC 才会入库。绑定/解绑请在资产管理中操作；已绑定资产的信标需先解绑才能删除",
+        "create": "添加信标",
+        "searchPh": "搜索 MAC / 名称…",
+        "macField": "MAC",
+        "macPh": "支持 AA:BB:… / AA-BB-… / AABB…",
+        "macInvalid": "请填写有效的 12 位十六进制 MAC 地址",
+        "deviceName": "设备名",
+        "ibeaconUuid": "iBeacon UUID",
+        "colMac": "MAC / 编码",
+        "colLastSeen": "最后可见",
+        "colGateway": "最近网关",
+        "colAsset": "绑定资产",
+        "colBind": "绑定状态",
+        "colProtocol": "协议",
+        "colBattery": "电量",
+        "filterBound": "绑定",
+        "filterAllBound": "全部绑定",
+        "filterBoundYes": "已绑定",
+        "filterBoundNo": "未绑定",
+        "filterPresence": "状态",
+        "filterAllPresence": "全部状态",
+        "filterOnline": "在线",
+        "filterOffline": "离线",
+        "filterBattery": "电量",
+        "filterAllBattery": "全部电量",
+        "filterBatteryUnknown": "未知",
+        "filterProtocol": "协议",
+        "filterAllProtocol": "全部协议",
+        "filterNoProtocol": "无协议",
+        "clearFilters": "清空条件",
+        "downloadTemplate": "下载模板",
+        "import": "导入",
+        "batchDelete": "批量删除",
+        "batchDeleteCount": "批量删除 ({count})",
+        "history": "历史",
+        "bindAsset": "绑资产",
+        "unbind": "解绑",
+        "historySignals": "历史信号",
+        "historyPresence": "历史状态",
+        "historyTitleSignals": "历史信号 · {name}",
+        "historyTitlePresence": "历史状态 · {name}",
+        "signalsHint": "同一网关约 30 秒记一点；默认仅保留最近 2 天",
+        "presenceHint": "最近 30 天上下线记录",
+        "colReason": "原因",
+        "reasonScanOnline": "扫描上线",
+        "reasonTimeout": "超时下线",
+        "reasonGatewayOffline": "网关离线",
+        "statusOnline": "上线",
+        "statusOffline": "下线",
+        "cannotDeleteBound": "该信标已绑定资产，请先解绑后再删除",
+        "boundOk": "已绑定到资产",
+        "unbindConfirm": "确认解除该信标与资产的绑定？解绑后将无法继续通过该信标定位。",
+        "unbindTitle": "解绑确认",
+        "unboundOk": "已解绑",
+        "allBoundSelected": "所选信标均已绑定资产，请先解绑后再删除",
+        "batchDeletePartial": "将删除 {unbound} 条未绑定信标；另有 {bound} 条已绑定将被跳过。是否继续？",
+        "batchDeleteAll": "确认删除选中的 {count} 条信标？",
+        "batchDeleteTitle": "批量删除",
+        "deletedPartial": "已删除 {deleted} 条，跳过已绑定 {skipped} 条",
+        "deletedOk": "已删除 {deleted} 条",
+        "templateDownloading": "模板已开始下载",
+        "importCreated": "新增 {n}",
+        "importUpdated": "更新 {n}",
+        "importSkipped": "跳过 {n}",
+        "importFailed": "失败 {n}",
+        "importTitle": "导入信标",
+        "importHint": "请先下载 CSV 模板，每行填写一个 MAC（支持冒号/横线/无分隔符）。已登记的 MAC 会跳过，新 MAC 会新建。",
+        "dropHint": "将 CSV 拖到此处，或",
+        "clickSelect": "点击选择",
+        "importResult": "新增 {created} · 更新 {updated} · 跳过 {skipped} · 失败 {failed}",
+        "colRow": "行号",
+        "errorTruncated": "仅显示前 50 条错误",
+        "startImport": "开始导入",
+        "bindTitle": "绑定到资产",
+        "selectAsset": "选择资产",
+        "protocolLabel": "广播协议",
+        "autoDetect": "自动识别",
+        "protocolHint": "默认自动识别电量协议；仅在异常时再手动指定。",
+        "assetLabel": "资产",
+        "einkSettings": "墨水屏设置",
+        "einkCapable": "支持墨水屏",
+        "einkCapableHint": "扫描识别 GeoTag 墨水屏（E-lnk 三色或 ZA25GM2D 四色；同名前缀的 Find My 除外）。可手选屏型，也可关闭以隐藏入口。",
+        "einkPasskey": "配对密码",
+        "einkPasskeyPh": "4–6 位数字，未配置则无法下发",
+        "einkPasskeyConfigured": "已配置配对密码",
+        "einkPasskeyEmpty": "未配置（无法下发）",
+        "einkPreferredGateway": "首选改屏网关",
+        "einkPreferredGatewayPh": "可选；默认用最近可见网关",
+        "einkLastAt": "上次改屏",
+        "einkSettingsSaved": "墨水屏设置已保存",
+        "einkYes": "是",
+        "einkNo": "否"
+      },
+      "gateways": {
+        "title": "网关管理",
+        "create": "新建网关",
+        "searchPh": "搜索编码 / 名称 / MAC / 区域 / 地图…",
+        "colZone": "区域",
+        "colMap": "地图",
+        "colInstall": "安装点(米)",
+        "colLastSeen": "最后可见",
+        "provision": "接入配置",
+        "createTitle": "新建网关",
+        "editTitle": "编辑网关",
+        "zoneLabel": "所属区域",
+        "zonePh": "选择区域后可在平面图上选点",
+        "calRssi": "1米校准 RSSI (dBm)",
+        "calHint": "本网关在约 1 米处测到的典型 RSSI，用于估距；校一次即可覆盖其下所有信标",
+        "installPoint": "地图安装点",
+        "noMapForZone": "该区域尚未关联地图，请先在区域管理中选择地图",
+        "clientIdOptional": "Client ID（可选，留空自动生成）",
+        "createAndProvision": "创建并生成接入配置",
+        "codePh": "4 位数字",
+        "codeHint": "已自动生成 4 位编码，可修改",
+        "codeInvalid": "网关编码需为 4 位数字",
+        "provisionTitle": "网关 MQTT 接入配置",
+        "provisionHint": "账号密码仅含字母和数字，可直接修改后保存。Broker 信息来自项目 MQTT 连接。",
+        "username": "账号",
+        "password": "密码",
+        "usr": "usr",
+        "pw": "pw",
+        "simpleCredentialHint": "仅字母和数字，不含特殊字符；账号 2-64 位，密码 4-64 位",
+        "saveCredentials": "保存账号密码",
+        "created": "网关已创建",
+        "needName": "请填写网关名称",
+        "colVendor": "类型",
+        "vendorNative": "自研",
+        "vendorHcbg": "HCBG",
+        "hcbgLabel": "HCBG 网关",
+        "hcbgHint": "勾选后按蜂巢元 HCBG01 JSON 协议接入；必须填写网关 MAC（gw_addr）",
+        "needHcbgMac": "HCBG 网关必须填写 12 位 MAC",
+        "hcbgMacPh": "网关 MAC，对应 gw_addr",
+        "provisionHintHcbg": "把 host/port/usr/pw/clientId、pub=GwData、sub=SrvData、qos=0 填进 GatewayAssistant；数据模式选 JSON。",
+        "deleteConfirm": "确认删除网关「{code} · {name}」？"
+      },
+      "maps": {
+        "title": "地图管理",
+        "subtitle": "上传楼层平面图，并填写真实长宽（米），供区域与网关安装选点使用",
+        "create": "新建地图",
+        "colSize": "尺寸(米)",
+        "colImage": "平面图",
+        "uploaded": "已上传",
+        "notUploaded": "未上传",
+        "colZoneCount": "关联区域数",
+        "colZones": "关联区域",
+        "drawerEdit": "编辑地图",
+        "drawerCreate": "新建地图",
+        "width": "宽度（米）",
+        "height": "高度（米）",
+        "image": "平面图",
+        "uploadImage": "上传平面图",
+        "linkedZones": "关联区域",
+        "noZones": "暂无关联区域",
+        "needImageFile": "请上传图片文件",
+        "imageUploaded": "平面图已上传",
+        "needCodeName": "请填写编码和名称",
+        "needSize": "请填写平面图真实宽度、高度（米）",
+        "deleteConfirm": "确认删除地图「{code} · {name}」？"
+      },
+      "zones": {
+        "title": "区域管理",
+        "subtitle": "区域归属某张地图；网关再归属区域",
+        "create": "新建区域",
+        "searchPh": "搜索编码 / 名称 / 地图…",
+        "colMap": "所属地图",
+        "drawerEdit": "编辑区域",
+        "drawerCreate": "新建区域",
+        "mapLabel": "所属地图",
+        "mapPh": "请选择地图",
+        "noMaps": "暂无地图。",
+        "goCreateMap": "去创建地图",
+        "needCodeName": "请填写编码和名称",
+        "deleteConfirm": "确认删除区域「{code} · {name}」？"
+      },
+      "presenceTtl": {
+        "title": "在线阈值",
+        "subtitle": "设置网关 / 信标（资产）多久未上报判为离线。建议网关阈值 ≥ 网关 Keepalive。",
+        "gatewayLabel": "网关离线阈值（秒）· {hint}",
+        "gatewayHint": "无心跳/扫描超过该时间 → 网关离线。HCBG 走 GwData 扫描/心跳，不发 GwStatus。默认 90 秒。",
+        "beaconLabel": "信标 / 资产离线阈值（秒）· {hint}",
+        "beaconHint": "绑定信标超过该时间无扫描 → 资产/信标离线。HCBG 扫描在网关阈值内即视为在线。默认 300 秒（5 分钟）。",
+        "sec": "{n} 秒",
+        "aboutMinSec": "约 {m} 分 {s} 秒",
+        "aboutMin": "约 {m} 分钟",
+        "gatewayRange": "网关阈值需在 30～3600 秒",
+        "beaconRange": "信标/资产阈值需在 60～86400 秒",
+        "saved": "已保存在线阈值"
+      }
+    },
+    "alerts": {
+      "rules": {
+        "title": "告警规则",
+        "subtitle": "配置触发条件与阈值：信标/网关/资产离线、电量过低、信号过弱、盘点结果。命中后生成告警事件，并可推送到「我的通知」。",
+        "create": "新建规则",
+        "colName": "规则名称",
+        "colCondition": "触发条件",
+        "colThreshold": "阈值",
+        "drawerEdit": "编辑告警规则",
+        "drawerCreate": "新建告警规则",
+        "namePh": "例如：信标离线 5 分钟",
+        "thresholdLabel": "阈值（{unit}）",
+        "minCoverage": "最低覆盖率（%）",
+        "needName": "请填写规则名称",
+        "updated": "规则已更新",
+        "created": "规则已创建",
+        "unitSec": "秒",
+        "unitPct": "%",
+        "unitDbm": "dBm",
+        "BEACON_OFFLINE": {
+          "label": "信标离线",
+          "hint": "超过该秒数未再被网关扫描到则告警"
+        },
+        "GATEWAY_OFFLINE": {
+          "label": "网关离线",
+          "hint": "超过该秒数无心跳/上报则告警"
+        },
+        "ASSET_OFFLINE": {
+          "label": "资产离线",
+          "hint": "已绑定信标的资产：信标超过该秒数未见扫描则告警"
+        },
+        "BATTERY_LOW": {
+          "label": "电量过低",
+          "hint": "电量百分比 ≤ 该阈值则告警（无百分比时按档位估算）"
+        },
+        "INVENTORY_RESULT": {
+          "label": "盘点结果发送",
+          "hint": "盘点结束后推送结果。覆盖率低于该阈值发 WARNING，否则 INFO（需在「我的通知」订阅）"
+        },
+        "summary": {
+          "BEACON_OFFLINE": "超过 {value} 秒未见扫描",
+          "GATEWAY_OFFLINE": "超过 {value} 秒无心跳",
+          "ASSET_OFFLINE": "绑定信标超过 {value} 秒未见扫描",
+          "BATTERY_LOW": "电量 ≤ {value}%",
+          "INVENTORY_RESULT": "覆盖率 < {value}% 为警告，否则信息",
+          "RSSI_THRESHOLD": "RSSI < {value} dBm"
+        },
+        "RSSI_THRESHOLD": {
+          "label": "信号过弱（RSSI）",
+          "hint": "在线时平滑 RSSI 弱于该值（更负）则告警，例如 -85"
+        }
+      },
+      "notifications": {
+        "title": "我的通知",
+        "subtitle": "配置邮箱 / Webhook，勾选「告警 / 恢复」，并选择未恢复时的重复推送间隔。高级规则支持静默时段与规则类型过滤。",
+        "channels": "通知渠道",
+        "email": "邮箱",
+        "emailPh": "邮箱地址",
+        "remarkPh": "备注（可选）",
+        "accountEmail": "账号邮箱：{email}。邮件需先在「平台管理 → 邮件配置」启用 SMTP；Webhook 会真实 POST JSON。",
+        "needLicense": "告警通知需要授权。请在「平台管理 → 系统运维」粘贴授权码。忘记密码邮件不受影响。",
+        "colEnabled": "启用",
+        "subscriptions": "订阅（告警 / 恢复）",
+        "channel": "渠道",
+        "selectChannel": "选择渠道",
+        "minSeverity": "最低级别",
+        "events": "事件",
+        "onAlert": "告警触发",
+        "onRecovery": "告警恢复",
+        "interval": "推送间隔",
+        "intervalHint": "「仅一次」= 开单与恢复各推一次；其它选项在告警未恢复期间按间隔重复提醒。",
+        "ruleTypes": "规则类型过滤",
+        "ruleTypesPh": "空=全部；例如 BEACON_OFFLINE,INVENTORY_RESULT",
+        "quietHours": "静默时段",
+        "criticalBypass": "CRITICAL 仍推",
+        "addSubscription": "添加订阅",
+        "colAlert": "告警",
+        "colRecovery": "恢复",
+        "colAdvanced": "高级",
+        "allRules": "全部规则",
+        "hasQuiet": "有静默",
+        "deliveries": "最近投递",
+        "deliveriesHint": "共 {count} 条。先落库再发信；「已跳过」表示抖动抑制（未发邮件）。每 10 秒自动刷新。",
+        "emptyDeliveries": "暂无投递记录",
+        "colAttempts": "次数",
+        "intervalOnce": "仅一次（触发/恢复各推一次）",
+        "interval5m": "每 5 分钟提醒",
+        "interval15m": "每 15 分钟提醒",
+        "interval30m": "每 30 分钟提醒",
+        "interval1h": "每 1 小时提醒",
+        "interval6h": "每 6 小时提醒",
+        "onceShort": "仅一次",
+        "everyNSec": "每 {n} 秒",
+        "kindAlert": "告警",
+        "kindRecovery": "恢复",
+        "statusSent": "已发送",
+        "statusFailed": "失败",
+        "statusPending": "待发送",
+        "statusSkipped": "已跳过",
+        "loadDeliveriesFailed": "投递记录加载失败",
+        "needAddress": "请填写地址",
+        "channelAdded": "渠道已添加",
+        "deleteChannelConfirm": "删除渠道会同时影响相关订阅，确认？",
+        "deleteChannelTitle": "删除渠道",
+        "workspaceNotReady": "工作区未就绪",
+        "needChannel": "请选择渠道",
+        "subscriptionCreated": "订阅已创建",
+        "deleteSubConfirm": "确认删除该订阅？",
+        "deleteSubTitle": "删除订阅"
+      }
+    },
+    "mqtt": {
+      "commands": {
+        "title": "设备下行命令",
+        "subtitle": "写入出站队列后由 Worker 通过 MQTT 发布（默认主题 SrvData）。可发任意 JSON；HCBG 需 pkt_type=command，并带 gw_addr 与 data.cmd。",
+        "connection": "MQTT 连接",
+        "connectionPh": "默认使用主连接",
+        "disabledSuffix": "（停用）",
+        "publish": "下发",
+        "queued": "命令已入队，Worker 将下发",
+        "sentAt": "发送时间"
+      }
+    },
+    "analytics": {
+      "assetsTitle": "资产分析",
+      "assetsSubtitle": "资产与扫码健康度",
+      "assetCount": "资产数",
+      "beaconCount": "信标数",
+      "gatewayOnline": "在线网关",
+      "openAlerts": "未处理告警",
+      "scansLastHour": "近1小时扫描",
+      "generatedAt": "生成时间",
+      "dailyScans": "近 7 日扫码",
+      "date": "日期",
+      "scanCount": "扫码次数",
+      "dailyTitle": "每日汇总",
+      "dailySubtitle": "运营快照与近 7 日扫码量（UTC 日切）",
+      "assetTotal": "资产总数",
+      "beaconTotal": "信标总数",
+      "openAlertsAlt": "未关闭告警",
+      "scansHourAlt": "近1小时扫码",
+      "share": "占比",
+      "generatedAtLabel": "生成时间：{time}"
+    },
+    "projects": {
+      "tasks": {
+        "title": "任务"
+      },
+      "list": {
+        "title": "工作区列表",
+        "subtitle": "新建工作区会自动创建管理员角色并赋给创建者",
+        "create": "新建工作区",
+        "drawerTitle": "工作区",
+        "archive": "归档",
+        "archiveInfo": "工作区已归档",
+        "archiveConfirm": "确认归档工作区「{name}」？归档后不可再使用。",
+        "archiveTitle": "归档确认",
+        "archived": "已归档"
+      },
+      "documents": {
+        "title": "文档",
+        "subtitle": "上传、下载与删除文件（单文件建议不超过 50MB）",
+        "upload": "上传文档",
+        "emptyScope": "工作区未就绪",
+        "needFile": "请选择文件",
+        "uploaded": "上传成功",
+        "deleteConfirm": "确认删除文档「{name}」？",
+        "uploadTitle": "上传文档",
+        "titleOptional": "标题（可选）",
+        "titlePh": "默认使用文件名",
+        "selectFile": "选择文件"
+      },
+      "members": {
+        "title": "成员",
+        "subtitle": "邀请已有用户并分配角色",
+        "projectRoles": "角色",
+        "invite": "邀请成员",
+        "rolesList": "角色列表",
+        "permissionCount": "权限数",
+        "inviteTitle": "邀请成员",
+        "projectRole": "角色",
+        "roleEdit": "编辑角色",
+        "roleCreate": "新建角色",
+        "noPermissions": "未加载到可分配权限，请刷新后重试。",
+        "joined": "已加入",
+        "rolesUpdated": "角色已更新",
+        "removed": "已移除",
+        "roleSaved": "角色已保存",
+        "cannotDeleteRole": "系统/受保护角色不可删除",
+        "deleteRoleConfirm": "确认删除角色「{name}」？将同时从成员上解除该角色。",
+        "deleteRoleTitle": "删除角色",
+        "roleDeleted": "角色已删除"
+      }
+    },
+    "tenantMembers": {
+      "title": "租户成员",
+      "subtitle": "邀请用户并分配租户角色",
+      "invite": "邀请成员",
+      "rolesTitle": "租户角色",
+      "createRole": "新建角色",
+      "inviteTitle": "邀请租户成员",
+      "initialPassword": "初始密码",
+      "roleEdit": "编辑角色",
+      "roleCreate": "新建角色",
+      "selectPermissions": "请选择权限",
+      "noPermissions": "未加载到可分配权限，请确认已选择租户并刷新页面后重试。",
+      "permissionCountHint": "共 {count} 项可分配权限",
+      "invited": "成员已邀请",
+      "rolesUpdated": "角色已更新",
+      "removed": "已移除",
+      "roleSaved": "角色已保存",
+      "cannotDeleteRole": "系统/受保护角色不可删除",
+      "deleteRoleConfirm": "确认删除角色「{name}」？将同时从成员上解除该角色。",
+      "deleteRoleTitle": "删除角色",
+      "roleDeleted": "角色已删除",
+      "permissionCount": "权限数"
+    },
+    "platformGateways": {
+      "title": "平台网关总览",
+      "subtitle": "跨组织查看网关在线状态与接入信息",
+      "tenant": "租户",
+      "project": "工作区",
+      "lastSeen": "最后可见"
+    }
+  }
+}

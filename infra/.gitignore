@@ -1,0 +1,5 @@
+.env
+
+# Mosquitto password files contain salted password hashes and stay local.
+mosquitto/secrets/*
+!mosquitto/secrets/.gitkeep

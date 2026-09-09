@@ -1,0 +1,45 @@
+spring:
+  config:
+    activate:
+      on-profile: install
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+logging:
+  level:
+    root: INFO
+    com.assetmanagement: INFO
+    org.springframework.data.repository.config: WARN
+
+springdoc:
+  api-docs:
+    enabled: ${SPRINGDOC_ENABLED:false}
+  swagger-ui:
+    enabled: ${SPRINGDOC_ENABLED:false}
+
+app:
+  security:
+    refresh-token:
+      secure: ${AUTH_REFRESH_COOKIE_SECURE:false}
+    browser:
+      allowed-origins: ${AUTH_ALLOWED_ORIGINS}
+  dev-bootstrap:
+    enabled: true
+    root-username: ${APP_DEV_BOOTSTRAP_ROOT_USERNAME:}
+    root-email: ${APP_DEV_BOOTSTRAP_ROOT_EMAIL:}
+    root-password: ${APP_DEV_BOOTSTRAP_ROOT_PASSWORD:}
+    root-display-name: ${APP_DEV_BOOTSTRAP_ROOT_DISPLAY_NAME:Admin}
+    tenant-code: default
+    tenant-name: Default
+    project-code: default-project
+    project-name: Default Project
+    mqtt-enabled: true
+    mqtt-broker-uri: ${APP_DEV_BOOTSTRAP_MQTT_BROKER_URI:}
+    mqtt-username: ${APP_DEV_BOOTSTRAP_MQTT_USERNAME:}
+    mqtt-password: ${APP_DEV_BOOTSTRAP_MQTT_PASSWORD:}
+    mqtt-connection-name: ${APP_DEV_BOOTSTRAP_MQTT_CONNECTION_NAME:本机 Broker}
+  mqtt:
+    connection-test:
+      allowed-private-addresses: ${MQTT_CONNECTION_TEST_ALLOWED_PRIVATE_ADDRESSES:127.0.0.1,mosquitto}

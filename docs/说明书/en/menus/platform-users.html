@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Users</title>
+  <style>
+:root {
+  --bg: #f6f7f9;
+  --panel: #fff;
+  --text: #1f2328;
+  --muted: #5c6570;
+  --line: #e6e8ec;
+  --brand: #1a5f4a;
+  --link: #0b6e4f;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; height: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+nav {
+  width: 280px;
+  flex: 0 0 280px;
+  background: var(--panel);
+  border-right: 1px solid var(--line);
+  padding: 16px 12px 32px;
+  overflow-y: auto;
+  height: 100vh;
+}
+nav .brand { font-weight: 700; color: var(--brand); padding: 4px 8px 14px; font-size: 15px; }
+nav .brand a { color: inherit; text-decoration: none; }
+nav .top-link { margin-bottom: 10px; }
+nav .section { margin-bottom: 4px; }
+nav .parent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  margin: 0;
+  padding: 7px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+}
+nav .parent:hover { background: #eef6f2; }
+nav .parent.current, nav .parent.active { color: var(--brand); }
+nav .chevron {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 5px solid currentColor;
+  flex: 0 0 auto;
+  transform: rotate(0deg);
+  transition: transform 0.15s ease;
+}
+nav .section.open > .parent .chevron { transform: rotate(90deg); }
+nav .children { display: none; padding: 0 0 8px 20px; }
+nav .section.open > .children { display: block; }
+nav a.item {
+  display: block;
+  padding: 5px 8px;
+  border-radius: 6px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+nav a.item:hover { background: #eef6f2; color: var(--text); }
+nav a.item.active { background: #1a5f4a; color: #fff; }
+main { flex: 1; padding: 32px 40px 80px; overflow-y: auto; height: 100vh; }
+article { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 28px 36px; max-width: 860px; }
+h1 { margin-top: 0; font-size: 28px; }
+h2 { margin-top: 1.6em; font-size: 20px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+h3 { font-size: 16px; }
+p, li { line-height: 1.7; }
+a { color: var(--link); }
+table { border-collapse: collapse; width: 100%; margin: 12px 0 20px; font-size: 14px; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #f3f5f7; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9em; background: #f3f5f7; padding: 1px 5px; border-radius: 4px; }
+pre { background: #111827; color: #e5e7eb; padding: 14px 16px; border-radius: 8px; overflow: auto; }
+pre code { background: none; color: inherit; padding: 0; }
+pre.diagram { background: #f3f5f7; color: var(--text); font-size: 12px; }
+.hint { border-left: 4px solid #3b82f6; background: #eff6ff; padding: 10px 14px; margin: 16px 0; border-radius: 0 8px 8px 0; }
+.hint.warning { border-color: #d97706; background: #fffbeb; }
+.hint.danger { border-color: #dc2626; background: #fef2f2; }
+.hint.success { border-color: #059669; background: #ecfdf5; }
+.hint.info { border-color: #2563eb; background: #eff6ff; }
+.home-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
+.home-cards a {
+  display: block; background: var(--panel); border: 1px solid var(--line);
+  border-radius: 12px; padding: 28px 24px; text-decoration: none; color: var(--text);
+}
+.home-cards a:hover { border-color: var(--brand); }
+.home-cards strong { display: block; font-size: 20px; color: var(--brand); margin-bottom: 8px; }
+.group-list { list-style: none; padding: 0; }
+.group-list a {
+  display: block; padding: 12px 14px; border: 1px solid var(--line);
+  border-radius: 8px; margin: 8px 0; text-decoration: none; color: var(--text);
+}
+.group-list a:hover { border-color: var(--brand); }
+@media (max-width: 860px) {
+  body { display: block; height: auto; overflow: auto; }
+  nav { width: auto; height: auto; }
+  main { height: auto; padding: 16px; overflow: visible; }
+  .home-cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="brand"><a href="../../index.html">资产管理平台说明书</a></div>
+  <a class="item top-link" href="../../index.html">选择语言 / Language</a>
+<div class="section" data-slug="intro">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>Getting started</button>
+<div class="children">
+<a class="item" href="../README.html">Introduction</a>
+<a class="item" href="../getting-started.html">First-time setup</a>
+</div></div>
+<div class="section" data-slug="install">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>Install &amp; operations</button>
+<div class="children">
+<a class="item" href="../install/offline.html">Offline install</a>
+<a class="item" href="../install/login.html">Sign-in, language and password reset</a>
+<a class="item" href="../install/upgrade.html">Upgrade without overwriting data</a>
+<a class="item" href="../install/ops.html">Daily commands, backup and HTTPS</a>
+</div></div>
+<a class="parent" href="overview.html">Overview</a>
+<div class="section" data-slug="asset-center">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>Asset Center</button>
+<div class="children">
+<a class="item" href="assets.html">Assets</a>
+<a class="item" href="asset-types.html">Asset types</a>
+<a class="item" href="asset-status.html">Asset status</a>
+<a class="item" href="floorplan.html">Floor plan</a>
+<a class="item" href="inventory.html">Inventory</a>
+</div></div>
+<div class="section" data-slug="devices">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>Devices &amp; Space</button>
+<div class="children">
+<a class="item" href="beacons.html">Beacons</a>
+<a class="item" href="gateways.html">Gateways</a>
+<a class="item" href="maps.html">Maps</a>
+<a class="item" href="zones.html">Zones</a>
+<a class="item" href="presence-ttl.html">Presence TTL</a>
+</div></div>
+<div class="section" data-slug="alerts">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>Alert Center</button>
+<div class="children">
+<a class="item" href="alert-events.html">Alert events</a>
+<a class="item" href="alert-rules.html">Alert rules</a>
+<a class="item" href="notifications.html">My notifications</a>
+</div></div>
+<div class="section" data-slug="analytics">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>Analytics</button>
+<div class="children">
+<a class="item" href="analytics-assets.html">Asset analytics</a>
+<a class="item" href="daily-summary.html">Daily summary</a>
+</div></div>
+<div class="section" data-slug="mqtt">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>MQTT Integration</button>
+<div class="children">
+<a class="item" href="mqtt-connections.html">Connections</a>
+<a class="item" href="mqtt-topics.html">Topic routes</a>
+<a class="item" href="mqtt-messages.html">Message monitor</a>
+<a class="item" href="mqtt-commands.html">Downlink commands</a>
+</div></div>
+<div class="section open is-current" data-slug="platform">
+<button type="button" class="parent current" aria-expanded="true"><span class="chevron" aria-hidden="true"></span>Platform Administration</button>
+<div class="children">
+<a class="item active" href="platform-users.html">Users</a>
+<a class="item" href="platform-roles.html">Roles</a>
+<a class="item" href="audit.html">Audit log</a>
+<a class="item" href="mail.html">Mail settings</a>
+<a class="item" href="branding.html">Login branding</a>
+<a class="item" href="ops.html">System ops</a>
+</div></div>
+<a class="parent" href="account.html">Account</a>
+<div class="section" data-slug="appendix">
+<button type="button" class="parent" aria-expanded="false"><span class="chevron" aria-hidden="true"></span>Appendix</button>
+<div class="children">
+<a class="item" href="../appendix/defaults.html">Ports and data directory</a>
+<a class="item" href="../appendix/gateway.html">Gateway MQTT parameters</a>
+<a class="item" href="../appendix/app-api.html">App API</a>
+</div></div>
+</nav>
+<main>
+  <article>
+    <h1>Users</h1>
+<p>Path: <strong>Platform Administration → Users</strong>. <strong>Super admin only</strong>.</p>
+<p>Operate other accounts: username, display name, email, platform roles, activate/suspend, reset password (min 8 characters on create).</p>
+<div class="hint warning">
+
+**The super admin and protected accounts** are view-only here. Change the super-admin email/password in [Account](account.md). Username and email are unique and must not collide (login accepts either). Username cannot be changed after create.
+
+</div>
+  </article>
+</main>
+
+<script>
+(function () {
+  var nav = document.querySelector("nav");
+  if (!nav) return;
+  var scrollKey = "am-guide-nav-scroll";
+  var saved = sessionStorage.getItem(scrollKey);
+  if (saved !== null) nav.scrollTop = Number(saved);
+  nav.querySelectorAll("a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      sessionStorage.setItem(scrollKey, String(nav.scrollTop));
+    });
+  });
+  nav.querySelectorAll(".section[data-slug]").forEach(function (section) {
+    var btn = section.querySelector("button.parent");
+    if (!btn) return;
+    btn.addEventListener("click", function () {
+      var open = !section.classList.contains("open");
+      section.classList.toggle("open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
